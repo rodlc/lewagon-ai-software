@@ -30,6 +30,8 @@ Feel free to add any code you want to this file. You can also use `puts` stateme
 4. **Use `puts` statements**: If you're still having trouble, add `puts` statements to your code to print out the values of variables at different points in the code. This can help you see where things are going wrong.
 5. **Google it**: If you're still stuck, try Googling the error message or the problem you're having. You may want to check StackOverflow to see if someone else has had the same problem.
 
+Note, you should always feel free to refer to the Ruby documentation. It's a great resource for understanding how different methods and classes work. You can find the documentation for Ruby [here](https://ruby-doc.org/).
+
 ## Going Further
 
 If you're really getting stuck, you can try `pry-byebug`, which is a debugging tool that allows you to step through your code line by line and see what's happening at each step. You should already have installed it on the setup day.

@@ -41,7 +41,7 @@ end
 # capitalize_words("hi everybody it is nice to meet you") do |word|
 #   word.length > 3
 # end
-# ^ that should give me back 'hi EVERYBODY it is NICE to MEET you'
+# ^ that should give me back 'hi Everybody it is Nice to Meet you'
 # # I have no idea how to do that.
 def capitalize_words(string)
   # This method is supposed to capitalize words that match a condition
