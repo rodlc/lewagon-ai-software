@@ -59,7 +59,7 @@ end
 # Finally, I have this one that I just can't figure out
 # My boss said I should get these results but it's just not working:
 # > safe_divide(1, 5) # => should return 0.2
-# > safe_divide(1, 0)} # => should return "Can't divide by zero"
+# > safe_divide(1, 0) # => should return "Can't divide by zero"
 # > safe_divide(1, 0) { 100.0 } # => should return 100.0
 # The boss also said I should check out this documentation guide:
 # https://docs.ruby-lang.org/en/3.2/Kernel.html#method-i-block_given-3F
