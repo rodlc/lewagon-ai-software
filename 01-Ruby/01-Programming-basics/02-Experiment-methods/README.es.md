@@ -24,7 +24,7 @@ En Ruby, todo (texto, entero (integer), número flotante (float), un array, etc.
 
 ## Especificaciones
 
-Encuentra los métodos Ruby adecuados para la [Clase String ](http://ruby-doc.org/core-3.1.2/String.html), la [Clase Integer](http://ruby-doc.org/core-3.1.2/Integer.html), y la [Clase Array](http://ruby-doc.org/core-3.1.2/Array.html) para ejecutar y hacer que pasen las pruebas.
+Encuentra los métodos Ruby adecuados para la [Clase String ](http://ruby-doc.org/3.3.5/String.html), la [Clase Integer](http://ruby-doc.org/3.3.5/Integer.html), y la [Clase Array](http://ruby-doc.org/3.3.5/Array.html) para ejecutar y hacer que pasen las pruebas.
 
 ¡Escribir código requiere de astucia para saber cómo y dónde buscar la información que necesitas! A menudo el paso más difícil es saber cómo estructurar una pregunta en Google. Usa lo siguiente para encontrar los métodos necesarios para este desafío:
 

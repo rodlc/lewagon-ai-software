@@ -67,5 +67,5 @@ You beat the bank! You win.
 
 ## Suggestions et ressources complémentaires
 
-- Tu peux utiliser la [classe Random](https://ruby-doc.org/core-3.1.2/Random.html).
+- Tu peux utiliser la [classe Random](https://ruby-doc.org/3.3.5/Random.html).
 - Quand tu exécutes une boucle, tu as besoin d’une condition pour arrêter le jeu à un moment donné.
