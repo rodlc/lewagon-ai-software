@@ -28,5 +28,5 @@ Implementa la clase `Record` para que tenga todo el comportamiento que se espera
 ## Sugerencias y recursos adicionales
 
 - Hay un método [`send`](http://stackoverflow.com/questions/3337285/what-does-send-do-in-ruby) en todas las clases.
-- Puedes configurar una variable de instancia dinámicamente con [`instance_variable_set`](http://ruby-doc.org/core-3.1.2/Object.html#method-i-instance_variable_set)
-- Puedes leer una variable de instancia dinámicamente con [`instance_variable_get`](http://ruby-doc.org/core-3.1.2/Object.html#method-i-instance_variable_get).
+- Puedes configurar una variable de instancia dinámicamente con [`instance_variable_set`](http://ruby-doc.org/3.3.5/Object.html#method-i-instance_variable_set)
+- Puedes leer una variable de instancia dinámicamente con [`instance_variable_get`](http://ruby-doc.org/3.3.5/Object.html#method-i-instance_variable_get).
