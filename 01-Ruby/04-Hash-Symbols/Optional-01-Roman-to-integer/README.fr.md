@@ -1,4 +1,4 @@
-Écris une méthode `roman_to_integer(chaine_romaine)` qui traduit un nombre romain en son équivalent entier : 'IV' en 4, 'XVI' en 16, etc.
+Écris une méthode `roman_to_integer(roman_string)` qui traduit un nombre romain en son équivalent entier : 'IV' en 4, 'XVI' en 16, etc.
 
 Lorsque le nombre romain est invalide, la méthode doit renvoyer 0.
 
