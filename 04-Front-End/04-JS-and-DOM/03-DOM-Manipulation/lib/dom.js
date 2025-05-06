@@ -7,12 +7,12 @@ import runChallenges from "../spec/examiner.js";
 // Here are some challenges. Solve them from top to bottom
 
 // **Each time** you complete a challenge, please commit and push!
-// This is a good practice. Each time you make some progress in software
+// This is good practice. Each time you make some progress in software
 // development, you want to save a snapshot.
 
 
-// Ex 1. Read what's written in the email input
-//       Make the function getEmail() return it
+// Ex 1. Retrieve whatever is currently written in the email input field and
+//       make the function getEmail() return it
 const getEmail = () => {
   // TODO: return the email
 };
@@ -20,11 +20,13 @@ const getEmail = () => {
 // /!\ DO NOT CHANGE THIS LINE - TEST PURPOSES
 const borisesEmail = getEmail();
 
-// Ex 2. Change the content of the email input by writing your own email address
+// Ex 2. Make the email input field have your personal email address in it
+//      (e.g. 'myemail@gmail.com')
+//      If it works, you should see your email written in the input field
 
 
 // Ex 3. Replace the email hint (next to the input) with 'This is my email now'
-//       The text should be emphasized using a <strong> tag
+//       Use a <strong> tag to emphasize the text
 
 
 
@@ -32,7 +34,7 @@ const borisesEmail = getEmail();
 
 
 
-// Ex 5. Count the number of table body rows there are
+// Ex 5. Count the total number of rows in the table body
 //       Make the function teamCount() return it
 const teamCount = () => {
   // TODO: return the number of teams
@@ -46,7 +48,7 @@ const teamCountBeforeAddition = teamCount();
 
 
 
-// Ex 7. Write some code to get the points for the first team
+// Ex 7. Retrieve and return the point value for the first team
 //       (Rugby Club Toulonnais)
 const firstTeamPoints = () => {
   // TODO: return the points
