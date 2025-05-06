@@ -34,5 +34,5 @@
 * 你用了什么迭代器（iterators）？
 
 ## 进一步建议 & 资源
-* 看一看[Enumerable doc](http://ruby-doc.org/core-3.1.2/Enumerable.html)中的方法！
+* 看一看[Enumerable doc](http://ruby-doc.org/3.3.5/Enumerable.html)中的方法！
 
