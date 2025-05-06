@@ -63,26 +63,29 @@ describe 'debugging_dojo.rb' do
     end
   end
 
-  describe '#safe_divide' do
-    it 'returns the result of division when denominator is not zero' do
-      expect(safe_divide(1, 5)).to eq(0.2)
-      expect(safe_divide(-10, 2)).to eq(-5)
-      expect(safe_divide(0, 1)).to eq(0)
+  describe '#plan_party' do
+    it 'invites guests based on the given block condition' do
+      result = plan_party(["Alice", "Bob", "Charlie"]) { |name| name.start_with?('A') }
+      expect(result).to eq(["Alice"])
     end
 
-    it 'returns the correct string when dividing by zero and no block given' do
-      expect(safe_divide(1, 0)).to eq("Cannot divide by zero")
-      expect(safe_divide(-10, 0)).to eq("Cannot divide by zero")
+    it 'invites guests based on length condition' do
+      result = plan_party(["Alice", "Bob", "Charlie"]) { |name| name.length > 3 }
+      expect(result).to eq(["Alice", "Charlie"])
     end
 
-    it 'returns the result of division when denominator is not zero and block is given' do
-      result = safe_divide(1, 5) { 'should not return this' }
-      expect(result).to eq(0.2)
+    it 'invites guests based on character inclusion' do
+      result = plan_party(["Alice", "Bob", "Charlie"]) { |name| name.include?('b') }
+      expect(result).to eq(["Bob"])
     end
 
-    it 'returns the correct string when dividing by zero and block is given' do
-      result = safe_divide(1, 0) { 'should return this' }
-      expect(result).to eq('should return this')
+    it 'returns an empty array if no guests match the condition' do
+      result = plan_party(["Alice", "Bob", "Charlie"]) { |name| name.start_with?('X') }
+      expect(result).to eq([])
+    end
+
+    it 'raises an error if no block is given' do
+      expect { plan_party(["Alice", "Bob", "Charlie"]) }.to raise_error(LocalJumpError)
     end
   end
 end

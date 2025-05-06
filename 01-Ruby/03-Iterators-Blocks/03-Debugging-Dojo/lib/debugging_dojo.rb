@@ -56,24 +56,27 @@ def capitalize_words(string)
   return processed_words.join(' ')
 end
 
-# Finally, I have this one that I just can't figure out
-# My boss said I should get these results but it's just not working:
-# > safe_divide(1, 5) # => should return 0.2
-# > safe_divide(1, 0) # => should return "Can't divide by zero"
-# > safe_divide(1, 0) { 100.0 } # => should return 100.0
-# The boss also said I should check out this documentation guide:
-# https://docs.ruby-lang.org/en/3.2/Kernel.html#method-i-block_given-3F
-# I don't know what that means, but I think it has something to do with
-# checking if a block is given.
-def safe_divide(number1, number2)
-  # This method is supposed to divide two numbers
-  if number2.is_zero?
-    if there.is_a_block?
-      yield
-    else
-      return "Cannot divide by zero"
-    end
-  else
-    number1 / number2
+# You're planning a party 🥳 but not everyone is invited 😱
+# This method will help you narrow down the guest list.
+# It takes an array of names and a block that defines the condition for being invited.
+# The block should return true for names that should be invited and false for those that shouldn't.
+# The method will return an array of names that are invited.
+#
+# For example, if you want to invite only those whose names start with 'A', you can do:
+# plan_party(["Alice", "Bob", "Charlie"]) { |name| name.start_with?('A') }
+# => ["Alice"]
+#
+# If you want to invite names longer than 3 characters:
+# plan_party(["Alice", "Bob", "Charlie"]) { |name| name.length > 3 }
+# => ["Alice", "Charlie"]
+# Examples:
+# > plan_party(["Alice", "Bob", "Charlie"]) { |name| name.start_with?('A') }  # => ["Alice"]
+# > plan_party(["Alice", "Bob", "Charlie"]) { |name| name.length > 3 }  # => ["Alice", "Charlie"]
+# > plan_party(["Alice", "Bob", "Charlie"]) { |name| name.include?('b') }  # => ["Bob"]
+def plan_party(guests)
+  invited_guests = []
+
+  guests.each do |guest|
+    guests << guest if yield
   end
 end
