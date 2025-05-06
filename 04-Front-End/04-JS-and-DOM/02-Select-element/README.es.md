@@ -18,10 +18,10 @@ Deberías ver los países que han ganado las copas mundiales de fútbol FIFA en 
 
 ¡El objetivo del ejercicio es seleccionar la de Francia `<li>` 🇫🇷!
 
-La manera más fácil y simple es seleccionar un elemento del DOM **con un `id`**.
+La manera más fácil y simple es seleccionar un elemento del DOM **con un `id`**. Pero si ves el archivo `index.html`, verás que los elementos `<li>` no tienen ningún `id` asignado. Así que necesitamos agregar uno:
 
-- Abre el archivo `index.html`. Identifica el elemento que queremos seleccionar y asignale un `id`;
-- Abre el archivo `lib/select.js` y escribe el código JavaScript para seleccionar el elemento con id dado y ¡haz que la función lo devuelva (`return`)!
+1. Abre el archivo `index.html`. Identifica el elemento que queremos seleccionar y asignale un `id`;
+2. Abre el archivo `lib/select.js` y escribe el código JavaScript para seleccionar el elemento con id dado y ¡haz que la función lo devuelva (`return`)!
 
 ¡Que disfrutes el ejercicio! 🎣
 
