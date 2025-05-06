@@ -20,8 +20,8 @@ serve
 
 从DOM中选择元素最简单、最直接的方法是**使用它的`id`**：
 
-- 打开 `index.html` 文件，找到我们要选择的元素并为其设置一个`id`；
-- 打开 `lib/select.js` 文件并编写相应的JavaScript代码来选择具有给定`id`的元素，并使函数`return`该元素！
+1. 打开 `index.html` 文件，找到我们要选择的元素并为其设置一个`id`；
+2. 打开 `lib/select.js` 文件并编写相应的JavaScript代码来选择具有给定`id`的元素，并使函数`return`该元素！
 
 祝你选择愉快 🎣
 
