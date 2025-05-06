@@ -74,7 +74,7 @@ end
 # > plan_party(["Alice", "Bob", "Charlie"]) { |name| name.length > 3 }  # => ["Alice", "Charlie"]
 # > plan_party(["Alice", "Bob", "Charlie"]) { |name| name.include?('b') }  # => ["Bob"]
 def plan_party(guests)
-  invited_guests = []
+  guests = []
 
   guests.each do |guest|
     guests << guest if yield
