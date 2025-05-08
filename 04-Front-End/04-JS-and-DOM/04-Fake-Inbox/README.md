@@ -1,6 +1,6 @@
 ## Background & Objectives
 
-Think about the Gmail inbox interface. Do you need to refresh the page for new mail to show up? The answer is **no** of course! Sites like Gmail periodically fetch new emails and add them to the top of the list. So it's adding new content to the _DOM_ **after** the initial page load.
+Think about the Gmail inbox interface. Do you need to refresh the page for new mail to show up? The answer is **no**, of course! Sites like Gmail periodically fetch new emails and add them to the top of the list. So it's adding new content to the _DOM_ **after** the initial page load, without refreshing the page.
 
 In this challenge, you can test your code in two different ways:
 - In the browser
@@ -8,7 +8,7 @@ In this challenge, you can test your code in two different ways:
 
 ## Specs
 
-If we were building a real email client, we would use AJAX to fetch actual data for new emails. We don't know AJAX yet, so we'll simulate email fetching for now. Basically, that means we'll use random numbers 🙈 We have given you a skeleton in `lib/inbox.js` to get you started.
+If we were building a real email client, we would use AJAX to fetch actual data for new emails. We don't know AJAX yet (you'll learn about it soon!), so we'll simulate email fetching for now. Basically, that means we'll use random numbers 🙈 We have given you a skeleton in `lib/inbox.js` to get you started.
 
 - Implement a method `hasNewMessage()` that returns a `Boolean` (`true` or `false`). It should have a 20% probability of returning `true` (the rest of the time, it should return `false`).
 - Implement the method `newMessage()` which should return an object with keys `subject` and `sender`. This is the structure of a new email. The values for the `subject` and `sender` should be strings, but since we don't actually have an email service back-end, you can pick whatever you want there. It's also OK if it returns the same `subject` and `sender` each time, for now. For example:

@@ -18,10 +18,10 @@ Tu devrais voir une liste ordonnée des pays qui ont remporté le plus de fois l
 
 L'objectif de ce challenge est de sélectionner la France `<li>` 🇫🇷 !
 
-Le moyen le plus simple et rapide de sélectionner un élément du DOM est **avec un `id`** :
+Le moyen le plus simple et rapide de sélectionner un élément du DOM est **avec un `id`**. Mais si tu regardes le fichier `index.html`, tu verras que les éléments `<li>` n'ont pas d'`id` défini. Donc, il faut en ajouter un :
 
-- Ouvre le fichier `index.html`, repère l'élément que tu veux sélectionner et attribue-lui un `id` ;
-- Ouvre le fichier `lib/select.js` et rédige le code JavaScript pour sélectionner l'élément avec l'id donné, et fais en sorte que la fonction le retourne (`return`) !
+1. Ouvre le fichier `index.html`, repère l'élément que tu veux sélectionner et attribue-lui un `id` ;
+2. Ouvre le fichier `lib/select.js` et rédige le code JavaScript pour sélectionner l'élément avec l'id donné, et fais en sorte que la fonction le retourne (`return`) !
 
 Amuse-toi bien 🎣
 
