@@ -73,10 +73,13 @@ end
 # > plan_party(["Alice", "Bob", "Charlie"]) { |name| name.start_with?('A') }  # => ["Alice"]
 # > plan_party(["Alice", "Bob", "Charlie"]) { |name| name.length > 3 }  # => ["Alice", "Charlie"]
 # > plan_party(["Alice", "Bob", "Charlie"]) { |name| name.include?('b') }  # => ["Bob"]
+#
+# rubocop:disable Lint/UselessAssignment
 def plan_party(guests)
-  guests = []
+  invited_guests = []
 
   guests.each do |guest|
     guests << guest if yield
   end
 end
+# rubocop:enable Lint/UselessAssignment
