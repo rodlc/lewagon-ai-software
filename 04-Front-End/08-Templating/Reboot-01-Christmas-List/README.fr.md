@@ -4,7 +4,7 @@ Aujourd'hui, tu vas créer une liste de cadeaux de Noël, comme tu l'as fait dan
 
 Tu vas créer un formulaire qui te permettra d'ajouter des cadeaux à ta liste. Tu utiliseras aussi une [API](https://fakestoreapi.com/) pour obtenir des idées de cadeaux que tu pourras ajouter à ta liste.
 
-La feuille de style Bootstrap est déjà liée dans le fichier `index.html`, alors n'hésite pas à utiliser leurs classes prédéfinies ou à créer les tiennes dans `style.css` !
+La feuille de style Bootstrap est déjà liée dans le fichier `index.html`, alors n'hésite pas à utiliser ses classes prédéfinies ou à créer les tiennes dans `style.css` !
 
 Note : il n'y aura pas de `rake` pour cet exercice ! Pour vérifier si ta page fonctionne, tu devras la tester toi-même dans le navigateur.
 
