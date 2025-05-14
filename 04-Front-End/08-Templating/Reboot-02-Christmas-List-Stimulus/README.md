@@ -28,14 +28,12 @@ We will be using one Stimulus controller for the entire challenge, so you should
 <!-- [...] -->
 
 <input type="text"
-        class="form-control w-100 mt-2"
         id="name"
         data-gifts-target="nameInput">
 
 <!-- [...] -->
 
 <input type="text"
-        class="form-control w-100 mt-2"
         id="name"
         data-gifts-target="priceInput">
 
@@ -59,8 +57,7 @@ export default class extends Controller {
 
 <!-- [...] -->
 
-<form data-action="submit->gifts#addItemViaForm"
-      class="w-100 mx-auto">
+<form data-action="submit->gifts#addItemViaForm">
 
 <!-- [...] -->
 
@@ -90,8 +87,7 @@ export default class extends Controller {
 
 <!-- [...] -->
 
-<ol class="list"
-    data-gifts-target="list">
+<ol data-gifts-target="list">
 </ol>
 
 <!-- [...] -->
@@ -146,8 +142,7 @@ And that's it for the first form!
 ```
 <!-- index.html -->
 
-<select class="form-select w-50"
-        id="search-input"
+<select id="search"
         data-gifts-target="ideasInput">
     <!-- [...] -->
 </select>
@@ -168,8 +163,7 @@ export default class extends Controller {
 ```
 <!-- index.html -->
 
-<ul class="search-list"
-    data-gifts-target="ideasList">
+<ul data-gifts-target="ideasList">
 </ul>
 ```
 
@@ -188,8 +182,7 @@ export default class extends Controller {
 ```
 <!-- index.html -->
 
-<form class="mt-4 search-form"
-        data-action="submit->gifts#searchGifts">
+<form data-action="submit->gifts#searchGifts">
         <!-- [...] -->
 </form>
 ```
