@@ -59,12 +59,18 @@ Sometimes it's hard to think of gifts for everyone. So, let's use the Fake Store
 
 ![Find ideas form](https://raw.githubusercontent.com/lewagon/fullstack-images/master/frontend/js-reboot/step3.gif)
 
-For our 'ideas' form, we want to have a dropdown with the following options:
+For our 'ideas' form, we want to have a dropdown with the different categories from the Fake Store API. You can see the options here: `[https://fakestoreapi.com/products/categories](https://fakestoreapi.com/products/categories)`
 
-- Electronics
-- Jewelry
-- Men's clothing
-- Women's clothing
+```json
+[
+  "electronics",
+  "jewelery",
+  "men's clothing",
+  "women's clothing"
+]
+```
+
+_Note: The word "jewelery" is misspelled, but that's just how it is in the API. We can't change it!_
 
 **Important:** It doesn't matter if you have the text displayed in the options capitalised or not, but the `value` of each one _must_ be written the same as they are [here](https://fakestoreapi.com/products/categories)
 
