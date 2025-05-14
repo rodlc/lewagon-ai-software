@@ -2,7 +2,6 @@ const TOKEN = "your-token-here";
 
 const displayCoordinates = (longitude, latitude) => {
   // TODO #6: Insert the coordinates into the DOM
-  // - Extract the coordinates from the parsed JSON response (lang, lat)
   // - Display the coordinates in the element where the coordinates will be displayed
 };
 
