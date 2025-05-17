@@ -81,7 +81,7 @@ Si tienes problemas corriendo `rspec`, tal vez tengas que correr `bin/rspec`. Es
 
 Asegúrate de pensarlo dos veces antes de seleccionar el tipo de datos.¡No siempre resulta ser la primera selección!
 
-**Pregunta**:¿Puedes dibujar este esquema simple en [db.lewagon.com](http://db.lewagon.com)? Háblalo con tu compañero (buddy).
+**Pregunta**:¿Puedes dibujar este esquema simple en [kitt.lewagon.com/db](http://kitt.lewagon.com/db)? Háblalo con tu compañero (buddy).
 
 #### Validación
 
@@ -99,6 +99,7 @@ Valida todos los tests de los modelos antes de empezar a trabajar con las rutas.
 ```bash
 rspec spec/01_models
 ```
+
 Para correr tests selectivamente en la carpeta `spec/01_models`.
 
 También puedes testear tu código manualmente con la `rails console`.¡No olvides hacer `reload!` entre cada cambio que hagas en el código!
@@ -131,6 +132,7 @@ Preguntarse qué historias de usuario compondrán su aplicación y qué rutas ne
 ```
 GET "restaurants"
 ```
+
 - Un visitante puede agregar un nuevo restaurante y ser redireccionado a la vista `show` de ese nuevo restaurante.
 
 ```
@@ -150,8 +152,8 @@ GET "restaurants/38"
 GET "restaurants/38/reviews/new"
 POST "restaurants/38/reviews"
 ```
-- ¡Y eso es todo!
 
+- ¡Y eso es todo!
 
 En nuestro MVP, un visitante no puede actualizar / borrar un restaurante ni un review. Este es el papel del administrador (e.g. **tú**). Como programador/a tienes el poder de manipular la base de datos (DB) desde la `rails console` si quisieras actualizar / borrar algún registro.
 
