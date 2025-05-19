@@ -4,7 +4,7 @@ SQLite est une base de données simple qui dépend d’un seul fichier autonome.
 
 L’objectif de cet exercice est d’utiliser la ligne de commande pour lire et interroger une base de données fournie, appelée `jukebox.sqlite`.
 
-Le challenge consiste à dessiner le schéma de la base de données sur [db.lewagon.com](http://db.lewagon.com/), à l’enregistrer comme un fichier XML et à exécuter `rake` !
+Le challenge consiste à dessiner le schéma de la base de données sur [kitt.lewagon.com/db](http://kitt.lewagon.com/db/), à l’enregistrer comme un fichier XML et à exécuter `rake` !
 
 ### Configuration
 
@@ -20,7 +20,7 @@ Si ce n’est pas le cas, tu peux l’installer en exécutant dans ton terminal�
 gem install sqlite3 -v '< 2.0'
 ```
 
-Tu peux ouvrir la base de données fournie en exécutant :  pour lui adresser des requêtes :
+Tu peux ouvrir la base de données fournie en exécutant : pour lui adresser des requêtes :
 
 ```bash
 sqlite3 lib/db/jukebox.sqlite
@@ -40,16 +40,17 @@ Afin de parcourir la base de données, nous allons lancer la commande `Open Data
 - Ouvre ta palette de commande avec `Cmd / Ctrl + Shift + p`.
 - Tapez `SQLite: Open Database`.
 - Clique sur le chemin d’accès à la base de données qui pointe vers ta base de données.
-Tu devrais voir un onglet `SQL EXPLORER` avec ta base de données chargée ! Maintenant vous pouvez ouvrir votre base de données et la parcourir avec toutes les tables existantes ! Vous pouvez également cliquer sur l’icône `triangle` pour avoir une représentation plus visuelle de vos tables. 🙌
-Essaye-le avec la table `tracks`.
+  Tu devrais voir un onglet `SQL EXPLORER` avec ta base de données chargée ! Maintenant vous pouvez ouvrir votre base de données et la parcourir avec toutes les tables existantes ! Vous pouvez également cliquer sur l’icône `triangle` pour avoir une représentation plus visuelle de vos tables. 🙌
+  Essaye-le avec la table `tracks`.
 
 <iframe src="https://player.vimeo.com/video/690525143?h=75949ff5a2" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Spécifications
 
 L’objectif de cet exercice est d’explorer la base de données Jukebox et de comprendre son schéma. Réponds aux questions suivantes :
+
 - Quel est le schéma de la base de données ? (quelles sont les tables et les relations entre les tables)
 - Utilise l’outil SQL Design pour dessiner le schéma de cette base de données.
 - Combien de lignes chaque table contient-elle ? Quels sont les noms des colonnes pour chaque table ?
 
-Utilise [db.lewagon.com](http://db.lewagon.com/) pour dessiner le schéma de Jukebox. Enregistre-le au format XML dans `jukebox.xml` et vérifie-le avec `rake`.
+Utilise [kitt.lewagon.com/db](http://kitt.lewagon.com/db/) pour dessiner le schéma de Jukebox. Enregistre-le au format XML dans `jukebox.xml` et vérifie-le avec `rake`.
