@@ -1,10 +1,13 @@
-## Airbnb Week
+## AI Week
 
-You will spend the next sessions with your Project Group working on an Airbnb clone (you don't have to rent **flats**, be creative!)
+You will spend the next sessions with your Project Group working on an AI Assistant for a **Persona** with a **Goal**. For instance, Wott is an AI Assistant for **students learning how to code**.
+
+Brainstorm with your group and create a ticket to validate your idea with a teacher.
+
 
 ### Demos
 
-You will demo your work (in production, no demos on `localhost`!) during the **Geocoding** and **Authorization & Pundit** sessions. Deadlines matter!
+You will demo your work (in production, no demos on `localhost`!) during the **Multi-modal inference** and **Tools & Agents** sessions. Deadlines matter!
 
 ### Part I
 
@@ -12,19 +15,20 @@ Work on the following steps and validate them with a teacher at the start of the
 
 #### 1 - User stories
 
-Duplicate this [spreadsheet](https://docs.google.com/spreadsheets/d/1_q-wwWiWUY5VL0gZVtqWIidWEtfwhX8FHEbwaW0LuFI/edit?usp=sharing) (1 per team) and invite your teammates to collaborate.
+Duplicate this [spreadsheet](https://docs.google.com/spreadsheets/d/1Kh4r-r5ZDyaWSfJdvW1NQJEfqt-wO3ExFR9SVp29lpY/edit?gid=0#gid=0) (1 per team) and invite your teammates to collaborate.
 
 ![duplicate](https://raw.githubusercontent.com/lewagon/fullstack-images/master/rails/user-stories/duplicate.png)
 ![rename](https://raw.githubusercontent.com/lewagon/fullstack-images/master/rails/user-stories/rename.png)
 
-Start by thinking of the **user journeys** you will showcase during the demo. There are lots of possible use cases for a product like Airbnb, but try to narrow them down to the minimum viable journeys to make it work.
+Start by thinking of the **user journeys** you will showcase during the demo. There are lots of possible use cases for an AI Assistant, but try to narrow them down to the minimum viable journeys to solve a specific problem.
 
 <details><summary markdown='span'>View solution
 </summary>
 
-- 1 user journey for the user creating an offer
-- 1 user journey for the user booking an offer
-- 1 user journey for the owner accepting or declining a booking request
+- 1 user journey for the user creating a DB record (e.g. a challenge for Wott)
+- 1 user journey for the user asking a LLM a question in the context of a DB record
+- 1 user journey for the user joining a file with a question to a LLM
+- 1 user journey for the user following up on a question to a LLM (i.e. conversation)
 
 </details>
 
@@ -47,7 +51,7 @@ Create a ticket to validate them with a teacher. All good? Time for the `rails n
 
 ### Part II
 
-Before splitting the tasks among the team, set your project up together. The **lead developer** (and only they) should:
+Before splitting the tasks among the team, set your project up together. The **lead developer** (and only them) should:
 
 #### 1. Create the Rails project with a Postgres config
 
@@ -89,7 +93,7 @@ rails db:create db:migrate
 Even if it's just a skeleton app, it's important to deploy on Heroku **from day one**, and then continuously deploy every day with each new feature.
 
 ```bash
-heroku create airbnb-<user.lower_github_nickname> --region=REPLACE_WITH_REGION # (eu, us, or any region available in `heroku regions` list)
+heroku create ai-assistant-<user.lower_github_nickname> --region=REPLACE_WITH_REGION # (eu, us, or any region available in `heroku regions` list)
 heroku config:set WEB_CONCURRENCY=1 # fixes temporary Heroku bug
 git push heroku master
 heroku run rails db:migrate
@@ -113,13 +117,12 @@ From this point you can start splitting the tasks. **Spend time on the setup, be
 
 #### Kick-off
 
-When trying to split work in your team, you'll realize that many tasks depend on other ones... How to integrate facebook connect if there is no `User` model? How to implement bookings if there is no `Flat` model? Here are some guidelines to help you organize your work:
+When trying to split work in your team, you'll realize that many tasks depend on other ones... Here are some guidelines to help you organize your work:
 
-You must always start with the **core models** in your app that all future features will depend on. In Airbnb's case, they are clearly `User` and `Flat`. Once these models are integrated, it becomes easier to split work on remaining features. As a kick-off phase, you can therefore separate two main tasks:
+You must always start with the **core models** in your app that all future features will depend on. You can find them in your DB schema as the models that don't have foreign keys. Once these models are integrated, it becomes easier to split work on remaining features. As a kick-off phase, you can therefore separate two main tasks:
 
 **group #1 - Model kick-start**:
-- Integrate `User` with Devise signin/signup
-- Integrate `Flat` with listing (`index`) and creation (`new/create`)
+- Integrate your contextual core model (i.e. `Challenge` for Wott) with read actions (`index/show`) and creation (`new/create`).
 
 **group #2 - Front-end kick-start**:
 - Work on a clean layout with navbar/footer
@@ -129,46 +132,33 @@ Once both groups are done (it should take you around 2h each) and once you have 
 
 #### Tasks organization
 
-Here is a list of different user stories to implement on the Airbnb project:
+In the ~10 user stories listed in the spreadsheet, **some of these features are more important than others**. It's your role to prioritize them to get an MVP at the end of the week!
 
-- As a user, I can navigate on the website from the navbar (with functional links, e.g. "signin/signout", "My bookings", "Publish an offer", etc.)
-- As a user, I can view a flat's page
-- As a user, I can book a flat
-- As a user, I can add pictures for my flat
-- As a user, I can add reviews for a flat I've stayed in
-- As a user, I can locate flats on a map
-- As a user, I can log in with Facebook
-- As a user, I can receive an email when someone books my flat
-- ...
+#### Code in silo, from model to view
 
-**Some of these features are more important than others**. It's your role to prioritize them to get an MVP at the end of the week!
-
-#### Feature example: Book a flat
-
-When you work on a feature, work on it **conscientiously from the database to the HTML/CSS**. Let's take the example of the "booking" feature:
+When you work on a feature, work on it **conscientiously from the database to the HTML/CSS**. Let's take the example of creating a challenge:
 
 *Model*
-- I will create a `Booking` model and its associated migration.
+- I will generate a `Challenge` model and its associated migration.
 - Then I will write a working model with associations and validations.
 - I will then crash-test my model from the `rails console` to make sure everything in the model works.
 
 *Routing*:
-- I will add bookings routes in `routes.rb`
+- I will add the new/create routes in `routes.rb`
 
 *Controller*:
-- I will create a new `BookingsController` with the `create` and `index` actions.
-- I will implement these two actions.
+- I will add two `new` and `create` actions in the `ChallengesController`
 
-*Views modification*:
-- I will embed the booking form in the existing `views/flats/show.html.erb`
-- I will list all current user's bookings on a new page `views/bookings/index.html.erb`.
+*Views*:
+- I will code the challenge form in the a `views/challenges/new.html.erb`
+- The create action redirects to the `show` view, with a confirmation notice
 
 *Links*:
-- I will add a link to the `bookings#index`page in the navbar.
+- I will add a link to create a Challenge in the navbar.
 
 *HTML/CSS*:
 - My booking form is clean with the correct Bootstrap classes for the inputs and buttons.
-- My new bookings page is clean with a `container` to center the content, clear headers, and a clean design for each booking.
+- My new challenge page is clean with a `container` to center the content, clear headers, and a clean design for each booking.
 - I will take time to refactor my HTML using partials if my HTML code is too long and hard to read.
 
 **Code it perfectly, from model to view**
