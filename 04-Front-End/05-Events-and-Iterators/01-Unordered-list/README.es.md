@@ -24,6 +24,8 @@ Comenzá trabajando con los tests en el navegador. Cuando termines, usá `rake` 
 
 ### Generador de los ítems de la lista
 
+Antes de crear la lista completa, comencemos por la parte más pequeña: el ítem de la lista.
+
 Implementa la primera función `listItem` la cual toma el parámetro `content` (de tipo cadena de texto (`String`)) y devuelve la etiqueta `<li>` con su contenido:
 
 ```js
@@ -81,7 +83,7 @@ La lista de compras debería verse así:
 const groceries = ['milk', 'butter', 'bread'];
 ```
 
-### Refactorizando con `Map()`
+### Refactorizando con `map()`
 
 Si tu solución pasa los tests `forEach()`, ¡intenta encontrar una mejor solución usando [`map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)!
 
