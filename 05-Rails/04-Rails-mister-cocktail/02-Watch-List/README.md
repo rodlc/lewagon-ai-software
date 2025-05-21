@@ -3,6 +3,7 @@
 Now it's time to make a 3-model app! And you guessed it, we'll be introducing a many to many relationship (`N:N`). So what's the deal? Well, it’s time to build yourself a Watch List. You'll be able to create lists in which you will save your favourite movies.
 
 Here are the **user actions** we want to implement in our app:
+
 - As a user, I can see all my movie lists
 - As a user, I can create a movie list
 - As a user, I can see the details of a movie list
@@ -91,8 +92,8 @@ In `application.js`, add the following lines:
 
 ```js
 // app/javascript/application.js
-import "@popperjs/core"
-import "bootstrap"
+import "@popperjs/core";
+import "bootstrap";
 ```
 
 And then in `manifest.js`, add the following lines:
@@ -123,7 +124,7 @@ Don't forget to `commit` and `push` your work often.
 
 ### 1 - Models
 
-Go to [db.lewagon.com](http://db.lewagon.com) and draw the schema with your buddy. The tables we need are `movies`, `lists` and `bookmarks`. Think about the relations between the tables and who is storing the *references*. 😉
+Go to [kitt.lewagon.com/db](http://kitt.lewagon.com/db) and draw the schema with your buddy. The tables we need are `movies`, `lists` and `bookmarks`. Think about the relations between the tables and who is storing the _references_. 😉
 
 ![](https://raw.githubusercontent.com/lewagon/fullstack-images/master/rails/watch-list/db.png)
 
@@ -191,8 +192,8 @@ The endpoints of the API requires you to sign up and generate an API key. Since 
 Here's how it works:
 
 1. the API would say: use `https://api.themoviedb.org/3/movie/top_rated?api_key=<your_api_key>`
-2. What you should do is replace this part of the url `https://api.themoviedb.org/3?api_key=<your_api_key>` by `https://tmdb.lewagon.com`. For example, `https://api.themoviedb.org/3/movie/top_rated?api_key=<your_api_key>` would become `https://tmdb.lewagon.com/movie/top_rated`.
-3. You can [try it here](https://tmdb.lewagon.com/movie/top_rated)
+2. What you should do is replace this part of the url `https://api.themoviedb.org/3?api_key=<your_api_key>` by `https://tmkitt.lewagon.com/db`. For example, `https://api.themoviedb.org/3/movie/top_rated?api_key=<your_api_key>` would become `https://tmkitt.lewagon.com/db/movie/top_rated`.
+3. You can [try it here](https://tmkitt.lewagon.com/db/movie/top_rated)
 
 **Movie Images**
 
