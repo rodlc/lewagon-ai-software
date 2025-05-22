@@ -1,57 +1,59 @@
-## Semaine Airbnb
+## AI Week
 
-Pendant les prochaines séances, tu travailleras avec ton groupe de projet sur un clone d'Airbnb (vous n'êtes pas obligés de louer des **appartements**, soyez créatifs !)
+Vous passerez les prochaines sessions avec votre groupe projet à travailler sur un **Assistant IA** pour un **Persona** ayant un **Objectif**. Par exemple, Wott est un assistant IA pour les **étudiants qui apprennent à coder**.
 
-### Démos
+Faites un brainstorming avec votre groupe et créez un ticket pour valider votre idée avec un enseignant.
 
-Vous ferez la démo de votre travail (en production, pas de démos sur `localhost` !) pendant les séances de **Géocodage** et **Authorization & Pundit**. Faites attention aux échéances !
+### Démonstrations
+
+Vous présenterez votre travail (en production, pas de démo sur `localhost` !) pendant les sessions **Multi-modal Inference** et **Tools & Agents**. C'est important de fixer des échéances !
 
 ### Partie I
 
-Travaillez sur les étapes suivantes et faites-les valider par un prof au début de la séance, avant de créer votre application Rails et de passer à la Partie II. Vous gagneras du temps, faites-nous confiance.
+Travaillez sur les étapes suivantes et **validez-les avec un enseignant** au début de la session **avant** de créer votre app Rails et de passer à la Partie II. Cela vous fera gagner beaucoup de temps.
 
-#### 1 - Stories utilisateur
+#### 1 - User stories
 
-Un membre de l'équipe doit dupliquer ce [tableur](https://docs.google.com/spreadsheets/d/1_q-wwWiWUY5VL0gZVtqWIidWEtfwhX8FHEbwaW0LuFI/edit?usp=sharing) (1 par équipe) et invite ses coéquipiers à collaborer.
+Dupliquez ce [tableur](https://docs.google.com/spreadsheets/d/1Kh4r-r5ZDyaWSfJdvW1NQJEfqt-wO3ExFR9SVp29lpY/edit?gid=0#gid=0) (un par équipe) et invitez vos coéquipiers à collaborer.
 
-![dupliquer](https://raw.githubusercontent.com/lewagon/fullstack-images/master/rails/user-stories/duplicate.png)
-![renommer](https://raw.githubusercontent.com/lewagon/fullstack-images/master/rails/user-stories/rename.png)
+![duplicate](https://raw.githubusercontent.com/lewagon/fullstack-images/master/rails/user-stories/duplicate.png)
+![rename](https://raw.githubusercontent.com/lewagon/fullstack-images/master/rails/user-stories/rename.png)
 
-Commencez par réfléchir aux **parcours utilisateur** que vous présenteras pendant la démo. Les scénarios possibles sont nombreux pour un produit comme Airbnb, mais essayez de vous limiter au minimum viable pour que l'application fonctionne.
+Commencez par réfléchir aux **parcours utilisateur** que vous allez montrer lors de la démo. Il existe de nombreux cas d’usage pour un assistant IA, mais essayez de les réduire aux parcours minimums viables pour résoudre un problème spécifique.
 
-<details><summary markdown='span'>View solution
-</summary>
+<details><summary markdown='span'>Voir solution</summary>
 
-- 1 parcours utilisateur pour l'utilisateur qui crée une offre
-- 1 parcours utilisateur pour l'utilisateur qui réserve une offre
-- 1 parcours utilisateur pour le propriétaire qui accepte ou refuse une demande de réservation
+- 1 parcours utilisateur pour créer un enregistrement en base (ex. un challenge pour Wott)
+- 1 parcours pour poser une question à un LLM dans le contexte d’un enregistrement
+- 1 parcours pour joindre un fichier à une question pour un LLM
+- 1 parcours pour relancer une question à un LLM (conversation)
 
 </details>
 
-Chaque parcours utilisateur contient plusieurs **stories utilisateur** : notez-les dans le tableur en utilisant la bonne terminologie. Une fois que vous avez terminé, créez un ticket pour les faire valider par un prof.
+Chaque parcours utilisateur peut contenir plusieurs **user stories** : écrivez-les dans le tableur en utilisant la bonne terminologie. Une fois terminé, créez un ticket pour les valider avec un enseignant.
 
-Vous pouvez dessiner des croquis des différents écrans et des principaux éléments qu'ils contiennent. Cela vous aidera à visualiser vos parcours utilisateur. Fais attention : vous n'avez pas besoin d'être trop spécifique à ce stade ! C'est un sprint, vous devez répartir intelligemment votre temps et vos ressources.
+Vous pouvez dessiner rapidement des croquis des différentes pages (papier/stylo) avec les éléments principaux. Cela vous aidera à visualiser les parcours. Attention, pas besoin d’être trop précis à ce stade ! C’est un sprint : gérez bien votre temps et vos ressources.
 
 #### 2 - Schéma de base de données
 
-Dessinez le schéma de votre base de données avec [notre outil](https://kitt.lewagon.com/db/new) et **créez un ticket pour le faire valider par un prof**. Dessinez uniquement le minimum viable pour que votre application fonctionne. Utilisez les bonnes conventions (noms au pluriel pour les colonnes... etc - cf. les cours sur les bases de données).
+Dessinez votre schéma de base de données en utilisant [notre outil](https://kitt.lewagon.com/db/new) et **créez un ticket pour le valider avec un enseignant**. Ne dessinez que le strict minimum pour faire fonctionner votre app. Respectez les conventions (noms pluriels pour les tables, etc. – cf. cours sur les BDD).
 
 #### 3 - Routes
 
-Retournez à votre tableur avec les stories utilisateur et ajoutez les informations suivantes :
-- Route : verbe + chemin
+Retournez sur le tableur des user stories et ajoutez les informations suivantes :
+- Route : Verbe + path
 - Action
 - Contrôleur
 
-Créez un ticket pour les faire valider par un prof. C'est bon ? On peut passer à `rails new` !
+Créez un ticket pour les valider avec un enseignant. C’est bon ? Place au `rails new` !
 
 ### Partie II
 
-Avant de répartir les tâches au sein de votre équipe, configurez le projet tous ensemble. Le **développeur principal** (et lui uniquement) devra :
+Avant de vous répartir les tâches, mettez en place le projet **ensemble**. Le **développeur principal** (et lui seul) doit :
 
-#### 1. Créer le projet Rails avec une configuration Postgres
+#### 1. Créer le projet Rails avec Postgres
 
-Utilisez le modèle minimal du Wagon, qui contient déjà une bonne configuration front-end :
+Utilisez le template minimal de Le Wagon, qui inclut déjà une bonne configuration front-end :
 
 ```bash
 cd ~/code/<user.github_nickname>
@@ -61,7 +63,7 @@ rails new \
   CHANGE_THIS_TO_YOUR_RAILS_APP_NAME
 ```
 
-Seul le **développeur principal** doit s'occuper de cette étape, pas toute l'équipe !
+Encore une fois, **seul le développeur principal** le fait ! Pas toute l’équipe...
 
 #### 2. Pousser le projet sur Github
 
@@ -71,13 +73,14 @@ gh repo create --public --source=.
 git push origin master
 ```
 
-#### 3. Ajouter ses coéquipiers en tant que collaborateurs sur le dépôt Github
 
-Allez sur [les paramètres de ton dépôt Github](https://github.com/<user.github_nickname>/rails-airbnb-clone/settings/collaboration) et ajoutez les membres du groupe en tant que **collaborateurs** sur le dépôt.
+#### 3. Ajouter vos coéquipiers comme collaborateurs sur Github
 
-Les autres membres de l'équipe peuvent maintenant **cloner** le projet. ⚠️**Attention à utiliser l'URL `SSH`**⚠️
+Allez dans les [paramètres de votre repo Github](https://github.com/<user.github_nickname>/rails-airbnb-clone/settings/collaboration) et ajoutez vos coéquipiers comme **collaborateurs**.
 
-Les autres membres de l'équipe devront ensuite exécuter :
+Les autres membres peuvent maintenant **cloner** le projet. ⚠️**Attention, utilisez l’URL `SSH`**⚠️
+
+Ensuite, ils doivent exécuter :
 
 ```bash
 bundle install
@@ -86,93 +89,78 @@ rails db:create db:migrate
 
 #### 4. Déployer sur Heroku
 
-Même s'il ne s'agit que d'un squelette de l'application, il est important de la déployer sur Heroku **dès le premier jour**, puis de continuer à la déployer tous les jours, à chaque nouvelle fonctionnalité.
+Même si l'app est vide, déployez sur Heroku **dès le premier jour**, puis déployez à chaque nouvelle fonctionnalité.
 
 ```bash
-heroku create airbnb-<user.lower_github_nickname> --region=REPLACE_WITH_REGION # (eu, us, or any region available in `heroku regions` list)
-heroku config:set WEB_CONCURRENCY=1 # fixes temporary Heroku bug
+heroku create ai-assistant-<user.lower_github_nickname> --region=REMPLACEZ_AVEC_REGION # (eu, us, etc.)
+heroku config:set WEB_CONCURRENCY=1
 git push heroku master
 heroku run rails db:migrate
 ```
 
 ### 5. Tableau Kanban
 
-Un [tableau Kanban](https://fr.wikipedia.org/wiki/Tableau_kanban) est un outil de gestion de projet conçu pour t'aider à visualiser ton travail, suivre ta progression et optimiser l'efficacité (ou le flux). Il existe de nombreuses ressources : ([Trello](https://trello.com/), [Github Projects](https://github.com/features/project-management/) et [Notion](https://www.notion.so/), pour n'en nommer que quelques-unes).
+Un [tableau Kanban](https://fr.wikipedia.org/wiki/Kanban_(d%C3%A9veloppement)) est un outil de gestion agile pour visualiser le travail, suivre la progression et maximiser l’efficacité. Voici trois brouillons pour démarrer avec Trello, Github Projects ou Notion :
 
-On a préparé trois drafts pour t'aider à démarrer si tu choisis Trello, Github Projects ou Notion, mais tu es libre d'utiliser n'importe quel autre outil si tu préfères :
+1. **Trello** – Copiez [ce tableau](https://trello.com/b/WB3fRTj2), ajoutez vos coéquipiers, et commencez à importer vos user stories et tâches (classées par priorité).
 
-1. Draft Trello - Fais une copie de [ce tableau Trello](https://trello.com/b/WB3fRTj2) (menu > plus d'options > copier le tableau > nom du tableau pour ton projet). Ajoute ensuite tous les membres de ton équipe au tableau et commence à importer toutes tes stories utilisateur et tes tâches (par ordre de priorité).
+2. **Github Projects** – Une fois le repo créé et les collaborateurs ajoutés, copiez [ce tableau Github](https://github.com/users/tonipanacek/projects/1). Suivez [ces instructions](https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/copying-an-existing-project). ⚠️ Les cartes ne sont pas copiées automatiquement, ajoutez-les vous-mêmes.
 
-2. Draft Github Projects - Pour configurer ton tableau kanban sur Github, tu devras d'abord avoir créé ton dépôt et ajouté tous les collaborateurs. Un membre de ton équipe pourra ensuite utiliser [ce tableau](https://github.com/users/tonipanacek/projects/1) comme base du tableau de ton projet. Suis les instructions [ici](https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/copying-an-existing-project) pour apprendre à copier et ajouter le tableau au dépôt de ton projet. Deux éléments à prendre en compte : 1. Github ne copie pas les cards depuis le tableau d'origine, tu devras donc les ajouter toi-même. N'hésite pas à copier/coller les cards ou commence de zéro. 2. Github utilise la syntaxe markdown pour la mise en forme du texte (titres, style de police, cases à cocher). Ce n'est pas obligatoire, mais il peut être sympa de mettre en forme des cards. Plus d'infos [ici](https://guides.github.com/features/mastering-markdown/).
+3. **Notion** – Dupliquez [cette page Notion](https://www.notion.so/lewagon/Project-Weeks-a3961a7da7324637bea441832becb3ad), ajoutez vos coéquipiers et commencez à saisir vos user stories. Suivez [ce guide](https://www.notion.com/help/embed-and-connect-other-apps#web-bookmarks) pour les bookmarks Web. Si vous débutez sur Notion, consultez [cette page](https://www.notion.com/help/start-here).
 
-3. Draft Notion - Fais une copie de [cette page Notion](https://www.notion.so/lewagon/Project-Weeks-a3961a7da7324637bea441832becb3ad) en sélectionnant l'option `Duplicate` dans la barre de navigation. Ajoute ensuite tous les membres de ton équipe au tableau (en cliquant sur `Share`, puis en les invitant par e-mail) et commence à importer toutes tes stories utilisateur et tes tâches, par ordre de priorité. Le coin supérieur droit de ta page doit contenir tous les liens utiles de ton application. Ceux qui apparaissent dans le draft te serviront de guide, mais malheureusement tu ne pourras pas les modifier. Tu devras recréer toi-même les liens que tu souhaites inclure. Suis [ce guide](https://www.notion.com/help/embed-and-connect-other-apps#web-bookmarks) pour apprendre à ajouter correctement les `Web bookmarks`. Si tu débutes sur Notion, n'hésite pas à consulter [cette page](https://www.notion.com/help/start-here) pour en savoir plus et devenir un expert en un rien de temps 💯
+Ensuite, vous pouvez répartir les tâches. **Prenez le temps de bien configurer le projet, cela simplifiera tout le reste**.
 
-À partir de ce point, vous pouvez commencer à vous répartir les tâches. **Ne bâclez pas la configuration, tout sera plus simple si vous faites les choses correctement dès le début**.
+### Quelques conseils de gestion de projet
 
-### Quelques lignes directrices pour la gestion de projet
+#### Kick-off
 
-#### Coup d'envoi
+Lorsque vous répartissez le travail, vous constaterez que certaines tâches dépendent d’autres... Voici quelques conseils :
 
-Au moment de répartir les tâches au sein de l'équipe, vous allez vous rendre compte que beaucoup de tâches dépendent d'autres... Comment intégrer facebook connect sans modèle `User` ? Comment coder des réservations sans modèle `Flat` ? Voici quelques lignes directrices pour vous aider à organiser votre travail :
+Commencez toujours par les **modèles de base** de votre app (ceux sans clés étrangères). Une fois intégrés, il est plus facile de travailler sur les fonctionnalités annexes. Pour démarrer, deux groupes :
 
-Commencez toujours par les **modèles principaux** de votre application, dont toutes les fonctionnalités futures dépendront. Dans le cas d'Airbnb, il s'agit bien sûr des modèles `User` et `Flat`. Une fois ces modèles intégrés, il sera plus facile de répartir le travail pour les fonctionnalités restantes. Pour commencer, vous pouvez donc identifier deux grandes tâches :
+**groupe #1 - Démarrage modèle** :
+- Intégrer le modèle principal avec actions `index/show` et `new/create`.
 
-**groupe #1 - Lancement des modèles** :
-- Intégrer `User` en se connectant/s'inscrivant à Devise
-- Intégrer `Flat` avec les actions `index` et `new/create`
+**groupe #2 - Démarrage front-end** :
+- Créer un layout propre avec navbar/footer
+- Construire une page d’accueil simple et attrayante
 
-**groupe #2 - Lancement du front-end** :
-- Travailler sur une mise en page soignée avec barre de navigation/pied-de-page
-- Créer une page d'accueil simple et attractive
-
-Une fois que les deux groupes ont terminé (cela devrait prendre environ 2h à chaque groupe) et une fois que vous avez tous mergé votre travail sur GitHub, vous pouvez passer à la répartition des tâches pour le reste des fonctionnalités.
+Une fois ces deux groupes terminés (comptez environ 2h), fusionnez votre travail sur Github et répartissez les autres tâches.
 
 #### Organisation des tâches
 
-Voici une liste des différentes stories utilisateur à coder sur le projet Airbnb :
+Parmi la dizaine de user stories, **certaines sont plus importantes que d'autres**. Priorisez-les pour obtenir un MVP en fin de semaine !
 
-- En tant qu'utilisateur, je peux naviguer sur le site Web depuis la barre de navigation (avec des liens fonctionnels, par ex. "connexion/déconnexion", "Mes réservations", "Publier une offre", etc.).
-- En tant qu'utilisateur, je peux afficher la page d'un appartement.
-- En tant qu'utilisateur, je peux réserver un appartement.
-- En tant qu'utilisateur, je peux ajouter des photos de mon appartement.
-- En tant qu'utilisateur, je peux ajouter un avis à propos d'un appartement dans lequel j'ai séjourné.
-- En tant qu'utilisateur, je peux localiser des appartements sur une carte.
-- En tant qu'utilisateur, je peux me connecter avec Facebook.
-- En tant qu'utilisateur, je peux recevoir un e-mail quand quelqu'un réserve mon appartement.
-- ...
+#### Coder en silo : du modèle à la vue
 
-**Certaines de ces fonctionnalités sont plus importantes que d'autres**. C'est à toi de les hiérarchiser pour obtenir un MVP à la fin de la semaine !
+Lorsque vous développez une fonctionnalité, **faites-le de manière complète, du modèle à la vue HTML/CSS**. Exemple : création d’un challenge :
 
-#### Exemple de fonctionnalité : Réserver un appartement
+*Modèle* :
+- Générer un modèle `Challenge` avec migration.
+- Ajouter associations et validations.
+- Tester le modèle dans la console Rails.
 
-Quand tu travailles sur une fonctionnalité, fais-le **consciencieusement de la base de données au HTML/CSS**. Prenons l'exemple de la fonctionnalité de réservation :
-
-*Modèle*
-- Je vais créer un modèle `Booking` et sa migration associée.
-- Je vais ensuite rédiger un modèle de travail avec des associations et des validations.
-- Je vais ensuite tester mon modèle depuis la console `rails console` pour m'assurer que tout fonctionne dans le modèle.
-
-*Construction de routes* :
-- Je vais ajouter des routes de réservation dans `routes.rb`.
+*Routing* :
+- Ajouter les routes `new/create` dans `routes.rb`.
 
 *Contrôleur* :
-- Je vais créer un nouveau contrôleur `BookingsController` avec les actions `create` et `index`.
-- Je vais coder ces deux actions.
+- Ajouter les actions `new` et `create` dans `ChallengesController`.
 
-*Modification des vues* :
-- Je vais intégrer le formulaire de réservation dans les vues existantes (`views/flats/show.html.erb`).
-- Je vais lister toutes les réservations actuelles d'un utilisateur sur une nouvelle page `views/bookings/index.html.erb`.
+*Vues* :
+- Coder le formulaire dans `views/challenges/new.html.erb`.
+- Rediriger vers la `show` avec un message de confirmation.
 
 *Liens* :
-- Je vais ajouter un lien vers la page `bookings#index` dans la barre de navigation.
+- Ajouter un lien dans la navbar pour créer un Challenge.
 
 *HTML/CSS* :
-- Mon formulaire de réservation est propre, avec les bonnes classes Bootstrap pour les champs « input » et les boutons.
-- Ma page de nouvelles réservations est propre, avec un conteneur (`container`) pour centrer le contenu, des en-têtes clairs et un design soigné pour chaque réservation.
-- Je vais prendre le temps de refactoriser mon HTML en utilisant des partials si mon code HTML est trop long et difficile à lire.
+- Utiliser Bootstrap pour les inputs des formulaires et les boutons.
+- Centrer le contenu avec `container`, titres clairs, etc.
+- Refactoriser le HTML avec des partials si nécessaire.
 
-**Rédigez votre code à la perfection, du modèle à la vue**
+**Codez parfaitement, du modèle à la vue**
 
-- Testez toutes les associations et les validations de votre modèle dans la console Rails.
-- Ne négligez pas la vue. Si vous ajoutez un formulaire, optez pour un joli formulaire Bootstrap, centré et responsive. Si vous codez une liste des appartements, créez une jolie grille Bootstrap (par exemple, avec une photo de l'appartement sur la gauche et les informations de l'appartement sur la droite).
-- Utilisez des partials pour refactoriser votre HTML et le rendre plus facile à lire et entretenir.
+- Testez vos associations et validations dans la console Rails.
+- Ne négligez pas la vue. Soignez vos formulaires (Bootstrap), vos listes (grille propre).
+- Utilisez des partials pour rendre le code lisible et maintenable.
+

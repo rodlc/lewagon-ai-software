@@ -38,7 +38,7 @@ You can draw quick sketches with a pen and paper of the different screens and th
 
 #### 2 - Database Schema
 
-Draw your database schema using [our db tool](https://kitt.lewagon.com/db/new) and **create a ticket to validate it with a teacher**. Draw only the minimum viable for your app to work. Use the right conventions (plural names for columns... etc - cf. the DB lectures).
+Draw your database schema using [our db tool](https://kitt.lewagon.com/db/new) and **create a ticket to validate it with a teacher**. Draw only the minimum viable for your app to work. Use the right conventions (plural names for tables... etc - cf. the DB lectures).
 
 #### 3 - Routes
 
