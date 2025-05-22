@@ -1,3 +1,3 @@
-## AirBnB Day 5
+## AI Week Day 5
 
-Final day! Get ready for **final demos** tonight 😊
+TODO(Eschults): add concise guidelines

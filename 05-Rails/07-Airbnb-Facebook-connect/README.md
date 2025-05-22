@@ -1,3 +1,3 @@
-## AirBnB Day 2
+## AI Week Day 2
 
-Keep up the good work!
+TODO(Eschults): add concise guidelines

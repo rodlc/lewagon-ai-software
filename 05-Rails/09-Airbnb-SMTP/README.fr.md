@@ -1,3 +1,3 @@
-## Airbnb Jour 4
+## AI Week Jour 4
 
-Continuez à avancer !
+TODO(Eschults): add concise guidelines

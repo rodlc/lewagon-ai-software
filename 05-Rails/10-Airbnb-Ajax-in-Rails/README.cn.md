@@ -1,3 +1,3 @@
-## AirBnB 第五天
+## AI Week 第五天
 
-最后一天! 准备好今晚的 **最终演示**  😊
+TODO(Eschults): add concise guidelines
