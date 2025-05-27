@@ -1,6 +1,6 @@
 ## Background & Objectives
 
-In this challenge, we want you to generate the HTML of an **unordered list** from raw data.
+In this challenge, we want you to use JavaScript to generate HTML. You will create a function that can generate the HTML of an **unordered list** from raw data (as an array of strings).
 
 ### Setup
 
@@ -12,17 +12,19 @@ serve
 
 Then, open [`localhost:8000`](http://localhost:8000) in your browser.
 
-In this challenge, we will also have 2 processes to test our code:
+In this challenge, we will also have 2 ways to test our code:
 - In the browser
 - In the terminal
 
-They both test the same things but in 2 separate interfaces.
+They both run the exact same tests, but it's easier to debug in the browser.
 
-Start by working with the tests in the browser. When you are done, use `rake` to test in the terminal.
+So, start by working with the tests in the browser. When you are done, use `rake` to test in the terminal.
 
 ## Specs
 
 ### List item generator
+
+Before we get to making the whole list, let's start with the smallest part of it: the list item.
 
 First, implement a `listItem(content)` function that takes one parameter, `content` (of type `String`) and returns an `<li>` tag as a `String` like this:
 
@@ -37,7 +39,7 @@ listItem('butter');
 // => '<li class="list-group-item">butter</li>
 ```
 
-Make sure you use [ES6 template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) and not concatenation (not the modern way to do this in JavaScript).
+The easiest way to do this will be [ES6 template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals), which is the equivalent to interpolation in Ruby, and not concatenation.
 
 💡 Note that `content` is a parameter to the function `listItem`. You don't need to worry about what the content will be; just accept for now that it will get passed in as an argument when the function is called.
 
@@ -80,7 +82,7 @@ The groceries list should look as follows:
 const groceries = ['milk', 'butter', 'bread'];
 ```
 
-### Refactoring with `Map()`
+### Refactoring with `map()`
 
 If your solution passes the tests using `forEach()`, the last step is to find a better solution using [`map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)!
 
