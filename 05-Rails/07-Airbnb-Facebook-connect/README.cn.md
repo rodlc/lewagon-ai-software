@@ -1,3 +1,3 @@
-## AirBnB 第二天
+## AI Week 第二天
 
-继续努力!
+TODO(Eschults): add concise guidelines

@@ -1,3 +1,4 @@
-## AirBnB Día 2
+## AI Week Día 2
 
-¡Sigue avanzando!
+TODO(Eschults): add concise guidelines
+
