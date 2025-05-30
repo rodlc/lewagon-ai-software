@@ -1,4 +1,4 @@
-## AI Week
+## AI Week - Kick-off
 
 You will spend the next sessions with your Project Group working on an AI Assistant for a **Persona** with a **Goal**. For instance, Wott is an AI Assistant for **students learning how to code**.
 
