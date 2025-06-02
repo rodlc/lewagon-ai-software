@@ -40,6 +40,20 @@ You can draw quick sketches with a pen and paper of the different screens and th
 
 Draw your database schema using [our db tool](https://kitt.lewagon.com/db/new) and **create a ticket to validate it with a teacher**. Draw only the minimum viable for your app to work. Use the right conventions (plural names for tables... etc - cf. the DB lectures).
 
+💡 In order to harmonize the way to store user questions and assistant answers, you can include the following table, as well as the users table to handle Sign ins and Sign ups.
+
++-------------+
+|  messages   |
++-------------+
+| id          |
+| role        |
+| content     |
+| user_id     |
+| ...         |
++-------------+
+
+⚠️ **IMPORTANT**: do not generate the `User` model today, wait for the Authentication lecture (second lecture on the Prompt Engineering day) to use the right approach to do so, otherwise you will waste precious time!
+
 #### 3 - Routes
 
 Go back to your User stories spreadsheet and add the following information:
@@ -121,10 +135,13 @@ When trying to split work in your team, you'll realize that many tasks depend on
 
 You must always start with the **core models** in your app that all future features will depend on. You can find them in your DB schema as the models that don't have foreign keys. Once these models are integrated, it becomes easier to split work on remaining features. As a kick-off phase, you can therefore separate two main tasks:
 
-**group #1 - Model kick-start**:
+**Group #1 - Model kick-start**:
+- Generate the `Message` model that will store user questions and assistant answers.
 - Integrate your contextual core model (i.e. `Challenge` for Wott) with read actions (`index/show`) and creation (`new/create`).
+- ⚠️ Do not generate the `User` model before the Authentication lecture! You will use Devise to generate it, which will save you a lot of time.
 
-**group #2 - Front-end kick-start**:
+
+**Group #2 - Front-end kick-start**:
 - Work on a clean layout with navbar/footer
 - Build a simple, attractive home page
 
