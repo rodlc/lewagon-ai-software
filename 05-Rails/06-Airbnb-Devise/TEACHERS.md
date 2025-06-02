@@ -38,49 +38,6 @@ Here are some instructions for validating DB and routes when kick-starting proje
              +--------------+
 ```
 
-### Accepted routing
-
-You will find 3 accepted routing below.
-
-#### The dashboard way
-
-- Users can see their `offers`, their `bookings`, their `bookings` on their `offers` through a dashboard.
-- The dashboard view is associated to a `DashboardController` and a possible `profile` action.
-
-#### The non-CRUD way
-
-- Users can see offers at `/offers`, their own offers at `/my_offers`, etc.
-- This requires custom actions in controllers and custom routes in router.
-
-#### The namespacing way
-
-- Requires new controllers: `Account::OffersController` and `Account::BookingsController`
-
-```
-+-app
-   |
-   +-controllers
-      |
-      +-account
-      |  |
-      |  +-offers_controller.rb
-      |  |
-      |  +-bookings_controller.rb
-      |
-      +-offers_controller.rb
-      |
-      +-bookings_controller.rb
-```
-- Requires namespaced routes:
-
-```ruby
-# config/routes.rb
-namespace :account do
-  resources :offers
-  resources :bookings
-end
-```
-
 ## Le Wagon's minimal template (Monday afternoon)
 
 Don't let students waste time and creating their Rails app from scratch. Use our minimal template with already a front-end setup (Bootstrap, Simple Form).
