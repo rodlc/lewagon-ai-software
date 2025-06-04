@@ -4,6 +4,8 @@ In front-end web development, **data attributes** are a pretty handy way to inje
 
 Remember that you have already worked with attributes, such as **id**, **class**, **href**, **style**, etc. Theses are standard attributes which are used for a specific purpose. But sometimes we need to store other kinds of data in the HTML and create our own attributes to do so. This is where the **data attributes** come in.
 
+The only difference between a standard attribute and a data attribute is that a standard attribute is written like `id="my-id"` and a data attribute is written like `data-my-attribute="my-value"`. The `data-` prefix is what tells the browser that this is a data attribute and that we are "making it up" ourselves.
+
 In this challenge you will learn how to interact with these data attributes via JavaScript.
 
 ## Setup

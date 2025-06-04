@@ -2,7 +2,7 @@
 
 SQLite is a simple database that relies on a standalone file. If you're interested, you can read more [here](http://en.wikipedia.org/wiki/SQLite).
 
-The goal of this exercise is to use the command line or a database tool to read and query a sample database called `jukebox.sqlite` that we have given you. To complete the challenge, draw the DB schema on [db.lewagon.com](http://db.lewagon.com/), save it as an XML file and run `rake`!
+The goal of this exercise is to use the command line or a database tool to read and query a sample database called `jukebox.sqlite` that we have given you. To complete the challenge, draw the DB schema on [kitt.lewagon.com/db](http://kitt.lewagon.com/db/), save it as an XML file and run `rake`!
 
 ### Setup
 
@@ -46,8 +46,9 @@ You should see the `SQL EXPLORER` tab with your database loaded! Now you can ope
 ## Specs
 
 The goal of this exercise is to explore the Jukebox database, and understand its schema. Answer the following questions:
+
 - What is the database schema? (i.e what are the tables, and the relations between tables)
 - Use SQL Design tool to draw the schema of this database.
 - How many rows does each table contain? What are the column names for each table?
 
-Use [db.lewagon.com](http://db.lewagon.com/) to draw the Jukebox schema. Save it in XML format to `jukebox.xml` and check it with `rake`.
+Use [kitt.lewagon.com/db](http://kitt.lewagon.com/db/) to draw the Jukebox schema. Save it in XML format to `jukebox.xml` and check it with `rake`.

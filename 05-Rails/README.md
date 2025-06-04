@@ -27,7 +27,7 @@ You will have to follow the front-end setup carefully to work on a nice-looking 
 
 ### `05 Hosting & Image Upload`
 
-This  morning lecture has 2 parts:
+This morning lecture has 2 parts:
 **Hosting**: Deployment on [Heroku](http://heroku.com/)
 
 **Image Upload**: We'll host images on [Cloudinary](http://cloudinary.com/), using [ActiveStorage](https://guides.rubyonrails.org/v6.0.1/active_storage_overview.html). The course also explains how you can secure your API keys using the [dotenv](https://github.com/bkeepers/dotenv) gem. **Listen carefully if you don't want your bank details stolen on Github.**
@@ -78,7 +78,7 @@ Now, it's time for the Grand Finale - your projects. Take a bit of time over the
 
 - Write your user stories (not more than 15).
 - Draw mockups of your main views on a paper.
-- Start building your DB schema on [db.lewagon.com](http://db.lewagon.com).
+- Start building your DB schema on [kitt.lewagon.com/db](http://kitt.lewagon.com/db).
 - Start thinking about your routes.
 
 If you can get most of this done, you'll save a lot of time on Monday and be able to start on your projects without too much fuss.

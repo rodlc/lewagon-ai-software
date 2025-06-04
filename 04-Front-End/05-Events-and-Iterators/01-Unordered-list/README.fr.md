@@ -24,6 +24,8 @@ Commence par travailler avec les tests dans le navigateur. Quand tu auras fini, 
 
 ### Générateur d'éléments d'une liste
 
+Avant de créer la liste entière, commençons par le plus petit élément : l'élément de la liste.
+
 Commence par coder la fonction `listItem` qui prend un paramètre `content` (de type `string`) et retourne la balise `<li>` avec son contenu :
 
 ```js
@@ -81,7 +83,7 @@ La liste de courses devrait ressembler à ceci :
 const groceries = ['milk', 'butter', 'bread'];
 ```
 
-### Refactoring avec `Map()`
+### Refactoring avec `map()`
 
 Si ta solution passe tous les tests avec `forEach()`, essaie de trouver une meilleure solution en utilisant [`map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)!
 

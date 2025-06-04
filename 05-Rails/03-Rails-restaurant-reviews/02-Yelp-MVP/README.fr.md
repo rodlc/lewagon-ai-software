@@ -82,7 +82,7 @@ Si tu as du mal à lancer `rspec`, tu auras peut-être besoin d'exécuter `bin/r
 
 Réfléchis bien avant de choisir le type de données, ta première idée ne sera pas forcément la bonne !
 
-**Question** : Peux-tu dessiner ce simple schéma sur [db.lewagon.com](http://db.lewagon.com) ? Parles-en avec ton buddy.
+**Question** : Peux-tu dessiner ce simple schéma sur [kitt.lewagon.com/db](http://kitt.lewagon.com/db) ? Parles-en avec ton buddy.
 
 #### Validation
 
@@ -100,6 +100,7 @@ Valide tous les tests du modèle avant de passer à la définition des routes. T
 ```bash
 rspec spec/01_models
 ```
+
 pour exécuter les tests de façon sélective dans le dossier `spec/01_models`.
 
 Tu peux aussi tester ton code manuellement avec la console `rails console`. N'oublie pas de recharger (`reload!`) entre chaque modification de code !
@@ -132,6 +133,7 @@ Se demander quelles sont les user stories qui composeront votre application et q
 ```
 GET "restaurants"
 ```
+
 - Un visiteur peut ajouter un nouveau restaurant et être redirigé vers la vue `show` de la page de ce nouveau restaurant.
 
 ```

@@ -23,6 +23,7 @@ Aprenderás la mejor forma de implementar Bootstrap SASS y a pasar de `form_with
 Aprenderás sobre el asset pipeline.
 
 En cuanto a los ejercicios, comenzarás con la creación de una app de cócteles que tomará dos días. Dicha app tendrá 3 modelos `Cocktail`, `Ingredient` y `Dose`. Tendrás que:
+
 - seguir la configuración front-end detenidamente para poder crear una app que luzca bien.
 
 ### `05 Hosting y la Carga de Imágenes`
@@ -70,8 +71,6 @@ Esta clase es sobre búsquedas. Abarca desde search 101 usando Active Record a s
 
 Después de Devise te enseñaremos cómo manejar la autorización (**authorization**) en tu app Rails y así asegurarnos de que ¡solo el creador del restaurante puede hacer actualizaciones o destruirlo!
 
-
-
 ### Preparación de Proyectos (fin de semana)
 
 ¡Has hecho cosas increíbles y estamos muy orgullosos!
@@ -80,7 +79,7 @@ Es hora del Gran Final, los proyectos. Continúa trabajando en tu proyecto duran
 
 - Escribe las historias de tus usuarios/as (no más de 15).
 - Haz maquetas en papel de tus vistas principales.
-- Empieza creando tu esquema de base de datos (DB) en [db.lewagon.com](http://db.lewagon.com).
+- Empieza creando tu esquema de base de datos (DB) en [kitt.lewagon.com/db](http://kitt.lewagon.com/db).
 - Comienza a pensar en tus rutas.
 
 Si puedes terminar la gran parte de todo esto ahorrarás mucho tiempo el lunes y serás más eficaz.

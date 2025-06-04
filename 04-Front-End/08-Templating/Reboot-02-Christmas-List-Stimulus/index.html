@@ -25,46 +25,47 @@
   <body>
     <div class="app-container">
       <h1 class="text-center my-4">🎁🎄 Christmas List 🎄🎁</h1>
-      <ol class="list"></ol>
 
-      <div class="divider"></div>
+      <hr class="divider my-5" />
+
+      <h3>Your list 🎁</h3>
+      <ol id="list">
+      </ol>
+
+      <hr class="divider my-5" />
 
       <h2>Add a new item</h2>
-      <form class="w-100 mx-auto gift-form">
-        <div class="d-flex gap-4">
-          <div class="w-50">
-            <label>Name</label>
-            <input type="text" class="form-control w-100 mt-2" id="name" />
-          </div>
 
-          <div class="w-50">
-            <label>Price</label>
-            <input type="text" class="form-control w-100 mt-2" id="price" />
+      <form class="mb-3">
+        <div class="d-flex gap-5 align-items-end">
+          <div class="flex-grow-1">
+            <label for="name" class="form-label">Name</label>
+            <input id="name" type="text" class="form-control" />
+          </div>
+          <div class="flex-grow-1">
+            <label for="password" class="form-label">Price</label>
+            <input id="password" type="number" class="form-control" />
           </div>
         </div>
-        <input
-          type="submit"
-          class="w-100 mt-4 btn btn-success"
-          value="Submit"
-        />
+        <button type="submit" class="btn btn-success w-100 mt-3">Submit</button>
       </form>
 
-      <div class="divider" style="margin: 36px 0"></div>
+      <hr class="divider my-5" />
 
       <h3>Find ideas! 💡</h3>
 
-      <ul class="search-list"></ul>
-
-      <form class="mt-4 search-form">
-        <label>What would you like to search for?</label>
-        <div class="d-flex align-items-center gap-2 mt-2">
-          <select class="form-select w-75" id="search-input">
-            <option value="electronics">Electronics</option>
-            <option value="jewelery">Jewelery</option>
-            <option value="men's clothing">Men's clothing</option>
-            <option value="women's clothing">Women's clothing</option>
-          </select>
-          <input type="submit" class="w-25 btn btn-success" value="Search" />
+      <form class="mb-3">
+        <div class="d-flex gap-5 align-items-end">
+          <div class="w-100">
+            <label for="search" class="form-label">What would you like to search for?</label>
+            <select id="search" class="form-select">
+              <option value="electronics">Electronics</option>
+              <option value="jewelery">Jewelery</option>
+              <option value="men's clothing">Men's clothing</option>
+              <option value="women's clothing">Women's clothing</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-success">Search</button>
         </div>
       </form>
     </div>

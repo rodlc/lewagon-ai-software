@@ -4,6 +4,8 @@ Dans le développement front-end, les attributs de données - `data-attributes` 
 
 Rappelez-vous que tu as déjà travaillé avec des attributs, tels que **id**, **class**, **href**, **style**, etc. Ce sont des attributs standards qui sont utilisés pour un but spécifique. Mais parfois nous avons besoin de stocker d'autres types de données dans le HTML et de créer nos propres attributs pour le faire. C'est là que les **data attributes** entrent en jeu.
 
+La seule différence entre un attribut standard et un attribut de données est qu'un attribut standard est écrit comme `id="my-id"` et un attribut de données est écrit comme `data-my-attribute="my-value"`. Le préfixe `data-` indique au navigateur qu'il s'agit d'un attribut de données et que nous l'avons "inventé" nous-mêmes.
+
 Dans ce challenge, tu vas apprendre à interagir avec ces attributs de données via JavaScript.
 
 ## Mise en place
