@@ -142,7 +142,7 @@ const App = () => {
   console.log("Quotes: ", quotes);
 
   React.useEffect(() => {
-    fetch('https://api.quotable.io/quotes')
+    fetch('https://quotable.vercel.app/quotes')
       .then((response) => response.json())
       .then((data) => setQuotes(data));
   }, []);
@@ -201,7 +201,7 @@ const getNewQuote = (quotes) => {
 ```js
 console.log("currentQuote: ", currentQuote);
 React.useEffect(() => {
-    fetch('https://api.quotable.io/quotes')
+    fetch('https://quotable.vercel.app/quotes')
       .then((response) => response.json())
       .then((data) => {
         setQuotes(data);
