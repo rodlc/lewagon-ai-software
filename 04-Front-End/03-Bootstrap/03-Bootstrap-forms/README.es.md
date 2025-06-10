@@ -91,7 +91,7 @@ Aquí está otro ejemplo. Este **no tiene etiquetas**:
 </form>
 ```
 
-Ahora, si quieres un [inline form] (https://getbootstrap.com/docs/5.1/forms/layout/#inline-forms) puedes **agregarle `.row` (la cual es un flexbox) y las clases `.row-cols-*-auto` al `<form>`** (la clase `.row-cols-*` nos permite decidir a partir de qué breakpoint (los saltos en los que la pantalla cambia de layout) estarán posicionados tus campos de datos de entrada. Por ejemplo, `.row-cols-sm-auto` significa que en la versión mobile cada campo de datos de entrada toma el ancho completo mientras que en una tablet o en dispositivos más grandes todos los campos de datos de entrada están próximos entre sí ):
+Ahora, si quieres un [inline form] (https://getbootstrap.com/docs/5.3/forms/layout/#inline-forms) puedes **agregarle `.row` (la cual es un flexbox) y las clases `.row-cols-*-auto` al `<form>`** (la clase `.row-cols-*` nos permite decidir a partir de qué breakpoint (los saltos en los que la pantalla cambia de layout) estarán posicionados tus campos de datos de entrada. Por ejemplo, `.row-cols-sm-auto` significa que en la versión mobile cada campo de datos de entrada toma el ancho completo mientras que en una tablet o en dispositivos más grandes todos los campos de datos de entrada están próximos entre sí ):
 
 ```html
 <form action="#" class="row row-cols-lg-auto">

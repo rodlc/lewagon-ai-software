@@ -35,7 +35,7 @@ rspec # to run the tests
 
 ### Feuille de style Bootstrap
 
-En suivant [la documentation](https://getbootstrap.com/docs/5.1/getting-started/introduction/#css), installe Bootstrap dans ton application Rails en copiant-collant la balise `link` dans le `head` de ton layout `application.html.erb` :
+En suivant [la documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/#css), installe Bootstrap dans ton application Rails en copiant-collant la balise `link` dans le `head` de ton layout `application.html.erb` :
 
 ```erb
 <!-- app/views/layouts/application.html.erb -->

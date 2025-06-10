@@ -33,7 +33,7 @@ rspec # to run the tests
 
 ### 安装Bootstrap样式
 
-跟着[这个文档](https://getbootstrap.com/docs/5.1/getting-started/introduction/#css)来安装Bootstrap在你的Rails应用上。你可以复制粘贴下方代码在`application.html.erb`的`head`中添加一个`link`标签：
+跟着[这个文档](https://getbootstrap.com/docs/5.3/getting-started/introduction/#css)来安装Bootstrap在你的Rails应用上。你可以复制粘贴下方代码在`application.html.erb`的`head`中添加一个`link`标签：
 
 ```erb
 <!-- app/views/layouts/application.html.erb -->

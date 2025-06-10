@@ -29,7 +29,7 @@ git commit -m "Prepare rails app with external specs"
 
 ### 安装 Bootstrap 样式
 
-跟着[这个文档](https://getbootstrap.com/docs/5.1/getting-started/introduction/#css)来安装 Bootstrap 在你的 Rails 应用上。你可以复制粘贴下方代码在`application.html.erb`的`head`中添加一个`link`标签：
+跟着[这个文档](https://getbootstrap.com/docs/5.3/getting-started/introduction/#css)来安装 Bootstrap 在你的 Rails 应用上。你可以复制粘贴下方代码在`application.html.erb`的`head`中添加一个`link`标签：
 
 ```erb
 <!-- app/views/layouts/application.html.erb -->

@@ -33,7 +33,7 @@ rspec # to run the tests
 
 ### Bootstrap stylesheets
 
-Following [the documentation](https://getbootstrap.com/docs/5.1/getting-started/introduction/#css), install Bootstrap's stylesheets to your Rails app by copy-pasting the link tag in the `head` of the `application.html.erb` layout:
+Following [the documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/#css), install Bootstrap's stylesheets to your Rails app by copy-pasting the link tag in the `head` of the `application.html.erb` layout:
 
 ```erb
 <!-- app/views/layouts/application.html.erb -->

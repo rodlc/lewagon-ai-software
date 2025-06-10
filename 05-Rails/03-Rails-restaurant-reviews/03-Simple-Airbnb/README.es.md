@@ -36,7 +36,7 @@ rspec # to run the tests
 
 ### Hojas de estilo de Bootstrap
 
-Siguiendo las instrucciones de [la documentación](https://getbootstrap.com/docs/5.1/getting-started/introduction/#css), instala las hojas de estilo de Bootstrap en tu Rails app copiando y pegando el link tag en el `head` del layout en `application.html.erb`:
+Siguiendo las instrucciones de [la documentación](https://getbootstrap.com/docs/5.3/getting-started/introduction/#css), instala las hojas de estilo de Bootstrap en tu Rails app copiando y pegando el link tag en el `head` del layout en `application.html.erb`:
 
 ```erb
 <!-- app/views/layouts/application.html.erb -->

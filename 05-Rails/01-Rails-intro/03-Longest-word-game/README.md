@@ -131,12 +131,12 @@ At the bottom of the results, add a `link_to` to go back to the New game page.
 
 ### Designing your app
 
-Install Bootstrap by copy-pasting the `link` tag [from the documentation](https://getbootstrap.com/docs/5.1/getting-started/introduction/#css) in the `head` of your layout:
+Install Bootstrap by copy-pasting the `link` tag [from the documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/#css) in the `head` of your layout:
 
 ```erb
 <!-- app/views/layouts/application.html.erb -->
 <!-- [...] -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 ```
 
 Write your own CSS in the `app/assets/stylesheets/application.css` file.
