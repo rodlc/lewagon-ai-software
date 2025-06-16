@@ -19,7 +19,7 @@ Deberías ver un formulario con todas las diferentes categorías de restaurantes
 - Cuando seleccionamos uno y hacemos clic en "Search", la página no debe recargarse y el objetivo es mostrar la lista de los restaurantes filtrados a la derecha.
 - Deberíamos ver un mensaje que indique que no hay resultados en caso de que no haya restaurantes para la categoría escojada.
 - La lista debe reiniciarse cada vez que haces una nueva búsqueda antes de mostrar los nuevos restaurantes.
-- Puedes usar el [**flush list**](https://getbootstrap.com/docs/5.2/components/list-group/#flush) de Bootstrap para mostrar los restaurantes. ¡Pero si lo deseas, puedes ser más creativo!
+- Puedes usar el [**flush list**](https://getbootstrap.com/docs/5.3/components/list-group/#flush) de Bootstrap para mostrar los restaurantes. ¡Pero si lo deseas, puedes ser más creativo!
 
 ![The Fork Challenge demo](https://raw.githubusercontent.com/lewagon/fullstack-images/master/frontend/the-fork-challenge-1.png)
 

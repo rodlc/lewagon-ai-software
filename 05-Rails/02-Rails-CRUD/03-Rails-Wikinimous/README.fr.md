@@ -52,12 +52,12 @@ Jette un œil à l'[application en ligne](https://wikinimous.lewagon.com) pour v
 
 **Installe les feuilles de style Bootstrap**
 
-En suivant [la documentation](https://getbootstrap.com/docs/5.1/getting-started/introduction/#css), installe Bootstrap dans ton application Rails en copiant-collant la balise `link` dans le `head` de ton layout `application.html.erb` :
+En suivant [la documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/#css), installe Bootstrap dans ton application Rails en copiant-collant la balise `link` dans le `head` de ton layout `application.html.erb` :
 
 ```erb
 <!-- app/views/layouts/application.html.erb -->
 <!-- [...] -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 ```
 
 Tu peux désormais utiliser n'importe quelle classe Bootstrap dans les vues de ton application Rails 🎉
