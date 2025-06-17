@@ -1,6 +1,6 @@
 ## Background & Objectives
 
-In this exercise, we'll practise our API skills. Let's start with a `GET` request. Here we'll use the [MapBox Geocoding API](https://www.mapbox.com/search/). We want to build a tool where we can input an address, hit a button, and get the **GPS Coordinates** back! For the cherry on top, we'll display the map as well.
+In this exercise, we'll practise our API skills. Let's start with a `GET` request. Here we'll use the [MapBox Geocoding API](https://www.mapbox.com/search/). We want to build a tool where we can input an address, hit a button, and get the **GPS Coordinates** back! As a cherry on top 🍒 we'll display a map as well.
 
 <div class="text-center">
   <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/frontend/mapbox_ajax_geocoder.gif" alt="MapBox Geocoding demo" width="100%">
@@ -18,7 +18,7 @@ Open [`localhost:8000`](http://localhost:8000) in your browser.
 
 ### Geocoding
 
-First, you will need to create a MapBox account and get an API key (it's free to sign up!) Then, read the [MapBox Geocoding API documentation](https://docs.mapbox.com/api/search/geocoding/). It boils down to doing an HTTP `GET` request with an address as a query string parameter.
+First, you will need to create a Mapbox account and get an API key (it's free to sign up!) Then, read the [Mapbox Geocoding API documentation](https://docs.mapbox.com/api/search/geocoding/). It boils down to doing an HTTP `GET` request with an address as a query string parameter.
 
 ```javascript
 'https://api.mapbox.com/search/geocode/v6/forward?q=Los%20Angeles&access_token=YOUR-API-KEY'
