@@ -91,7 +91,7 @@ Example of Bootstrap form **without labels**:
 </form>
 ```
 
-Now if you want an [inline form](https://getbootstrap.com/docs/5.1/forms/layout/#inline-forms) you can **add the `.row` (which is a flexbox) and `.row-cols-*-auto` classes to the `<form>`** (the `.row-cols-*` class allows you to decide as of which breakpoint you want your input fields to be stacked next to each other. For example, `.row-cols-sm-auto` means that on mobile each input field takes up the full width and on a tablet or larger devices all input fields are next to each other):
+Now if you want an [inline form](https://getbootstrap.com/docs/5.3/forms/layout/#inline-forms) you can **add the `.row` (which is a flexbox) and `.row-cols-*-auto` classes to the `<form>`** (the `.row-cols-*` class allows you to decide as of which breakpoint you want your input fields to be stacked next to each other. For example, `.row-cols-sm-auto` means that on mobile each input field takes up the full width and on a tablet or larger devices all input fields are next to each other):
 
 ```html
 <form action="#" class="row row-cols-lg-auto">

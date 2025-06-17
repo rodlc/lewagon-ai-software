@@ -147,7 +147,7 @@ const App = () => {
   console.log("Citas: ", quotes);
 
   React.useEffect(() => {
-    fetch('https://api.quotable.io/quotes')
+    fetch('https://quotable.vercel.app/quotes')
       .then((response) => response.json())
       .then((data) => setQuotes(data));
   }, []);
@@ -202,7 +202,7 @@ Utilicémoslo desde `React.useEffect`, una vez que tengamos todas las citas disp
 ```js
 console.log("currentQuote: ", currentQuote);
 React.useEffect(() => {
-  fetch('https://api.quotable.io/quotes')
+  fetch('https://quotable.vercel.app/quotes')
     .then((response) => response.json())
     .then((data) => {
       setQuotes(data);

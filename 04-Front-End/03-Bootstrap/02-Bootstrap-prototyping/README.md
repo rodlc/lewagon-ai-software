@@ -21,5 +21,5 @@ You should **not use any CSS** for this exercise, only the Bootstrap classes! Th
 
 ## Further suggestions & resources
 
-- Make sure to use the [Bootstrap documentation](https://getbootstrap.com/docs/5.1), they have a lot more to offer than `btn` classes!
+- Make sure to use the [Bootstrap documentation](https://getbootstrap.com/docs/5.3), they have a lot more to offer than `btn` classes!
 - Have a look at the [final result](http://lewagon.github.io/bootstrap-challenges/02-Bootstrap-prototyping) to compare it with your work.

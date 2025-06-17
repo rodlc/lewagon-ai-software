@@ -19,7 +19,7 @@ You should see a form with all the different restaurant categories.
 - When we select one and click on _Search_, the page **should not reload** and the goal is to display the list of the filtered restaurants on the right.
 - We should see a message indicating that there are no results in case there are no restaurants for that category.
 - The list should reset every time you make a new search before displaying the new restaurants.
-- You can use the Bootstrap [**flush list**](https://getbootstrap.com/docs/5.2/components/list-group/#flush) to display the restaurants. But feel free to be creative if you like!
+- You can use the Bootstrap [**flush list**](https://getbootstrap.com/docs/5.3/components/list-group/#flush) to display the restaurants. But feel free to be creative if you like!
 
 ![The Fork Challenge demo](https://raw.githubusercontent.com/lewagon/fullstack-images/master/frontend/the-fork-challenge-1.png)
 
