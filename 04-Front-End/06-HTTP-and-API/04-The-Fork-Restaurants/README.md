@@ -6,7 +6,7 @@ In this challenge, we'll take a closer look at the Fork API that we saw during t
 
 You will build a search app to filter the restaurants of [The Fork API](https://the-fork.api.lewagon.com/).
 
-Your goal is to implement in `index.js` the search logic, so we can filter by category when you click on search.
+Your goal is to implement the search logic in `index.js`, so we can filter by category when you click on search.
 
 Open the html page in your browser with:
 
@@ -34,7 +34,7 @@ Once the search works as expected, let's make the code more readable and avoid t
 Let's create two new functions to extract some of our logic out of the `addEventListener` callback:
 
 - First, an `insertResults` method that will insert the results in our list. Which parameter should be passed to it?
-- Secondly, a `buildSearchUrl` method that will find the chosen category and build the URL we need to make our query. It should return the **URL appended with the search query parameters**.
+- Secondly, a `buildSearchUrl` method that will find the chosen category and build the URL we need to make our query. It should return the **URL with the search query parameters appended**.
 
 At the end, your code should be easily readable and have no more than 1 indentation level!
 
