@@ -1,9 +1,9 @@
 ## Contexte et objectifs
 
-Dans cet exercice, on va pratiquer nos compétences en API. On va commencer simple avec une requête `GET`. Ici, on utilisera l'[API Geocoding de MapBox](https://www.mapbox.com/search/). On va chercher à créer un outil dans lequel il sera possible de saisir une adresse, d'appuyer sur un bouton et d'obtenir des **coordonnées GPS** en retour ! Et pour couronner le tout, on affichera la carte.
+Dans cet exercice, on va pratiquer nos compétences en API. On va commencer simple avec une requête `GET`. Ici, on utilisera l'[API Geocoding de Mapbox](https://www.mapbox.com/search/). On va chercher à créer un outil dans lequel il sera possible de saisir une adresse, d'appuyer sur un bouton et d'obtenir des **coordonnées GPS** en retour ! Et pour couronner le tout, on affichera la carte.
 
 <div class="text-center">
-  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/frontend/mapbox_ajax_geocoder.gif" alt="MapBox Geocoding demo" width="100%">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/frontend/mapbox_ajax_geocoder.gif" alt="Mapbox Geocoding demo" width="100%">
 </div>
 
 ## Spécifications
@@ -16,7 +16,7 @@ serve
 
 ### Geocoding
 
-Pour commencer, tu vas devoir créer un compte MapBox et obtenir une clé d'API (l'inscription est gratuite !). Lis ensuite la [documentation sur l'API Geocoding de MapBox](https://docs.mapbox.com/api/search/geocoding/). Tout se résumera à une requête HTTP `GET` avec une adresse comme paramètre de string de la requête.
+Pour commencer, tu vas devoir créer un compte Mapbox et obtenir une clé d'API (l'inscription est gratuite !). Lis ensuite la [documentation sur l'API Geocoding de Mapbox](https://docs.mapbox.com/api/search/geocoding/). Tout se résumera à une requête HTTP `GET` avec une adresse comme paramètre de string de la requête.
 
 ```javascript
 'https://api.mapbox.com/search/geocode/v6/forward?q=Los%20Angeles&access_token=YOUR-API-KEY'
@@ -26,17 +26,17 @@ REMARQUE : La requête à l'API Mapbox aura besoin de ta clé API comme paramèt
 
 Continue et examine le formulaire déjà présent dans le texte standard du challenge `index.html`. Il contient une entrée (`input`) de type `"text"` où un utilisateur peut saisir une adresse, et une entrée (`input`) de type `"submit"` pour afficher un bouton.
 
-Utilise l'événement `submit` pour capturer le moment où le formulaire est envoyé par l'utilisateur. C'est à ce moment-là que tu voudras déclencher la requête AJAX au service Geocoding de MapBox Geocoding en utilisant `fetch` (nous en parlerons plus dans le prochain cours!).
+Utilise l'événement `submit` pour capturer le moment où le formulaire est envoyé par l'utilisateur. C'est à ce moment-là que tu voudras déclencher la requête AJAX au service Geocoding de Mapbox Geocoding en utilisant `fetch` (nous en parlerons plus dans le prochain cours!).
 
-Comme toujours quand tu récupères des données d'une API, commence par afficher ce que tu obtiens de MapBox avec `console.log()`. C'est un énorme JSON ! Maintenant que tu l'as, détermine où se trouvent les coordonnées GPS et affiche-les à l'écran.
+Comme toujours quand tu récupères des données d'une API, commence par afficher ce que tu obtiens de Mapbox avec `console.log()`. C'est un énorme JSON ! Maintenant que tu l'as, détermine où se trouvent les coordonnées GPS et affiche-les à l'écran.
 
-Astuce : MapBox retourne les coordonnées avec la longitude d'abord, puis la latitude !
+Astuce : Mapbox retourne les coordonnées avec la longitude d'abord, puis la latitude !
 
 ### (FACULTATIF) Afficher une carte
 
-Pour afficher une carte MapBox avec un marqueur à l'adresse spécifiée, on utilisera une deuxième API, l'[API JavaScript de MapBox](https://www.mapbox.com/mapbox-gl-js/api/).
+Pour afficher une carte Mapbox avec un marqueur à l'adresse spécifiée, on utilisera une deuxième API, l'[API JavaScript de Mapbox](https://www.mapbox.com/mapbox-gl-js/api/).
 
-Pour l'utiliser, ajoute cette ligne dans le `head` de ton fichier HTML, afin de pouvoir utiliser la feuille de style de MapBox pour ta carte :
+Pour l'utiliser, ajoute cette ligne dans le `head` de ton fichier HTML, afin de pouvoir utiliser la feuille de style de Mapbox pour ta carte :
 
 ```html
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet">
