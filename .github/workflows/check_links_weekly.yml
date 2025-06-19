@@ -9,6 +9,7 @@ on:
 jobs:
   check-links:
     name: runner / linkspector
+    if: ${{ github.repository_owner == 'lewagon' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

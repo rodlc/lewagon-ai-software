@@ -28,12 +28,12 @@ git commit -m "Prepare rails app with external specs"
 
 ### Installe les feuilles de style Bootstrap
 
-En suivant [la documentation](https://getbootstrap.com/docs/5.1/getting-started/introduction/#css), installe Bootstrap dans ton application Rails en copiant-collant la balise `link` dans le `head` de ton layout `application.html.erb` :
+En suivant [la documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/#css), installe Bootstrap dans ton application Rails en copiant-collant la balise `link` dans le `head` de ton layout `application.html.erb` :
 
 ```erb
 <!-- app/views/layouts/application.html.erb -->
 <!-- [...] -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 ```
 
 Tu peux désormais utiliser n'importe quelle classe Bootstrap dans les vues de ton application Rails 🎉
@@ -82,7 +82,7 @@ Si tu as du mal à lancer `rspec`, tu auras peut-être besoin d'exécuter `bin/r
 
 Réfléchis bien avant de choisir le type de données, ta première idée ne sera pas forcément la bonne !
 
-**Question** : Peux-tu dessiner ce simple schéma sur [db.lewagon.com](http://db.lewagon.com) ? Parles-en avec ton buddy.
+**Question** : Peux-tu dessiner ce simple schéma sur [kitt.lewagon.com/db](http://kitt.lewagon.com/db) ? Parles-en avec ton buddy.
 
 #### Validation
 
@@ -100,6 +100,7 @@ Valide tous les tests du modèle avant de passer à la définition des routes. T
 ```bash
 rspec spec/01_models
 ```
+
 pour exécuter les tests de façon sélective dans le dossier `spec/01_models`.
 
 Tu peux aussi tester ton code manuellement avec la console `rails console`. N'oublie pas de recharger (`reload!`) entre chaque modification de code !
@@ -132,6 +133,7 @@ Se demander quelles sont les user stories qui composeront votre application et q
 ```
 GET "restaurants"
 ```
+
 - Un visiteur peut ajouter un nouveau restaurant et être redirigé vers la vue `show` de la page de ce nouveau restaurant.
 
 ```

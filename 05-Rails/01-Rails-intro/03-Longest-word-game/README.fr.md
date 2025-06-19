@@ -131,12 +131,12 @@ En bas des résultats, ajoute un lien (`link_to`) pour retourner à la page d'un
 
 ### Rajoute du style à ton application
 
-Installe Bootstrap en copiant-collant la balise `link` [de la documentation](https://getbootstrap.com/docs/5.1/getting-started/introduction/#css) dans le `head` du layout :
+Installe Bootstrap en copiant-collant la balise `link` [de la documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/#css) dans le `head` du layout :
 
 ```erb
 <!-- app/views/layouts/application.html.erb -->
 <!-- [...] -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 ```
 
 Écris ton propre CSS dans le fichier `app/assets/stylesheets/application.css`.

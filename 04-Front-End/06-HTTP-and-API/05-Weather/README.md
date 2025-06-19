@@ -1,6 +1,6 @@
 ## Background & Objectives
 
-In this challenge, we are going to play around with the [OpenWeatherMap API](https://openweathermap.org/)! We'll practise calling an API again, and discover how we can ask users for their current position!
+In this challenge, we are going to play around with the [OpenWeatherMap API](https://openweathermap.org/)! We'll practice calling an API again, and discover how we can ask users for their current position!
 
 ## Specs
 
@@ -12,21 +12,21 @@ serve
 
 ### Get your API key (1 for you and your buddy)
 
-First, go to [OpenWeatherMap API](https://home.openweathermap.org/) and create an account to get your API key. You should find it [here](https://home.openweathermap.org/api_keys). You all will be creating accounts at the same time, which can create some delay in the keys activation by Open Weather. To avoid this problem, **share your API key with your buddy** to limit the number of keys to activate.
+First, go to [OpenWeatherMap API](https://home.openweathermap.org/) and create an account to get your API key. You should find it [here](https://home.openweathermap.org/api_keys). Sometimes Open Weather takes a little while to activate the key, particularly when a bunch of students make keys from the same location 🙀 To avoid this problem, **share your API key with your buddy** to limit the number of keys needed.
 
 You are allowed to perform 60 calls / minute for free, which should be plenty enough for this challenge.
 
 ### Current weather
 
-Read the [current weather API doc](https://openweathermap.org/current) to find the endpoint we want to call with `fetch`. Found it? **Don't forget that a url always starts with `http://`** (or `https://`).
+Read the [current weather API doc](https://openweathermap.org/current) to find the endpoint we want to call with `fetch`. Found it? **Don't forget that a URL always starts with `http://`** (or `https://`).
 
-Before coding anything, try opening the url in your browser to see if you get a response. If you get a `401` it means you forgot to pass your API key! You can add it to the url's **query string** with the `appid` parameter:
+Before coding anything, try opening the URL in your browser to see if you get a response. If you get a `401` it means you forgot to pass your API key! You can add it to the URL's **query string** with the `appid` parameter:
 
 ```bash
 &appid=YOUR_API_KEY
 ```
 
-Once you managed to display the API's response in your browser, let's jump into the JavaScript implementation.
+Once you have managed to display the API response in your browser, let's jump into the JavaScript implementation.
 
 ### Display data in your page
 
@@ -76,6 +76,6 @@ If your HTML page reloads, it means you forgot to **prevent** something...
 
 ### Time to reorganize your code!
 
-You are not done yet. When your features work, it's tempting to leave the code as it is. Reorganizing your code to make it maintainable in the long run is key if you want to save tons of time in the future.
+You are not done yet. When your features work, it's tempting to leave the code as it is. Refactoring your code to make it maintainable in the long run is key if you want to save tons of time in the future.
 
 Do you see any common code there? You should be able to refactor the code in separate methods for better readability 🙌

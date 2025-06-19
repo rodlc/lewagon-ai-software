@@ -92,12 +92,12 @@ Task.create title: '学习', details: '有很多卡片要学习', completed: tru
 
 **安装Bootstrap样式**
 
-跟着[这个文档](https://getbootstrap.com/docs/5.1/getting-started/introduction/#css)来安装Bootstrap在你的Rails应用上。你可以复制粘贴下方代码在`application.html.erb`的`head`中添加一个`link`标签：
+跟着[这个文档](https://getbootstrap.com/docs/5.3/getting-started/introduction/#css)来安装Bootstrap在你的Rails应用上。你可以复制粘贴下方代码在`application.html.erb`的`head`中添加一个`link`标签：
 
 ```erb
 <!-- app/views/layouts/application.html.erb -->
 <!-- [...] -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 ```
 
 你现在可以在你Rails应用的各个页面里使用Bootstrap class啦！🎉
@@ -115,4 +115,3 @@ Task.create title: '学习', details: '有很多卡片要学习', completed: tru
 你现在可以随意使用任何[免费的Font Awesome图标](https://fontawesome.com/search?m=free)啦！ 🎉尝试找找一些好看的选项框图标吧！
 
 然后，在你的view里，使用条件语句。如果该任务是已完成状态，显示选中的方块。如果是未完成状态，则显示空的方块。
-

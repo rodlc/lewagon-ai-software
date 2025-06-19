@@ -5,4 +5,5 @@ on:
     types: [opened, reopened]
 jobs:
   comment:
+    if: ${{ github.repository_owner == 'lewagon' }}
     uses: lewagon/.github/.github/workflows/content-preview-kitt.yml@main

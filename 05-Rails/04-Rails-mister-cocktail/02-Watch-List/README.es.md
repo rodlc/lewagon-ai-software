@@ -3,6 +3,7 @@
 ¡Es hora de hacer una app de tres modelos! Y como lo sospechabas, vamos a introducir una relación de muchos a muchos (`n:n`). Bueno, ¿qué implica esto? Debes crear una Watch List para almacenar tus películas favoritas.
 
 Aquí están las **acciones de usuario** que queremos implementar en nuestra aplicación:
+
 - Como usuario, puedo ver todas mis listas de películas
 - Como usuario, puedo crear una lista de películas
 - Como usuario, puedo ver los detalles de una lista de películas
@@ -91,11 +92,12 @@ En `application.js`, agrega las siguientes líneas:
 
 ```js
 // app/javascript/application.js
-import "@popperjs/core"
-import "bootstrap"
+import "@popperjs/core";
+import "bootstrap";
 ```
 
 Depués de esto, agrega las siguientes líneas:
+
 ```js
 // app/assets/config/manifest.js
 //= link popper.js
@@ -122,9 +124,8 @@ No olvides hacer el `commit` y el `push` de tu trabajo regularmente.
 
 ### 1 - Modelos
 
-Ve a [db.lewagon.com](http://db.lewagon.com)
-y dibuja el esquema con tu compañero. Necesitamos las siguientes tablas: `movies`, `lists` y `bookmarks`. Piensa en el tipo de relaciones entre las tablas y quién almacenará las *referencias*. 😉
-
+Ve a [kitt.lewagon.com/db](http://kitt.lewagon.com/db)
+y dibuja el esquema con tu compañero. Necesitamos las siguientes tablas: `movies`, `lists` y `bookmarks`. Piensa en el tipo de relaciones entre las tablas y quién almacenará las _referencias_. 😉
 
 ![](https://raw.githubusercontent.com/lewagon/fullstack-images/master/rails/watch-list/db.png)
 
@@ -187,8 +188,8 @@ Los endpoints de la API te piden que crees una cuenta de usuario y generes una A
 A continuación te explicamos cómo funciona:
 
 1. La API dirá: usa `https://api.themoviedb.org/3/movie/top_rated?api_key=<your_api_key>`
-2. Lo que deberás hacer es reemplazar esta parte de la url `https://api.themoviedb.org/3?api_key=<your_api_key>` por `https://tmdb.lewagon.com`. Por ejemplo, `https://api.themoviedb.org/3/movie/top_rated?api_key=<your_api_key>` será `https://tmdb.lewagon.com/movie/top_rated`.
-3. Practica [aquí](https://tmdb.lewagon.com/movie/top_rated)
+2. Lo que deberás hacer es reemplazar esta parte de la url `https://api.themoviedb.org/3?api_key=<your_api_key>` por `https://tmkitt.lewagon.com/db`. Por ejemplo, `https://api.themoviedb.org/3/movie/top_rated?api_key=<your_api_key>` será `https://tmkitt.lewagon.com/db/movie/top_rated`.
+3. Practica [aquí](https://tmkitt.lewagon.com/db/movie/top_rated)
 
 **Imágenes de las Películas**
 
@@ -244,6 +245,7 @@ POST "lists/42/bookmarks"
 ```
 DELETE "bookmarks/25"
 ```
+
 ¿Necesitamos un `MoviesController`?
 
 ### 5 - Diseño sobre la marcha

@@ -70,7 +70,6 @@ Le cours d'aujourd'hui abordera le concept de recherche, de l'utilisation d'Acti
 
 Dans la foulée de Devise, on t'apprendra à gérer l'**autorisation** dans ton application Rails et à t'assurer que seul le créateur du restaurant peut le mettre à jour ou le supprimer !
 
-
 ### Préparation des projets (week-end)
 
 Tu as fait un excellent travail, on est très fiers de toi !
@@ -79,7 +78,7 @@ C'est le moment de la finale : les projets ! Pendant le week-end, prends le temp
 
 - Rédige tes stories utilisateur (pas plus de 15).
 - Dessine une maquette de tes vues principales.
-- Commence à créer le schéma de ta base de données sur [db.lewagon.com](http://db.lewagon.com).
+- Commence à créer le schéma de ta base de données sur [kitt.lewagon.com/db](http://kitt.lewagon.com/db).
 - Commence à réfléchir à tes routes.
 
 Si tu arrives à faire tout cela, tu gagneras du temps pour te lancer dans ton projet plus rapidement lundi.

@@ -28,12 +28,12 @@ git commit -m "Prepare rails app with external specs"
 
 ### Install Bootstrap stylesheets
 
-Following [the documentation](https://getbootstrap.com/docs/5.1/getting-started/introduction/#css), install Bootstrap stylesheets to your Rails app by copy-pasting the link tag in the `head` of the `application.html.erb` layout:
+Following [the documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/#css), install Bootstrap stylesheets to your Rails app by copy-pasting the link tag in the `head` of the `application.html.erb` layout:
 
 ```erb
 <!-- app/views/layouts/application.html.erb -->
 <!-- [...] -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 ```
 
 You can now use any Bootstrap class anywhere in your Rails views 🎉
@@ -82,7 +82,7 @@ If you have trouble running `rspec`, you may need to run `bin/rspec`. It means t
 
 Make sure you think twice before choosing the data type, it might not always be your first guess!
 
-**Question**: Can you draw this schema at [db.lewagon.com](http://db.lewagon.com)? Discuss with your buddy.
+**Question**: Can you draw this schema at [kitt.lewagon.com/db](http://kitt.lewagon.com/db)? Discuss with your buddy.
 
 #### Validation
 
@@ -100,6 +100,7 @@ Validate all model tests before moving to the routing layer. You can use this co
 ```bash
 rspec spec/01_models
 ```
+
 to selectively run tests in the `spec/01_models` folder.
 
 You can also manually test your code with the `rails console`. Don't forget to `reload!` between each code change!
@@ -132,6 +133,7 @@ Asking yourself what user stories will compose your application and which routes
 ```
 GET "restaurants"
 ```
+
 - A visitor can add a new restaurant, and be redirected to the `show` view of that new restaurant.
 
 ```
@@ -153,7 +155,6 @@ POST "restaurants/38/reviews"
 ```
 
 - And that's it!
-
 
 In our MVP, a visitor cannot update / delete any restaurant or review. This is the role of the admin (i.e. **you**) - as a developer you have the power to manipulate the DB from the `rails console` if you want to update / delete any record.
 

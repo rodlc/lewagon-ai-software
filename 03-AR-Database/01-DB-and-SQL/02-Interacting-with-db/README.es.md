@@ -4,7 +4,7 @@
 
 El objetivo de este ejercicio es usar la línea de comando para leer y hacer consultas de una base de datos de muestra que se llama `jukebox.sqlite` que te daremos.
 
-Para completar el desafío, dibuja el esquema de la base de datos en [db.lewagon.com](http://db.lewagon.com/), guárdalo como archivo XML y ejecuta `rake`!
+Para completar el desafío, dibuja el esquema de la base de datos en [kitt.lewagon.com/db](http://kitt.lewagon.com/db/), guárdalo como archivo XML y ejecuta `rake`!
 
 ### Configuracion
 
@@ -50,4 +50,4 @@ El objetivo de este ejercicio es explorar la base de datos Jukebox y entender su
 - Usa la herramienta de diseño SQL para dibujar el esquema de esta base de datos.
 - ¿Cuántas filas contiene una tabla? ¿Cuáles son los nombres de las columnas de cada tabla?
 
-Usa [db.lewagon.com](http://db.lewagon.com/) para dibujar el esquema de Jukebox. Guardalo en formato XML como `jukebox.xml` y compruebalo con `rake`.
+Usa [kitt.lewagon.com/db](http://kitt.lewagon.com/db/) para dibujar el esquema de Jukebox. Guardalo en formato XML como `jukebox.xml` y compruebalo con `rake`.

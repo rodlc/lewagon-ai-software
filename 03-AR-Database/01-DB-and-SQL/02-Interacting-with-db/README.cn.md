@@ -2,7 +2,7 @@
 
 `Sqlite`是一个简单的数据库，依赖于一个独立的文件。你可以在[en.wikipedia.org/wiki/SQLite](http://en.wikipedia.org/wiki/SQLite)上阅读更多信息。
 
-这第一个练习的目的是使用命令行来读取和查询名为`jukebox.sqlite`的样本数据库。要完成这个挑战，请在[db.lewagon.com](http://db.lewagon.com/)上绘制DB模式，将其保存为XML文件并运行`rake`!
+这第一个练习的目的是使用命令行来读取和查询名为`jukebox.sqlite`的样本数据库。要完成这个挑战，请在[kitt.lewagon.com/db](http://kitt.lewagon.com/db/)上绘制 DB 模式，将其保存为 XML 文件并运行`rake`!
 
 ### 设置
 
@@ -25,11 +25,11 @@ gem install sqlite3 -v '< 2.0'
 sqlite3 lib/db/jukebox.sqlite
 ```
 
-现在你在交互式的`sqlite3`控制台中，你可以向数据库写入你的SQL查询语句。你可以用`.quit`或`CTRL + D`退出`sqlite3`控制台。
+现在你在交互式的`sqlite3`控制台中，你可以向数据库写入你的 SQL 查询语句。你可以用`.quit`或`CTRL + D`退出`sqlite3`控制台。
 
 ## 工具
 
-你可以使用[VS Code SQLite插件](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)读取SQLite数据库，探索数据模式，甚至**运行SQL查询**。这个插件应该在第一天就安装好了。如果你没有安装的话，回到专门的章节，根据指示安装。根据你的电脑选择：[macOS](https://github.com/lewagon/setup/blob/master/macos.md#vscode_extensions)/[Windows](https://github.com/lewagon/setup/blob/master/windows.md#vscode_extensions)/[Ubuntu](https://github.com/lewagon/setup/blob/master/ubuntu.md#vscode_extensions)
+你可以使用[VS Code SQLite 插件](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)读取 SQLite 数据库，探索数据模式，甚至**运行 SQL 查询**。这个插件应该在第一天就安装好了。如果你没有安装的话，回到专门的章节，根据指示安装。根据你的电脑选择：[macOS](https://github.com/lewagon/setup/blob/master/macos.md#vscode_extensions)/[Windows](https://github.com/lewagon/setup/blob/master/windows.md#vscode_extensions)/[Ubuntu](https://github.com/lewagon/setup/blob/master/ubuntu.md#vscode_extensions)
 
 ### VS Code SQLite 插件 - 探索数据库
 
@@ -45,9 +45,10 @@ sqlite3 lib/db/jukebox.sqlite
 
 ## 详细说明
 
-本练习的目的是探索Jukebox数据库，并了解其模式，回答下列问题：
+本练习的目的是探索 Jukebox 数据库，并了解其模式，回答下列问题：
+
 - 什么是数据库的模式？(即什么是表，以及表之间的关系)
-- 使用SQL设计工具绘制该数据库的模式。
+- 使用 SQL 设计工具绘制该数据库的模式。
 - 每个表包含多少行？每个表的列名是什么？
 
-使用[db.lewagon.com](http://db.lewagon.com/)绘制Jukebox模式。将其以XML格式保存为`jukebox.xml`，然后用`rake`检查它。
+使用[kitt.lewagon.com/db](http://kitt.lewagon.com/db/)绘制 Jukebox 模式。将其以 XML 格式保存为`jukebox.xml`，然后用`rake`检查它。
