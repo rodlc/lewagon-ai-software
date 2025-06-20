@@ -48,7 +48,7 @@ We'll take a step back and check you've grasped all the core notions of Rails.
 ### `06 Intro to LLMs`
 
 2-part morning lecture:
-- Intro to LLMs. You will build your first AI-based feature using [RubyLLM](rubyllm.com) and understand the fundamentals of LLMs for Software Engineers.
+- Intro to LLMs. You will build your first AI-based feature using [RubyLLM](https://rubyllm.com/) and understand the fundamentals of LLMs for Software Engineers.
 - Collaboration techniques with git & Github. You will discover how to work in a dev team using `branches` and `pull requests`. It's a system you will use for every dev project you ever do, so pay attention!
 
 ### `07 Prompt Engineering`
