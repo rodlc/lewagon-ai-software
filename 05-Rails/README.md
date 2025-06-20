@@ -36,39 +36,47 @@ Also, **quiz time**! Your last one! Don't be sad 😢
 
 We'll take a step back and check you've grasped all the core notions of Rails.
 
-## Second part - Airbnb
+## Second part - AI Week
 
-**AirBnB**! For the second part, we'll work in your project teams of 3 or 4. The goal is to start from scratch and build an MVP of AirBnB - you'll have 5 blocks to go as far as you can on your clone.
+**AI Week**! For the second part, we'll work in your project teams of 3 or 4. The goal is to start from scratch and build an AI Assistant for a Persona and Goal - you'll have 5 blocks to go as far as you can on your AI Assistant.
 
 - First demo at the halfway point - If a full-time bootcamp, on Wednesday (5pm)
 - **Official demo on the last day!** If a full-time bootcamp, on Friday! (5pm)
 
-**No live-code for this week, except on the first block.** But you still have morning lecture at 9am on cool topics. So get up early! Here is an overview of what will be covered:
+**No live-code for this week.** But you still have morning lecture covering AI and Rails advanced topics. So get up early! Here is an overview of what will be covered:
 
-### `06 Devise`
+### `06 Intro to LLMs`
 
-2-parts morning lecture:
-
-- Authentication with [Devise](https://github.com/plataformatec/devise) gem.
+2-part morning lecture:
+- Intro to LLMs. You will build your first AI-based feature using [RubyLLM](rubyllm.com) and understand the fundamentals of LLMs for Software Engineers.
 - Collaboration techniques with git & Github. You will discover how to work in a dev team using `branches` and `pull requests`. It's a system you will use for every dev project you ever do, so pay attention!
 
-### `07 JavaScript in Rails`
+### `07 Prompt Engineering`
 
-Learn how to use Stimulus and `importmap` to implement new JavaScript features and to use third party libraries in Rails.
+2-part morning lecture:
+- Prompt Engineering. You will learn how to write effective prompts for LLMs, which is a crucial skill to shape your AI Assistant behavior.
+- Authentication with [Devise](https://github.com/plataformatec/devise) gem.
 
-### `08 Geocoding`
 
-Morning lecture on geocoding (with the `geocoder` gem) and Mapbox to add a map to your application and autocomplete on address form inputs.
+### `08 Multi-modal Inference`
 
-Then, every group should demo the current version of their Airbnb clone in front of the class.
+2-part morning lecture:
+- Multi-modal Inference. You will learn how to send files along w/ text to be processed by LLMs.
+- JavaScript in Rails. Learn how to use Stimulus and `importmap` to implement new JavaScript features and to use third party libraries in Rails.
 
-### `09 Search`
+Then, every group should demo the current version of their AI Assistatn in front of the class.
 
-Today's lecture covers the search topic, from the search 101 using Active Record to stronger solutions like ElasticSearch or Algolia.
+### `09 Conversational UX`
 
-### `10 Pundit`
+Allow users to follow-up on a first LLM answer by providing the conversation's history to the LLM. You will learn how to build a conversational UX in your Rails app using Turbo streams.
 
-Following on from Devise, we will teach you how to handle **authorization** in your Rails app and make sure only the restaurant creator can update it or destroy it!
+
+### `10 Tools & Agents`
+
+2-part morning lecture:
+- Tools & Agents. You will learn how to write tools, to allow the LLM to decide when to use them, and to let the LLM call APIs or query your DB when relevant.
+- WebSockets & ActionCable. You will learn how to stream answers in real-time for a better user experience.
+
 
 ### Projects prep (weekend)
 
