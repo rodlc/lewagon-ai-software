@@ -64,7 +64,7 @@ We'll take a step back and check you've grasped all the core notions of Rails.
 - Multi-modal Inference. You will learn how to send files along w/ text to be processed by LLMs.
 - JavaScript in Rails. Learn how to use Stimulus and `importmap` to implement new JavaScript features and to use third party libraries in Rails.
 
-Then, every group should demo the current version of their AI Assistatn in front of the class.
+Then, every group should demo the current version of their AI Assistant in front of the class.
 
 ### `09 Conversational UX`
 
