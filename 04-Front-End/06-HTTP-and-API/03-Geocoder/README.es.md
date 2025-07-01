@@ -1,9 +1,9 @@
 ## Antecedentes y objetivos
 
-En este ejercicio pondremos en práctica tus habilidades AJAX. Comenzamos con algo simple como una petición `GET`. Aquí usaremos la [API Geocoding de MapBox](https://www.mapbox.com/search/). ¡Queremos crear una herramienta donde sea posible introducir una dirección, hacer clic en un botón y recuperar las **Coordenadas GPS**! Para cerrar con broche de oro, también mostraremos el mapa.
+En este ejercicio pondremos en práctica tus habilidades AJAX. Comenzamos con algo simple como una petición `GET`. Aquí usaremos la [API Geocoding de Mapbox](https://www.mapbox.com/search/). ¡Queremos crear una herramienta donde sea posible introducir una dirección, hacer clic en un botón y recuperar las **Coordenadas GPS**! Para cerrar con broche de oro, también mostraremos el mapa.
 
 <div class="text-center">
-  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/frontend/mapbox_ajax_geocoder.gif" alt="Demostración de geocodificación de MapBox" width="100%">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/frontend/mapbox_ajax_geocoder.gif" alt="Demostración de geocodificación de Mapbox" width="100%">
 </div>
 
 ## Especificaciones
@@ -18,13 +18,13 @@ Abre [`localhost:8000`](http://localhost:8000) en tu navegador.
 
 ### Geocoding
 
-Primero, tienes que crear una cuenta en MapBox y obtener una clave de API (¡no hay que pagar nada!). Luego lee la [documentación de la API Geocoding de MapBox](https://www.mapbox.com/api-documentation/#geocoding). Todo se resume en hacer una petición HTTP tipo `GET` con una dirección como parámetro de cadena de consulta.
+Primero, tienes que crear una cuenta en Mapbox y obtener una clave de API (¡no hay que pagar nada!). Luego lee la [documentación de la API Geocoding de Mapbox](https://www.mapbox.com/api-documentation/#geocoding). Todo se resume en hacer una petición HTTP tipo `GET` con una dirección como parámetro de cadena de consulta.
 
 ```javascript
 'https://api.mapbox.com/search/geocode/v6/forward?q=Los%20Angeles&access_token=YOUR-API-KEY'
 ```
 
-NOTA: La petición a la API de MapBox necesitará tu clave de API como uno de los parámetros. Encontrarás dicha clave en la sección de [tu cuenta](https://www.mapbox.com/account/) una vez que la hayas creado y hayas iniciado sesión.
+NOTA: La petición a la API de Mapbox necesitará tu clave de API como uno de los parámetros. Encontrarás dicha clave en la sección de [tu cuenta](https://www.mapbox.com/account/) una vez que la hayas creado y hayas iniciado sesión.
 
 Sigue avanzando y encuentra el formulario que ya se encuentra en `index.html` del boilerplate del desafío. Tiene un `input` de tipo `"text"` donde un/a usuario/a puede introducir una dirección. También tiene un `input` de tipo `"submit"` para mostrar un botón.
 
@@ -36,9 +36,9 @@ Pista: ¡Las coordenadas que devuelve Mapbox empiezan con la longitud y luego si
 
 ### [OPCIONAL] Mostrar el mapa
 
-Para mostrar un mapa MapBox con el marcador de una dirección dada usaremos una segunda API, la [API JavaScript de MapBox](https://www.mapbox.com/mapbox-gl-js/api/).
+Para mostrar un mapa Mapbox con el marcador de una dirección dada usaremos una segunda API, la [API JavaScript de Mapbox](https://www.mapbox.com/mapbox-gl-js/api/).
 
-Para poder usarla debes agregar esta línea en el `head` de tu archivo HTML para así poder usar la hoja de estilo (stylesheet) de MapBox para tu mapa:
+Para poder usarla debes agregar esta línea en el `head` de tu archivo HTML para así poder usar la hoja de estilo (stylesheet) de Mapbox para tu mapa:
 
 ```html
 <link

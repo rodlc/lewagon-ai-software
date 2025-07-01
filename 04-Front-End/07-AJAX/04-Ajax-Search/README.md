@@ -1,8 +1,8 @@
 ## Background & Objectives
 
-In this challenge you will play with [OMDb API](https://www.omdbapi.com/) (The Open Movie Database). This API will allow you to retrieve information about movies from a keyword.
+In this challenge you will play with the [OMDb API](https://www.omdbapi.com/) (The Open Movie Database). This API will allow you to retrieve information about movies from a keyword.
 
-In this exercise, you'll have to implement a `GET` request to OMDb API in order to retrieve information about movies you're looking for and implement a callback to inject a card for each movie in the DOM.
+In this exercise, you'll have to implement a `GET` request to the OMDb API in order to retrieve information about movies you're looking for and implement a callback to inject a card for each movie into the DOM.
 
 ![Highlights Gif](https://raw.githubusercontent.com/lewagon/fullstack-images/master/frontend/ajax-search.gif)
 
@@ -45,19 +45,19 @@ Code your JavaScript in `lib/index.js`.
 
 ### Capture the movie title and make the request
 
-Add the proper event listener to capture the keyword entered by the user when they click on the `Search` button or when they hit the `enter` key of the keyboard.
+Add the proper event listener to capture the keyword entered by the user when they click on the `Search` button or when they hit the `enter` key on their keyboard.
 
-Then store this keyword in a variable and build the url you will use in the `fetch` request.
+Then store this keyword in a variable and build the URL you will use in the `fetch` request.
 
 Don't forget that this API will return a JSON, so you will have to make several operations before accessing the results.
 
-At each step, consider adding some `console.log` to see the object that you are manipulating.
+At each step, consider adding a `console.log` to see the object that you are manipulating.
 
 ### Inject a card for each movie
 
 As soon as you are able to `console.log` the results of the API request, start to implement the callback which will inject a card for each movie in the div with the `movie-cards` id.
 
-Here is the html of card you can use (but feel free to create your own):
+Here is the HTML of a card you can use (but feel free to create your own):
 
 ```html
 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
@@ -73,6 +73,6 @@ Here is the html of card you can use (but feel free to create your own):
 
 ### Optional: refresh the result on `keyup`
 
-Now that all the logic is implemented, try to update your code to refresh the results each time the user is entering a new letter.
+Now that all the logic is implemented, try to update your code to refresh the results each time the user types a new letter.
 
 Happy searching!

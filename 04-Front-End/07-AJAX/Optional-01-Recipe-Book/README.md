@@ -1,14 +1,14 @@
 ## Background & Objectives
 
-In this challenge, we'll retrieve data from an API and practice displaying it with HTML in DOM.
+In this challenge, we'll retrieve data from an API and practice displaying it with HTML in the DOM.
 
 ## Specs
 
-You will build a search app to search recipes using [The MealDB API](https://www.themealdb.com/api.php) and add them to your favourites.
+You will build a search app to search recipes using [The MealDB API](https://www.themealdb.com/api.php) and add them to your favorites.
 
 You can use [this endpoint](https://www.themealdb.com/api.php#:~:text=Filter%20by%20main%20ingredient) to search recipes by ingredient.
 
-Your goal is to implement in `index.js` the search logic, so we can filter by ingredient when you click on search.
+Your goal is to implement the search logic in `index.js` so that we can filter by ingredient when you click on search.
 
 Open the html page in your browser with:
 
@@ -18,9 +18,9 @@ serve
 
 You should see a form with a search input.
 
-- When we enter an ingredient, the page **should not reload** and we will display each recipe in the `#recipes-container` list, using some HTML.
+- When we enter an ingredient, the page **should not reload** and we will display each recipe in the `#recipes-container` list using some HTML.
 - We should see a message indicating that there are no results in case there are no recipes using that ingredient.
-- Once the search works, the second part of the challenge will be to favourite the recipes you want by clicking on the bookmark icon.
+- Once the search works, the second part of the challenge will be to favorite the recipes you want by clicking on the bookmark icon.
 - Once bookmarked, the recipe will appear on the `#favourites-container` list.
 
 ![App  boilerplate](https://raw.githubusercontent.com/lewagon/fullstack-images/master/frontend/ajax-recipe-book-1.png)
@@ -45,8 +45,7 @@ Let's create the function with two parameters: `recipes`, `container`. The first
 
 We will use the `forEach` method to iterate over the array of recipes, and for each recipe, we will generate some HTML (as a string), and insert the recipe data in the right place.
 
-The `insertRecipes` should add the following HTML to the DOM for each recipe (of course, with the titles and images customized for each recipe):The `insertRecipes` should add the following HTML to the DOM for each recipe (of course, with the titles and images customized for each recipe):
-
+The `insertRecipes` should add the following HTML to the DOM for each recipe (of course, with the titles and images customized for each recipe):
 
 ```html
 <div class="col-5">
@@ -60,7 +59,7 @@ The `insertRecipes` should add the following HTML to the DOM for each recipe (of
 </div>
 ```
 
-You should see a recipe list using the ingredient you entered in the search input:
+You should see a recipe list using the ingredient you entered in the search input.
 
 NB: you can go to [this endpoint](https://www.themealdb.com/api/json/v1/1/list.php?i=list) directly in your browser to see the full list of ingredients you can search by.
 
@@ -84,7 +83,7 @@ For this, let's create a function `addRecipeToFavourites` as the `callback` func
 
 Once clicked, we need to retrieve all the elements of a recipe (its `idMeal`, `strMeal`, `strMealThumb`) before we store it in the `favourites` variable.
 
-We will need to pass the recipe as a parameter of this function, so we can access the data we need to display it. From the `event` you can reconstruct the recipe object so we can save all its details:
+We will need to pass the recipe as a parameter to this function, so we can access the data we need to display it. From the `event` you can reconstruct the recipe object so we can save all its details:
 
 ```js
 const newRecipeToAdd = { idMeal: ..., strMeal: ..., strMealThumb: ... };
@@ -110,6 +109,6 @@ We will see in the next module that Rails handles both at the same time 💪
 
 ## Bonus (optional)
 
-- Use the `includes` method to check that a recipe is already favourited.
+- Use the `includes` method to check that a recipe is already favorited.
 - Clear the search input after a search.
 - Add a button to clear the favourites list.
