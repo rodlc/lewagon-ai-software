@@ -1,3 +1,3 @@
-## AirBnB 第四天
+## AI Week 第四天
 
-我们继续加油!
+TODO(Eschults): add concise guidelines

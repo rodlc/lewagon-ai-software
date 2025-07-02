@@ -12,75 +12,30 @@ By day end, every team should have:
 
 Here are some instructions for validating DB and routes when kick-starting project on Monday morning. Note that students work on a Airbnb-like so they can replace `flats` by any other table of `offers` (e.g. renting `boats`, `cats`, `gardens`, etc.).
 
-### DB scheme validation
+### DB schema validation
 
-- The DB scheme must have _a minima_ 3 linked tables: `users`, `offers` (whatever the offer is) and a joined table between.
+- The DB schema must have _a minima_ 3 linked tables: `users`, `challenges` (to rename accordingly to the core model in the context of the chosen AI assistant) and a `messages` table to store user questions and LLM answers.
 
 ```
   +--------------+       +-------------+
-  |     users    |       |    offers   |
+  |     users    |       | challenges  |
   +--------------+       +-------------+
 +-| id           |---+   | id          |-+
 | | first_name   |   |   | name        | |
-| | last_name    |   |   | description | |
-| | address      |   +-->| owner_id    | |
-| | phone_number |       +-------------+ |
-| +--------------+                       |
+| | last_name    |   |   | content     | |
+| +--------------+   +-->| user_id     | |
+|                        +-------------+ |
 |                                        |
-|            +-------------+             |
-|            |  bookings   |             |
-|            +-------------+             |
-|            | id          |             |
-|            | start_time  |             |
-|            | end_time    |             |
-+----------->| customer_id |             |
-             | offer_id    |<------------+
-             +-------------+
-```
-
-- The user must play 2 roles: `owner` of one or many `offers` and `customer`
-
-### Accepted routing
-
-You will find 3 accepted routing below.
-
-#### The dashboard way
-
-- Users can see their `offers`, their `bookings`, their `bookings` on their `offers` through a dashboard.
-- The dashboard view is associated to a `DashboardController` and a possible `profile` action.
-
-#### The non-CRUD way
-
-- Users can see offers at `/offers`, their own offers at `/my_offers`, etc.
-- This requires custom actions in controllers and custom routes in router.
-
-#### The namespacing way
-
-- Requires new controllers: `Account::OffersController` and `Account::BookingsController`
-
-```
-+-app
-   |
-   +-controllers
-      |
-      +-account
-      |  |
-      |  +-offers_controller.rb
-      |  |
-      |  +-bookings_controller.rb
-      |
-      +-offers_controller.rb
-      |
-      +-bookings_controller.rb
-```
-- Requires namespaced routes:
-
-```ruby
-# config/routes.rb
-namespace :account do
-  resources :offers
-  resources :bookings
-end
+|                                        |
+|            +--------------+            |
+|            |   messages   |            |
+|            +--------------+            |
+|            | id           |            |
+|            | role         |            |
+|            | content      |            |
++----------->| user_id      |            |
+             | challenge_id |<-----------+
+             +--------------+
 ```
 
 ## Le Wagon's minimal template (Monday afternoon)
@@ -95,22 +50,22 @@ rails new \
   APP_NAME
 ```
 
-## Intermediate demo (during Geocoding)
+## Intermediate demo (during Multi-modal inference)
 
-For the first intermediate demo on Geocoding day, every team should have:
+For the first intermediate demo on Multi-modal inference unit, every team should have:
 
 - A well-designed app (Bootstrap classes for form inputs and buttons, content centered in `container`, responsive grid for flat's cards, nice home page, functional navigation bar, etc.).
-- Where a user can signup/signin
-- Where a user can post a new offer (and attach pictures to it)
-- Where a user can check all offers and see one specific offer
-- They should have started working on the "booking" features (at least embed a booking form in the offer show page).
+- Where a user can signup/signin (must not be showcased during the demo)
+- Where a user can create new records of the core model
+- Where a user can list all records of the core model
+- They should have started working on asking a question to the LLM and displaying the answer, with a working prompt for the persona
 - Every page should have a clean design.
 
-If you see students losing time on non-core features (edit your profile, connect with Facebook, geocode the offers, etc.) while they have not finished the core ones or have a dirty design for main pages, **it's your role to put them back on track**. You are a teacher but also a product manager this week!
+If you see students losing time on non-core features (edit your profile, edit or destroy core model records) while they have not finished the core ones or have a dirty design for main pages, **it's your role to put them back on track**. You are a teacher but also a product manager this week!
 
-On the contrary, if all your teams have a very well designed app with simple core features working, they will be really motivated to keep enhancing their app and make kick-ass final demo on the last day of Airbnb.
+On the contrary, if all your teams have a very well designed app with simple core features working, they will be really motivated to keep enhancing their app and make kick-ass final demo.
 
-## Final demo (during Authorization & Pundit)
+## Final demo (during Tools & Agents)
 
 For the final demo, share the [demo day presentation guidelines](https://kitt.lewagon.com/camps/<user.batch_slug>/challenges?path=06-Projects%2F05-Build-an-API%2F01-Intermediate-demo).
 

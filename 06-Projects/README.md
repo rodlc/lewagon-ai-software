@@ -18,22 +18,19 @@ Before anything, let's make sure you kick-off your project the best possible way
 
 During the first week, you will still have morning talks on advanced topics. Here is the program for morning lectures:
 
-### `AI in Rails`
+### `Pundit`
 
-Learn how to use the OpenAI API in Rails.
+Following on from Devise, we will teach you how to handle **authorization** in your Rails app and make sure only the restaurant creator can update it or destroy it!
 
-### `Hotwire`
+### `Search`
 
-Learn how to build AJAX features _fast_ with Turbo Frames.
+Today's lecture covers the search topic, from the search 101 using Active Record to stronger solutions like ElasticSearch or Algolia.
 
-### `WebSocket & ActionCable`
-
-Learn how to add real-time features out-of-the box with Rails' ActionCable and Hotwire's Turbo Streams.
 
 ### `Background Jobs with Sidekiq`
 
 Take time-consuming processes (delivering emails, posting to an API, cleaning up, etc.) out of the controller using [Active Job](http://edgeguides.rubyonrails.org/active_job_basics.html).
 
-### `AI Chatbots and RAG`
+### `Embeddings and RAG`
 
 Learn how to build a chatbot using Retrieval Augmented Generation to have the chatbot respond based on the context of the application's database.
