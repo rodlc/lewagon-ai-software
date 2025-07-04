@@ -24,16 +24,32 @@ Start by thinking of the **user journeys** you will showcase during the demo. Th
 <details><summary markdown='span'>View solution
 </summary>
 
-- 1 user journey for the user creating a DB record (e.g. a challenge for Wott)
-- 1 user journey for the user asking a LLM a question in the context of a DB record
-- 1 user journey for the user joining a file with a question to a LLM
-- 1 user journey for the user following up on a question to a LLM (i.e. conversation)
-
+- 1 user journey for the user navigating in challenges (or the context of your choice)
+- 1 user journey for the user adding new challenges
+- 1 user journey for the user editing or destroying challenges they have created
+- 1 user journey for the user chatting w/ the AI about one challenge (or the context of your choice)
 </details>
 
 Each user journey contains several **user stories**: write them down in the spreadsheet by using the right terminology. When you are done, create a ticket to validate them with a teacher.
 
 You can draw quick sketches with a pen and paper of the different screens and the rough elements they contain. This will help you visualize your user journeys. Be careful, no need to be too specific at this point! This is a sprint, you need to allocate your time and resources wisely.
+
+<details><summary markdown='span'>View solution
+</summary>
+- As a visitor, I can visit the home page to see the application's proposition value
+- As a visitor, I can see the list of challenges to navigate to the challenge I would like to take
+- As a visitor, I can click on a challenge to see its details
+- As a user, I can display a form to fill in the information required to create a new challenge
+- As a user, I can submit the form to create the new challenge
+- As a user, I can display a form to edit a challenge I have created
+- As a user, I can destroy a challenge I have created
+- As a user, I can create a chat w/ the AI Assistant about one challenge
+- As a user, I can see the list of chats I created w/ the AI Assistant about one challenge
+- As a user, I can navigate to a chat I created w/ the AI Assistant about one challenge
+- As a user, I can send a message to the AI Assistant in the context of a chat
+- As a user, I can send a message w/ a file attachement to the AI Assistant
+- As a user, I can send a follow-up message to the AI Assistant
+</details>
 
 #### 2 - Database Schema
 
@@ -41,16 +57,10 @@ Draw your database schema using [our db tool](https://kitt.lewagon.com/db/new) a
 
 💡 In order to harmonize the way to store user questions and assistant answers, you can include the following table, as well as the users table to handle Sign ins and Sign ups.
 
-+-------------+
-|  messages   |
-+-------------+
-| id          |
-| role        |
-| content     |
-| user_id     |
-| ...         |
-+-------------+
-
+<details><summary markdown='span'>View solution
+</summary>
+  <img src="https://wagon-public-assets.s3.eu-west-3.amazonaws.com/3h0por8ku29vrntndn0ci30fobb7" alt="Database schema showing four tables: users, challenges, chats and messages, their relationships and columns">
+</details>
 
 #### 3 - Routes
 

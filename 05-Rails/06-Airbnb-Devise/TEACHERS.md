@@ -10,33 +10,18 @@ By day end, every team should have:
 
 ## Validation Guidelines (Monday morning)
 
-Here are some instructions for validating DB and routes when kick-starting project on Monday morning. Note that students work on a Airbnb-like so they can replace `flats` by any other table of `offers` (e.g. renting `boats`, `cats`, `gardens`, etc.).
+Here are some instructions for validating DB and routes when kick-starting project on Monday morning. Note that students work on the AI Assistant of their choice so they should replace the "contextual" `challenges` table by any other table of their choice.
+
+Examples:
+- For an AI Assistant to help nurses synthesize medical information to share w/ doctors, the table could be `patients`.
+- For an AI Assistant to help parents cook great meals, the table could be `recipes`.
+- For an AI Assistant to help readers find books recommendation, the table could be `books`
 
 ### DB schema validation
 
-- The DB schema must have _a minima_ 3 linked tables: `users`, `challenges` (to rename accordingly to the core model in the context of the chosen AI assistant) and a `messages` table to store user questions and LLM answers.
+- The DB schema must have 4 linked tables: `users`, `challenges` (to rename accordingly to the chosen context) and a `chats` and `messages` tables to group and store user questions and LLM answers.
 
-```
-  +--------------+       +-------------+
-  |     users    |       | challenges  |
-  +--------------+       +-------------+
-+-| id           |---+   | id          |-+
-| | first_name   |   |   | name        | |
-| | last_name    |   |   | content     | |
-| +--------------+   +-->| user_id     | |
-|                        +-------------+ |
-|                                        |
-|                                        |
-|            +--------------+            |
-|            |   messages   |            |
-|            +--------------+            |
-|            | id           |            |
-|            | role         |            |
-|            | content      |            |
-+----------->| user_id      |            |
-             | challenge_id |<-----------+
-             +--------------+
-```
+<img src="https://wagon-public-assets.s3.eu-west-3.amazonaws.com/3h0por8ku29vrntndn0ci30fobb7" alt="Database schema showing four tables: users, challenges, chats and messages, their relationships and columns">
 
 ## Le Wagon's minimal template (Monday afternoon)
 
@@ -55,10 +40,10 @@ rails new \
 For the first intermediate demo on Multi-modal inference unit, every team should have:
 
 - A well-designed app (Bootstrap classes for form inputs and buttons, content centered in `container`, responsive grid for flat's cards, nice home page, functional navigation bar, etc.).
-- Where a user can signup/signin (must not be showcased during the demo)
-- Where a user can create new records of the core model
-- Where a user can list all records of the core model
-- They should have started working on asking a question to the LLM and displaying the answer, with a working prompt for the persona
+- Where a user can sign up / sign in (must not be showcased during the demo)
+- Where a user can run CRUD actions on the context model
+- Where a user can create chats in the context of one record
+- Where a user can send a message to the AI Assistant and get a response in the context of a chat
 - Every page should have a clean design.
 
 If you see students losing time on non-core features (edit your profile, edit or destroy core model records) while they have not finished the core ones or have a dirty design for main pages, **it's your role to put them back on track**. You are a teacher but also a product manager this week!
