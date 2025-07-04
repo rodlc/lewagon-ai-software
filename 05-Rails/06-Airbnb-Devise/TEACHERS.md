@@ -39,11 +39,11 @@ rails new \
 
 For the first intermediate demo on Multi-modal inference unit, every team should have:
 
-- A well-designed app (Bootstrap classes for form inputs and buttons, content centered in `container`, responsive grid for flat's cards, nice home page, functional navigation bar, etc.).
-- Where a user can sign up / sign in (must not be showcased during the demo)
-- Where a user can run CRUD actions on the context model
-- Where a user can create chats in the context of one record
-- Where a user can send a message to the AI Assistant and get a response in the context of a chat
+- A well-designed app (Bootstrap classes for form inputs and buttons, content centered in `container`, responsive grid for flat's cards, nice home page, functional navigation bar, etc.),
+  - where a user can sign up / sign in (must not be showcased during the demo)
+  - where a user can run CRUD actions on the context model
+  - where a user can create chats in the context of one record
+  - where a user can send a message to the AI Assistant and get a response in the context of a chat
 - Every page should have a clean design.
 
 If you see students losing time on non-core features (edit your profile, edit or destroy core model records) while they have not finished the core ones or have a dirty design for main pages, **it's your role to put them back on track**. You are a teacher but also a product manager this week!
