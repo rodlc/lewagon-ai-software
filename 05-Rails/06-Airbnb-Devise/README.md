@@ -4,7 +4,6 @@ You will spend the next sessions with your Project Group working on an AI Assist
 
 Brainstorm with your group and create a ticket to validate your idea with a teacher.
 
-
 ### Demos
 
 You will demo your work (in production, no demos on `localhost`!) during the **Multi-modal inference** and **Tools & Agents** sessions. Deadlines matter!

@@ -2,7 +2,7 @@ At last, Rails!
 
 ## First week - Rails 101
 
-This is the last "real week" on Kitt with day-by-day challenges. From next week, you'll start working on longer projects, either an Airbnb clone or your own personal project. For now, we will dive into the architecture of a fresh Rails app and try to understand what's going on. **We'll build one Rails app per day**.
+This is the last "real week" on Kitt with day-by-day challenges. From next week, you'll start working on longer projects, either an AI assistant or your own personal project. For now, we will dive into the architecture of a fresh Rails app and try to understand what's going on. **We'll build one Rails app per day**.
 
 ### `01 Routing, Controllers & Views`
 
@@ -49,13 +49,13 @@ We'll take a step back and check you've grasped all the core notions of Rails.
 
 2-part morning lecture:
 - Intro to LLMs. You will build your first AI-based feature using [RubyLLM](https://rubyllm.com/) and understand the fundamentals of LLMs for Software Engineers.
-- Collaboration techniques with git & Github. You will discover how to work in a dev team using `branches` and `pull requests`. It's a system you will use for every dev project you ever do, so pay attention!
+- Authentication with [Devise](https://github.com/plataformatec/devise) gem.
 
 ### `07 Prompt Engineering`
 
 2-part morning lecture:
 - Prompt Engineering. You will learn how to write effective prompts for LLMs, which is a crucial skill to shape your AI Assistant behavior.
-- Authentication with [Devise](https://github.com/plataformatec/devise) gem.
+- Collaboration techniques with git & Github. You will discover how to work in a dev team using `branches` and `pull requests`. It's a system you will use for every dev project you ever do, so pay attention!
 
 
 ### `08 Multi-modal Inference`
