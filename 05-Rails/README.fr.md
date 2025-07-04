@@ -43,7 +43,7 @@ On fera un point pour vérifier que tu as bien compris toutes les notions clés 
 - Première démo à mi-parcours - Si c’est un bootcamp full-time, mercredi (17h)
 - **Démo officielle le dernier jour !** Si c’est un bootcamp full-time, vendredi ! (17h)
 
-**Pas de live-coding cette semaine.** Mais tu auras quand même une conférence matinale couvrant l’IA et des sujets avancés Rails. Alors lève-toi tôt ! Voici un aperçu du contenu :
+**Pas de livecode cette semaine.** Mais tu auras quand même des cours le matin couvrant l’IA et des sujets avancés Rails. Alors lève-toi tôt ! Voici un aperçu du contenu :
 
 ### `06 Intro to LLMs`
 
