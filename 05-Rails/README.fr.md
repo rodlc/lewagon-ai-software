@@ -1,84 +1,89 @@
-Rails, enfin !
+Enfin, Rails !
 
-## Première semaine - Introduction à Rails
+## Première semaine - Rails 101
 
-C'est la dernière « vraie semaine » sur Kitt avec des challenges quotidiens. À partir de la semaine prochaine, tu commenceras à travailler sur des projets plus longs, sur un clone d'Airbnb ou ton projet personnel. On commencera par se pencher sur l'architecture d'une nouvelle application Rails et on essaiera de comprendre comment elle fonctionne. **Tu créeras une application Rails par jour**.
+C'est la dernière "vraie semaine" sur Kitt avec des défis jour après jour. À partir de la semaine prochaine, vous commencerez à travailler sur des projets plus longs, soit un clone d'Airbnb, soit votre propre projet personnel. Pour l'instant, nous allons plonger dans l'architecture d'une application Rails fraîchement créée et essayer de comprendre ce qui se passe. **Nous construirons une application Rails par jour**.
 
-### `01 Routes, contrôleur et vues`
+### `01 Routage, Contrôleurs & Vues`
 
-Au cours de la première journée, tu verras le flux standard de Rails `routes > contrôleur > vue` sans ajouter la couche modèle et expliquer les paramètres (`params`). Pendant la journée, tu transformeras les challenges Ruby de la Semaine 1 en applications Rails.
+Votre premier jour vous présentera le flux standard de Rails : `routing > controller > view` sans ajouter la couche modèle et en expliquant les `params`. Au cours de la journée, vous transformerez d'anciens challenges Ruby de la Semaine 1 en applications Rails.
 
-### `02 Modèles et CRUD`
+### `02 Modèles & CRUD`
 
-Et revoilà ce bon vieux Active Record ! **C'est l'un des cours les plus importants sur Rails.** Ton prof principal codera les 7 actions CRUD à partir de zéro et introduira la construction de routes `resources`. Sois attentif ! 🤓
+Voici de nouveau notre vieil ami Active Record ! **Une des conférences les plus importantes de Rails.** Votre coach principal codera les 7 actions CRUD depuis zéro et introduira le routage `resources`. Soyez attentifs ! 🤓
 
-### `03 Construction de routes avancée`
+### `03 Routage Avancé`
 
-Aujourd'hui, tu ajouteras un deuxième modèle à une application Rails en créant un clone à deux modèles de Yelp, avec des restaurants et des avis. Le cours du matin abordera la construction de routes avancées et les validations dans Rails **au-delà du CRUD**.
+Aujourd'hui, vous ajouterez un deuxième modèle dans une application Rails en créant un clone à deux modèles de Yelp, avec restaurants et avis. La conférence du matin porte sur aller **au-delà du CRUD** avec un routage avancé et des validations dans Rails.
 
-### `04 Rails assets`
+### `04 Assets Rails`
 
-Tu découvriras la meilleure configuration pour utiliser Bootstrap SASS, et comment passer de `form_with` à `simple_form_for` en utilisant la configuration Simple Form de Bootstrap.
+Apprenez la meilleure configuration pour implémenter Bootstrap SCSS + bibliothèques front-end, et passez de `form_with` à `simple_form_for` en utilisant la config Simple Form Bootstrap.
 
-Tu découvriras également l'asset pipeline (pipeline d'actifs).
+Découvrez le pipeline des assets.
 
-Pour les exercices, tu commenceras un projet de création d'une application de films à voir sur deux jours, avec 3 modèles `Movie`, `Bookmark`, et `List`.
-Tu devras suivre attentivement la configuration front-end pour créer une application attrayante.
+Pour les exercices, vous commencerez une construction sur deux jours d'une application de watch list, avec 3 modèles : `Movie`, `Bookmark` et `List`.
+Vous devrez suivre attentivement la configuration front-end pour travailler sur une application esthétique.
 
-### `05 Hébergement et chargement d'images`
+### `05 Hébergement & Upload d'Image`
 
-Le cours du matin se divise en deux parties :
+La conférence de ce matin a deux parties :
 **Hébergement** : Déploiement sur [Heroku](http://heroku.com/)
 
-**Chargement d'images** : On hébergera des images sur [Cloudinary](http://cloudinary.com/) en utilisant [ActiveStorage](https://guides.rubyonrails.org/v6.0.1/active_storage_overview.html). Le cours t'expliquera aussi comment obtenir tes clés API en utilisant la gem [dotenv](https://github.com/bkeepers/dotenv). **Écoute attentivement si tu ne veux pas qu'on te vole tes coordonnées bancaires sur Github.**
+**Upload d'Image** : Nous hébergerons les images sur [Cloudinary](http://cloudinary.com/), en utilisant [ActiveStorage](https://guides.rubyonrails.org/v6.0.1/active_storage_overview.html). Le cours explique aussi comment sécuriser vos clés API avec la gem [dotenv](https://github.com/bkeepers/dotenv). **Écoutez bien si vous ne voulez pas que vos informations bancaires soient volées sur Github.**
 
-Puis ce sera **l'heure du dernier quiz** ! Ne sois pas triste ! 😢
+Aussi, **quiz !** Le dernier ! Ne soyez pas triste 😢
 
-On vérifiera que tu as bien compris toutes les notions clés de Rails.
+On fera un point pour vérifier que vous avez bien assimilé toutes les notions clés de Rails.
 
-## Deuxième semaine - Airbnb
+## Deuxième partie - Semaine IA
 
-**Airbnb** ! Pendant la deuxième semaine, tu travailleras avec ton équipe projet (3 ou 4 personnes). L'objectif sera de créer un MVP d'Airbnb à partir de zéro. Tu auras 5 jours pour avancer autant que possible sur ton clone.
+**Semaine IA** ! Pour la deuxième partie, vous travaillerez en équipes projets de 3 ou 4. L'objectif est de partir de zéro et construire un Assistant IA pour une Persona et un Objectif — vous aurez 5 blocs pour aller aussi loin que possible avec votre Assistant IA.
 
-- Première démo mercredi (à 17h)
-- **Démo officielle vendredi ! (à 17h)**
+- Première démo à mi-parcours - Pour un bootcamp intensif, mercredi (17h)
+- **Démo officielle le dernier jour !** Pour un bootcamp intensif, vendredi ! (17h)
 
-**Pas de séance de livecode à 17h cette semaine.** Mais il y aura quand même un cours à 9h sur de chouettes sujets. N'oublie pas de mettre ton réveil ! Voici un aperçu de ce qui t'attend :
+**Pas de live-coding cette semaine.** Mais vous aurez quand même des cours matinaux sur l’IA et des sujets avancés Rails. Alors, lève-toi tôt ! Voici un aperçu des thèmes abordés :
 
-### `06 Devise`
+### `06 Introduction aux LLM`
 
-Le cours du matin se divise en deux parties :
+Conférence matinale en 2 parties :
+- Introduction aux LLM. Vous créerez votre première fonctionnalité basée sur l’IA avec [RubyLLM](https://rubyllm.com/) et comprendrez les fondamentaux des LLM pour ingénieurs logiciel.
+- Techniques de collaboration avec git & Github. Vous découvrirez comment travailler en équipe de dev avec les `branches` et les `pull requests`. C’est un système que vous utiliserez sur tous vos projets dev, alors faites attention !
 
+### `07 Prompt Engineering`
+
+Conférence matinale en 2 parties :
+- Prompt Engineering. Vous apprendrez à écrire des prompts efficaces pour les LLM, une compétence cruciale pour façonner le comportement de votre Assistant IA.
 - Authentification avec la gem [Devise](https://github.com/plataformatec/devise).
-- Techniques de collaboration avec git et Github. Tu apprendras à travailler au sein d'une équipe de développeurs en utilisant des `branches` et des `pull requests`. C'est un système que tu utiliseras dans tous tes projets de développement, alors écoute bien !
 
-### 07 JavaScript dans Rails
+### `08 Inférence Multi-modale`
 
-Tu apprendras à utiliser Stimulus et `importmap` pour implémenter de nouvelles fonctionnalités JavaScript et utiliser des bibliothèques externes dans Rails.
+Conférence matinale en 2 parties :
+- Inférence multi-modale. Vous apprendrez à envoyer des fichiers avec du texte pour qu’ils soient traités par les LLM.
+- JavaScript dans Rails. Apprenez à utiliser Stimulus et `importmap` pour implémenter de nouvelles fonctionnalités JavaScript et utiliser des bibliothèques tierces dans Rails.
 
-### `08 Géocodage`
+Ensuite, chaque groupe devra présenter la version actuelle de son Assistant IA devant la classe.
 
-Le cours du matin abordera le géocodage (avec la gem `geocoder`) et les grandes lignes de l'utilisation de l'API Google pour ajouter une fonction d'auto-remplissage sur les champs "input" de formulaires d'adresse.
+### `09 UX Conversationnelle`
 
-Puis à 17h, tous les groupes feront une démo de leur dernière version du clone d'Airbnb devant la classe.
+Permettez aux utilisateurs de poursuivre une première réponse LLM en fournissant l’historique de la conversation au LLM. Vous apprendrez à construire une UX conversationnelle dans votre application Rails avec Turbo streams.
 
-### `09 Recherche`
+### `10 Outils & Agents`
 
-Le cours d'aujourd'hui abordera le concept de recherche, de l'utilisation d'ActiveRecord pour commencer à des solutions plus robustes comme ElasticSearch ou Algolia.
-
-### `10 Pundit`
-
-Dans la foulée de Devise, on t'apprendra à gérer l'**autorisation** dans ton application Rails et à t'assurer que seul le créateur du restaurant peut le mettre à jour ou le supprimer !
+Conférence matinale en 2 parties :
+- Outils & Agents. Vous apprendrez à écrire des outils, pour permettre au LLM de décider quand les utiliser, et à appeler des APIs ou interroger votre base de données quand c’est pertinent.
+- WebSockets & ActionCable. Vous apprendrez à streamer les réponses en temps réel pour une meilleure expérience utilisateur.
 
 ### Préparation des projets (week-end)
 
-Tu as fait un excellent travail, on est très fiers de toi !
+Vous avez fait des choses incroyables – nous sommes très fiers de vous !
 
-C'est le moment de la finale : les projets ! Pendant le week-end, prends le temps de réfléchir à ton projet :
+Maintenant, place au Grand Final – vos projets. Prenez un peu de temps ce week-end pour réfléchir à vos projets :
 
-- Rédige tes stories utilisateur (pas plus de 15).
-- Dessine une maquette de tes vues principales.
-- Commence à créer le schéma de ta base de données sur [kitt.lewagon.com/db](http://kitt.lewagon.com/db).
-- Commence à réfléchir à tes routes.
+- Écrivez vos user stories (pas plus de 15).
+- Dessinez des maquettes de vos vues principales sur papier.
+- Commencez à construire votre schéma de base de données sur [kitt.lewagon.com/db](http://kitt.lewagon.com/db).
+- Commencez à réfléchir à vos routes.
 
-Si tu arrives à faire tout cela, tu gagneras du temps pour te lancer dans ton projet plus rapidement lundi.
+Si vous arrivez à faire tout ça, vous gagnerez beaucoup de temps lundi et pourrez commencer vos projets sans trop de prise de tête.
