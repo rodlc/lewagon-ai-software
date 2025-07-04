@@ -10,7 +10,7 @@ By day end, every team should have:
 
 ## Validation Guidelines (Monday morning)
 
-Here are some instructions for validating DB and routes when kick-starting project on Monday morning. Note that students work on the AI Assistant of their choice so they should replace the "contextual" `challenges` table by any other table of their choice.
+Here are some instructions for validating DB and routes when kick-starting the project at the beginning of the AI Week. Note that students work on the AI Assistant of their choice so they should replace the "contextual" `challenges` table by any other table of their choice.
 
 Examples:
 - For an AI Assistant to help nurses synthesize medical information to share w/ doctors, the table could be `patients`.
