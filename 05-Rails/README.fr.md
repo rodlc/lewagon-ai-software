@@ -10,11 +10,11 @@ Ton premier jour te présentera le flux standard de Rails `routing > controller 
 
 ### `02 Models & CRUD`
 
-Voici notre vieil ami Active Record à nouveau ! **Une des conférences les plus importantes de Rails.** Ton lead coach codera les 7 actions CRUD de zéro et présentera le routing `resources`. Sois attentif ! 🤓
+Voici notre vieil ami Active Record à nouveau ! **Un des cours les plus importantes de Rails.** Ton lead coach codera les 7 actions CRUD de zéro et présentera le routing `resources`. Sois attentif ! 🤓
 
 ### `03 Advanced Routing`
 
-Aujourd'hui, tu ajouteras un second modèle dans une app Rails en construisant un clone à deux modèles de Yelp, avec restaurants et avis. La conférence du matin porte sur aller **Au-delà du CRUD** avec un routing avancé et des validations dans Rails.
+Aujourd'hui, tu ajouteras un second modèle dans une app Rails en construisant un clone à deux modèles de Yelp, avec restaurants et avis. Le cours du matin porte sur aller **Au-delà du CRUD** avec un routing avancé et des validations dans Rails.
 
 ### `04 Rails Assets`
 
@@ -22,12 +22,12 @@ Apprends la meilleure configuration pour implémenter Bootstrap SCSS + biblioth�
 
 Découvre le pipeline d’assets.
 
-Pour les exercices, tu commenceras une app de liste de surveillance sur deux jours, avec 3 modèles `Movie`, `Bookmark` et `List`.
+Pour les exercices, tu commenceras une app de wishlist de films à voir sur deux jours, avec 3 modèles `Movie`, `Bookmark` et `List`.
 Tu devras suivre la configuration front-end attentivement pour travailler sur une app qui a de la gueule.
 
 ### `05 Hosting & Image Upload`
 
-La conférence du matin a 2 parties :
+Le cours du matin a 2 parties :
 **Hosting** : Déploiement sur [Heroku](http://heroku.com/)
 
 **Image Upload** : Nous hébergerons les images sur [Cloudinary](http://cloudinary.com/), en utilisant [ActiveStorage](https://guides.rubyonrails.org/v6.0.1/active_storage_overview.html). Le cours explique aussi comment sécuriser tes clés API avec la gem [dotenv](https://github.com/bkeepers/dotenv). **Écoute bien si tu ne veux pas que tes infos bancaires soient volées sur Github.**
