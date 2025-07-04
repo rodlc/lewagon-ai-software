@@ -2,7 +2,7 @@
 
 ## Primera semana - Rails 101
 
-Esta es la última "semana real" en Kitt con desafíos día a día. Desde la próxima semana, comenzarás a trabajar en proyectos más largos, ya sea un clon de Airbnb o tu propio proyecto personal. Por ahora, nos sumergiremos en la arquitectura de una nueva app Rails y trataremos de entender qué está pasando. **Construiremos una app Rails por día**.
+Esta es la última "semana real" en Kitt con desafíos día a día. Desde la próxima semana, comenzarás a trabajar en proyectos más largos, ya sea un AI Assistant o tu propio proyecto personal. Por ahora, nos sumergiremos en la arquitectura de una nueva app Rails y trataremos de entender qué está pasando. **Construiremos una app Rails por día**.
 
 ### `01 Routing, Controladores y Vistas`
 

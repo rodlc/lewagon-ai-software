@@ -2,7 +2,7 @@ At last, Rails!
 
 ## First week - Rails 101
 
-This is the last "real week" on Kitt with day-by-day challenges. From next week, you'll start working on longer projects, either an Airbnb clone or your own personal project. For now, we will dive into the architecture of a fresh Rails app and try to understand what's going on. **We'll build one Rails app per day**.
+This is the last "real week" on Kitt with day-by-day challenges. From next week, you'll start working on longer projects, either an AI assistant or your own personal project. For now, we will dive into the architecture of a fresh Rails app and try to understand what's going on. **We'll build one Rails app per day**.
 
 ### `01 Routing, Controllers & Views`
 
