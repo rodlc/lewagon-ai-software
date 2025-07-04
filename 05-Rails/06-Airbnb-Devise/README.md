@@ -139,20 +139,21 @@ From this point you can start splitting the tasks. **Spend time on the setup, be
 
 #### Kick-off
 
-When trying to split work in your team, you'll realize that many tasks depend on other ones... Here are some guidelines to help you organize your work:
+When trying to split work in your team, you'll realize that many tasks depend on other ones... In the next session, you will learn how to collaborate as a team using git and Github.
 
-You must always start with the **core models** in your app that all future features will depend on. You can find them in your DB schema as the models that don't have foreign keys. Once these models are integrated, it becomes easier to split work on remaining features. As a kick-off phase, you can therefore separate two main tasks:
+In the meantime, you can start pair-programming on a few core features of your app. This is a good way to get started and to make sure you are all on the same page. Here are 3 scopes you can get start working on already:
 
-**Group #1 - Model kick-start**:
-- Generate the `Message` model that will store user questions and assistant answers.
-- Integrate your contextual core model (i.e. `Challenge` for Wott) with read actions (`index/show`) and creation (`new/create`).
+**#1 - Devise setup**:
+- Setup Devise and generate the `User` model with devise.
+- Go through the morning lecture to add the navbar, sign up and sign in pages (wrapped in Bootstrap cols), and setup the appropriate `before_action` and `skip_before_action` filters.
 
+**#2 - Front-end kick-start**:
+- Build a simple, attractive home page with a Bootstrap container, centered content, and a clear proposition value.
 
-**Group #2 - Front-end kick-start**:
-- Work on a clean layout with navbar/footer
-- Build a simple, attractive home page
+**#3 - Core model actions**:
+- Generate your contextual core model (i.e. `Challenge` for Wott) with read (`index/show`) and create (`new/create`) actions.
 
-Once both groups are done (it should take you around 2h each) and once you have all merged your work on GitHub, you can move on and split tasks for the remaining features.
+Don't forget to deploy your work on Heroku continuously, and to share your production URL on Slack before leaving.
 
 #### Tasks organization
 
