@@ -51,7 +51,6 @@ Draw your database schema using [our db tool](https://kitt.lewagon.com/db/new) a
 | ...         |
 +-------------+
 
-⚠️ **IMPORTANT**: do not generate the `User` model today, wait for the Authentication lecture (second lecture on the Prompt Engineering day) to use the right approach to do so, otherwise you will waste precious time!
 
 #### 3 - Routes
 
@@ -137,7 +136,6 @@ You must always start with the **core models** in your app that all future featu
 **Group #1 - Model kick-start**:
 - Generate the `Message` model that will store user questions and assistant answers.
 - Integrate your contextual core model (i.e. `Challenge` for Wott) with read actions (`index/show`) and creation (`new/create`).
-- ⚠️ Do not generate the `User` model before the Authentication lecture! You will use Devise to generate it, which will save you a lot of time.
 
 
 **Group #2 - Front-end kick-start**:
