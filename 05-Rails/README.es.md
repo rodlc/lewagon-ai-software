@@ -49,13 +49,13 @@ Haremos un repaso para comprobar que has entendido todos los conceptos clave de 
 
 Clase matutina en 2 partes:
 - Introducción a los LLM. Construirás tu primera funcionalidad basada en IA usando [RubyLLM](https://rubyllm.com/) y entenderás los fundamentos de los LLM para ingenieros de software.
-- Técnicas de colaboración con git & Github. Descubrirás cómo trabajar en equipo usando `branches` y `pull requests`. Es un sistema que usarás en todos los proyectos que hagas, así que presta atención.
+- Autenticación con la gema [Devise](https://github.com/plataformatec/devise).
 
 ### `07 Ingeniería de Prompts`
 
 Clase matutina en 2 partes:
 - Ingeniería de prompts. Aprenderás a escribir prompts efectivos para LLM, una habilidad clave para moldear el comportamiento de tu Asistente IA.
-- Autenticación con la gema [Devise](https://github.com/plataformatec/devise).
+- Técnicas de colaboración con git & Github. Descubrirás cómo trabajar en equipo usando `branches` y `pull requests`. Es un sistema que usarás en todos los proyectos que hagas, así que presta atención.
 
 ### `08 Inferencia Multi-modal`
 

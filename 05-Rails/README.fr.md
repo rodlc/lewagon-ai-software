@@ -49,13 +49,13 @@ On fera un point pour vérifier que vous avez bien assimilé toutes les notions 
 
 Conférence matinale en 2 parties :
 - Introduction aux LLM. Vous créerez votre première fonctionnalité basée sur l’IA avec [RubyLLM](https://rubyllm.com/) et comprendrez les fondamentaux des LLM pour ingénieurs logiciel.
-- Techniques de collaboration avec git & Github. Vous découvrirez comment travailler en équipe de dev avec les `branches` et les `pull requests`. C’est un système que vous utiliserez sur tous vos projets dev, alors faites attention !
+- Authentification avec la gem [Devise](https://github.com/plataformatec/devise).
 
 ### `07 Prompt Engineering`
 
 Conférence matinale en 2 parties :
 - Prompt Engineering. Vous apprendrez à écrire des prompts efficaces pour les LLM, une compétence cruciale pour façonner le comportement de votre Assistant IA.
-- Authentification avec la gem [Devise](https://github.com/plataformatec/devise).
+- Techniques de collaboration avec git & Github. Vous découvrirez comment travailler en équipe de dev avec les `branches` et les `pull requests`. C’est un système que vous utiliserez sur tous vos projets dev, alors soyez attentifs !
 
 ### `08 Inférence Multi-modale`
 
