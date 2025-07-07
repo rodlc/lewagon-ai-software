@@ -40,7 +40,7 @@ rails new \
 For the first intermediate demo on Multi-modal inference unit, every team should have:
 
 - a well-designed app (Bootstrap classes for form inputs and buttons, content centered in `container`, responsive grid for flat's cards, nice home page, functional navigation bar, etc.),
-- a user sign up / sign in page (does not need to be showcased during the demo),
+- a user sign up / sign in page (sign ups should not be showcased during demos),
 - working CRUD actions on the context model,
 - the ability to create chats in the context of one record,
 - a working feature where a user can send a message to the AI Assistant and get a response in the context of a chat,
