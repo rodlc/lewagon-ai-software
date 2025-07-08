@@ -24,16 +24,32 @@ Start by thinking of the **user journeys** you will showcase during the demo. Th
 <details><summary markdown='span'>View solution
 </summary>
 
-- 1 user journey for the user creating a DB record (e.g. a challenge for Wott)
-- 1 user journey for the user asking a LLM a question in the context of a DB record
-- 1 user journey for the user joining a file with a question to a LLM
-- 1 user journey for the user following up on a question to a LLM (i.e. conversation)
-
+- 1 user journey for the user navigating in challenges (or the context of your choice)
+- 1 user journey for the user adding new challenges
+- 1 user journey for the user editing or destroying challenges they have created
+- 1 user journey for the user chatting w/ the AI about one challenge (or the context of your choice)
 </details>
 
 Each user journey contains several **user stories**: write them down in the spreadsheet by using the right terminology. When you are done, create a ticket to validate them with a teacher.
 
 You can draw quick sketches with a pen and paper of the different screens and the rough elements they contain. This will help you visualize your user journeys. Be careful, no need to be too specific at this point! This is a sprint, you need to allocate your time and resources wisely.
+
+<details><summary markdown='span'>View solution
+</summary>
+- As a visitor, I can visit the home page to see the application's proposition value
+- As a visitor, I can see the list of challenges to navigate to the challenge I would like to take
+- As a visitor, I can click on a challenge to see its details
+- As a user, I can display a form to fill in the information required to create a new challenge
+- As a user, I can submit the form to create the new challenge
+- As a user, I can display a form to edit a challenge I have created
+- As a user, I can destroy a challenge I have created
+- As a user, I can create a chat w/ the AI Assistant about one challenge
+- As a user, I can see the list of chats I created w/ the AI Assistant about one challenge
+- As a user, I can navigate to a chat I created w/ the AI Assistant about one challenge
+- As a user, I can send a message to the AI Assistant in the context of a chat
+- As a user, I can send a message w/ a file attachement to the AI Assistant
+- As a user, I can send a follow-up message to the AI Assistant
+</details>
 
 #### 2 - Database Schema
 
@@ -41,16 +57,10 @@ Draw your database schema using [our db tool](https://kitt.lewagon.com/db/new) a
 
 💡 In order to harmonize the way to store user questions and assistant answers, you can include the following table, as well as the users table to handle Sign ins and Sign ups.
 
-+-------------+
-|  messages   |
-+-------------+
-| id          |
-| role        |
-| content     |
-| user_id     |
-| ...         |
-+-------------+
-
+<details><summary markdown='span'>View solution
+</summary>
+  <img src="https://wagon-public-assets.s3.eu-west-3.amazonaws.com/3h0por8ku29vrntndn0ci30fobb7" alt="Database schema showing four tables: users, challenges, chats and messages, their relationships and columns">
+</details>
 
 #### 3 - Routes
 
@@ -63,7 +73,7 @@ Create a ticket to validate them with a teacher. All good? Time for the `rails n
 
 ### Part II
 
-Before splitting the tasks among the team, set your project up together. The **lead developer** (and only them) should:
+Before splitting the tasks among the team, set your project up together. The **lead developer** (and only they) should:
 
 #### 1. Create the Rails project with a Postgres config
 
@@ -129,20 +139,21 @@ From this point you can start splitting the tasks. **Spend time on the setup, be
 
 #### Kick-off
 
-When trying to split work in your team, you'll realize that many tasks depend on other ones... Here are some guidelines to help you organize your work:
+When trying to split work in your team, you'll realize that many tasks depend on other ones... In the next session, you will learn how to collaborate as a team using git and Github.
 
-You must always start with the **core models** in your app that all future features will depend on. You can find them in your DB schema as the models that don't have foreign keys. Once these models are integrated, it becomes easier to split work on remaining features. As a kick-off phase, you can therefore separate two main tasks:
+In the meantime, you can start pair-programming on a few core features of your app. This is a good way to get started and to make sure you are all on the same page. Here are 3 scopes you can get start working on already:
 
-**Group #1 - Model kick-start**:
-- Generate the `Message` model that will store user questions and assistant answers.
-- Integrate your contextual core model (i.e. `Challenge` for Wott) with read actions (`index/show`) and creation (`new/create`).
+**#1 - Devise setup**:
+- Setup Devise and generate the `User` model with devise.
+- Go through the morning lecture to add the navbar, sign up and sign in pages (wrapped in Bootstrap cols), and setup the appropriate `before_action` and `skip_before_action` filters.
 
+**#2 - Front-end kick-start**:
+- Build a simple, attractive home page with a Bootstrap container, centered content, and a clear proposition value.
 
-**Group #2 - Front-end kick-start**:
-- Work on a clean layout with navbar/footer
-- Build a simple, attractive home page
+**#3 - Core model actions**:
+- Generate your contextual core model (i.e. `Challenge` for Wott) with read (`index/show`) and create (`new/create`) actions.
 
-Once both groups are done (it should take you around 2h each) and once you have all merged your work on GitHub, you can move on and split tasks for the remaining features.
+Don't forget to deploy your work on Heroku continuously, and to share your production URL on Slack before leaving.
 
 #### Tasks organization
 
