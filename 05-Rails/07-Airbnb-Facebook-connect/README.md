@@ -68,7 +68,7 @@ Someone can get started on the following user story, coding in silo from routing
 Now that you have a basic Rails app with a core model, it's time to add AI capabilities to your app.
 If you haven't done it already, it's time to setup RubyLLM in your app, following the **Intro to LLM** lecture.
 
-This is the starting point to get started on the AI-related user stories:
+This is the starting point to adding the AI-related user stories:
 - As a user, I can create a chat w/ the AI Assistant about one challenge
 - As a user, I can see the list of chats I created w/ the AI Assistant about one challenge
 - As a user, I can navigate to a chat I created w/ the AI Assistant about one challenge
