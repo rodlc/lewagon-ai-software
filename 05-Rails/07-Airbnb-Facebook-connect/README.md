@@ -3,7 +3,7 @@
 At this point, you should already have a basic Rails app deployed on Heroku, with one or several core models. If it's not the case, create a ticket.
 
 ### Splitting the work
-Now that you have seen how to collaborate as a team on a project using git and Github, it's time to split the work on start working on **branches**.
+Now that you have seen how to collaborate as a team on a project using git and Github, it's time to split the work and start working on **branches**.
 
 #### Clean up the master branch
 First, make sure the **lead developer** has committed and pushed all the finished work from day 1 to Github:
