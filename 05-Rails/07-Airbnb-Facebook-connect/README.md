@@ -56,7 +56,6 @@ Before being able to work on Scope 1 and 3, you need records of your core model 
 - As a visitor, I can click on a challenge to see its details
 
 **Scope 2: New + Create**
-Someone can get started on the following user story, coding in silo from routing to view:
 - As a user, I can display a form to fill in the information required to create a new challenge
 - As a user, I can submit the form to create the new challenge
 
