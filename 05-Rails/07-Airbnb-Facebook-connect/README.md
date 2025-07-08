@@ -81,7 +81,7 @@ On this part, you will see in every lecture how to make progress. That said, you
   <img src="https://wagon-public-assets.s3.eu-west-3.amazonaws.com/3h0por8ku29vrntndn0ci30fobb7" alt="Database schema showing four tables: users, challenges, chats and messages, their relationships and columns">
 </details>
 
-Remember that chats are created within the context of a "challenge", and that messages are created within the context of a "chat". If you need a refresher on this kind of implementations, go back to the **Nested Resources** section of the **Advanced Routing** lecture.
+Remember that **chats** are created within the context of a "challenge", and that **messages** are created within the context of a **chat**. If you need a refresher on this kind of implementations, go back to the **Nested Resources** section of the **Advanced Routing** lecture.
 
 And of course, if you struggle, create a ticket!
 
