@@ -45,7 +45,7 @@ code .
 > [!WARNING]
 > From now on you should not commit on `master` anymore.
 
-If you have already generated models in pair-programming, you should all be able to get started on some tasks. For each of the following scopes, someone can get started on the following user stories, coding in silo from routing to view and replacing "challenges" with your app's core model:
+If you have already generated models in pair-programming, you should all be able to get started on some tasks. For each of the following scopes, someone can get started on the corresponding user stories, coding in silo from routing to view and replacing "challenges" with your app's core model:
 
 **Scope 0: Seed**
 Before being able to work on Scope 1 and 3, you need records of your core model in your database. You can create records in your `rails console`, but you will find a seed to be very useful in development, check out [this tutorial](https://kitt.lewagon.com/knowledge/cheatsheets/rails_seeds?course_ats_slug=web).
