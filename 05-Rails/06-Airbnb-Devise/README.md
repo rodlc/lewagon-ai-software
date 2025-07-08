@@ -42,6 +42,7 @@ You can draw quick sketches with a pen and paper of the different screens and th
 - As a user, I can display a form to fill in the information required to create a new challenge
 - As a user, I can submit the form to create the new challenge
 - As a user, I can display a form to edit a challenge I have created
+- As a user, I can submit the form to update the challenge
 - As a user, I can destroy a challenge I have created
 - As a user, I can create a chat w/ the AI Assistant about one challenge
 - As a user, I can see the list of chats I created w/ the AI Assistant about one challenge
@@ -97,20 +98,8 @@ gh repo create --public --source=.
 git push origin master
 ```
 
-#### 3. Add your team mates as collaborators on the Github repo
 
-Go to [your Github repo settings](https://github.com/<user.github_nickname>/rails-airbnb-clone/settings/collaboration) and add your teammates as **collaborators** to the repo.
-
-The other teammates can now **clone** the project. ⚠️**Be careful, use `SSH` URL**⚠️
-
-Then, the teammates should run:
-
-```bash
-bundle install
-rails db:create db:migrate
-```
-
-#### 4. Deploy on Heroku
+#### 3. Deploy on Heroku
 
 Even if it's just a skeleton app, it's important to deploy on Heroku **from day one**, and then continuously deploy every day with each new feature.
 
@@ -121,7 +110,7 @@ git push heroku master
 heroku run rails db:migrate
 ```
 
-### 5. Kanban Board
+### 4. Kanban Board
 
 A [Kanban board](https://en.wikipedia.org/wiki/Kanban_board) is an agile project management tool designed to help visualize work, track progress, and maximize efficiency (or flow). There are many different resources out there ([Trello](https://trello.com/), [Github Projects](https://github.com/features/project-management/), [Notion](https://www.notion.so/), just to name a few).
 
@@ -144,7 +133,7 @@ When trying to split work in your team, you'll realize that many tasks depend on
 In the meantime, you can start pair-programming on a few core features of your app. This is a good way to get started and to make sure you are all on the same page. Here are 3 scopes you can get start working on already:
 
 **#1 - Devise setup**:
-- Setup Devise and generate the `User` model with devise.
+- Setup Devise and generate the `User` model with devise. Make sure to use `rails g devise User` (not `model`)!
 - Go through the morning lecture to add the navbar, sign up and sign in pages (wrapped in Bootstrap cols), and setup the appropriate `before_action` and `skip_before_action` filters.
 
 **#2 - Front-end kick-start**:
