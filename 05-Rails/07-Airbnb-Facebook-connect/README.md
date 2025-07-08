@@ -86,7 +86,7 @@ Remember that **chats** are created within the context of a "challenge", and tha
 And of course, if you struggle, create a ticket!
 
 ### System Prompt
-Next, you will work on your AI Assistant **system prompt** and make sure every API request is sent with the appopriate `with_instructions(system_prompt)`, shaped to the desired behavior you would like to implement in your app.
+Next, you will work on your AI Assistant **system prompt** and make sure every API request is sent with the appropriate `with_instructions(system_prompt)`, shaped to the desired behavior you would like to implement in your app.
 
 Remember that a good prompt should include:
 - Persona: who should the AI act as?
