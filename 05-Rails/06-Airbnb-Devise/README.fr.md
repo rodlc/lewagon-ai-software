@@ -1,59 +1,84 @@
-## AI Week
+## AI Week - Lancement
 
-Vous passerez les prochaines sessions avec votre groupe projet à travailler sur un **Assistant IA** pour un **Persona** ayant un **Objectif**. Par exemple, Wott est un assistant IA pour les **étudiants qui apprennent à coder**.
+Tu vas passer les prochaines sessions avec ton groupe de projet à travailler sur un Assistant IA pour un **Persona** avec un **Objectif**. Par exemple, Wott est un Assistant IA pour **des étudiants apprenant à coder**.
 
-Faites un brainstorming avec votre groupe et créez un ticket pour valider votre idée avec un enseignant.
+Fais un brainstorming avec ton groupe et crée un ticket pour valider votre idée avec un enseignant.
 
-### Démonstrations
+### Demos
 
-Vous présenterez votre travail (en production, pas de démo sur `localhost` !) pendant les sessions **Multi-modal Inference** et **Tools & Agents**. C'est important de fixer des échéances !
+Vous présenterez votre travail (en production, pas de demo en `localhost` !) pendant les sessions **Multi-modal inference** et **Tools & Agents**. Les deadlines sont importantes !
 
 ### Partie I
 
-Travaillez sur les étapes suivantes et **validez-les avec un enseignant** au début de la session **avant** de créer votre app Rails et de passer à la Partie II. Cela vous fera gagner beaucoup de temps.
+Travaille sur les étapes suivantes et valide-les avec un enseignant au début de la session avant de créer ton application Rails et de passer à la Partie II. Tu gagneras beaucoup de temps en faisant cela, fais-nous confiance.
 
 #### 1 - User stories
 
-Dupliquez ce [tableur](https://docs.google.com/spreadsheets/d/1Kh4r-r5ZDyaWSfJdvW1NQJEfqt-wO3ExFR9SVp29lpY/edit?gid=0#gid=0) (un par équipe) et invitez vos coéquipiers à collaborer.
+Duplique ce [tableur](https://docs.google.com/spreadsheets/d/1Kh4r-r5ZDyaWSfJdvW1NQJEfqt-wO3ExFR9SVp29lpY/edit?gid=0#gid=0) (1 par équipe) et invite tes coéquipiers à collaborer.
 
 ![duplicate](https://raw.githubusercontent.com/lewagon/fullstack-images/master/rails/user-stories/duplicate.png)
 ![rename](https://raw.githubusercontent.com/lewagon/fullstack-images/master/rails/user-stories/rename.png)
 
-Commencez par réfléchir aux **parcours utilisateur** que vous allez montrer lors de la démo. Il existe de nombreux cas d’usage pour un assistant IA, mais essayez de les réduire aux parcours minimums viables pour résoudre un problème spécifique.
+Commence par réfléchir aux **parcours utilisateur** que tu vas présenter lors de la démo. Il y a beaucoup d’usages possibles pour un Assistant IA, mais essaie de les réduire au minimum viable pour résoudre un problème précis.
 
-<details><summary markdown='span'>Voir solution</summary>
+<details><summary markdown='span'>Voir solution
+</summary>
 
-- 1 parcours utilisateur pour créer un enregistrement en base (ex. un challenge pour Wott)
-- 1 parcours pour poser une question à un LLM dans le contexte d’un enregistrement
-- 1 parcours pour joindre un fichier à une question pour un LLM
-- 1 parcours pour relancer une question à un LLM (conversation)
-
+- 1 parcours utilisateur pour l’utilisateur naviguant dans les challenges (ou le contexte de ton choix)
+- 1 parcours utilisateur pour l’utilisateur ajoutant de nouveaux challenges
+- 1 parcours utilisateur pour l’utilisateur modifiant ou supprimant les challenges qu’il a créés
+- 1 parcours utilisateur pour l’utilisateur discutant avec l’IA à propos d’un challenge (ou le contexte de ton choix)
 </details>
 
-Chaque parcours utilisateur peut contenir plusieurs **user stories** : écrivez-les dans le tableur en utilisant la bonne terminologie. Une fois terminé, créez un ticket pour les valider avec un enseignant.
+Chaque parcours utilisateur contient plusieurs **user stories** : écris-les dans le tableur en utilisant la bonne terminologie. Une fois terminé, crée un ticket pour les faire valider par un enseignant.
 
-Vous pouvez dessiner rapidement des croquis des différentes pages (papier/stylo) avec les éléments principaux. Cela vous aidera à visualiser les parcours. Attention, pas besoin d’être trop précis à ce stade ! C’est un sprint : gérez bien votre temps et vos ressources.
+Tu peux faire des croquis rapides au stylo et papier des différents écrans et des éléments qu’ils contiennent. Cela t’aidera à visualiser tes parcours utilisateur. Attention, pas besoin d’être trop précis à ce stade ! C’est un sprint, tu dois allouer ton temps et tes ressources intelligemment.
 
-#### 2 - Schéma de base de données
+<details><summary markdown='span'>Voir solution
+</summary>
+- En tant que visiteur, je peux visiter la page d’accueil pour voir la proposition de valeur de l’application
+- En tant que visiteur, je peux voir la liste des challenges pour naviguer vers celui que je souhaite faire
+- En tant que visiteur, je peux cliquer sur un challenge pour lire les instructions
+- En tant qu’utilisateur, je peux afficher un formulaire pour remplir les informations nécessaires à la création d’un nouveau challenge
+- En tant qu’utilisateur, je peux soumettre le formulaire pour créer le challenge
+- En tant qu’utilisateur, je peux afficher un formulaire pour modifier un challenge que j’ai créé
+- En tant qu’utilisateur, je peux soumettre le formulaire pour mettre à jour le challenge
+- En tant qu’utilisateur, je peux supprimer un challenge que j’ai créé
+- En tant qu’utilisateur, je peux créer une conversation avec l’Assistant IA à propos d’un challenge
+- En tant qu’utilisateur, je peux voir la liste des conversations que j’ai créées avec l’Assistant IA à propos d’un challenge
+- En tant qu’utilisateur, je peux naviguer vers une conversation que j’ai créée avec l’Assistant IA à propos d’un challenge
+- En tant qu’utilisateur, je peux envoyer un message à l’Assistant IA dans le contexte d’une conversation
+- En tant qu’utilisateur, je peux envoyer un message avec un fichier joint à l’Assistant IA
+- En tant qu’utilisateur, je peux envoyer un message de suivi à l’Assistant IA
+</details>
 
-Dessinez votre schéma de base de données en utilisant [notre outil](https://kitt.lewagon.com/db/new) et **créez un ticket pour le valider avec un enseignant**. Ne dessinez que le strict minimum pour faire fonctionner votre app. Respectez les conventions (noms pluriels pour les tables, etc. – cf. cours sur les BDD).
+#### 2 - Schéma de la base de données
+
+Dessine ton schéma de base de données avec [notre outil db](https://kitt.lewagon.com/db/new) et **crée un ticket pour le faire valider avec un enseignant**. Dessine uniquement le minimum viable pour que ton app fonctionne. Utilise les bonnes conventions (noms au pluriel pour les tables... etc – cf. les cours DB).
+
+💡 Pour harmoniser la manière de stocker les questions utilisateurs et les réponses de l’assistant, tu peux inclure la table suivante ainsi que la table users pour gérer les connexions et inscriptions.
+
+<details><summary markdown='span'>Voir solution
+</summary>
+  <img src="https://wagon-public-assets.s3.eu-west-3.amazonaws.com/3h0por8ku29vrntndn0ci30fobb7" alt="Schéma de base de données montrant quatre tables : users, challenges, chats et messages, leurs relations et colonnes">
+</details>
 
 #### 3 - Routes
 
-Retournez sur le tableur des user stories et ajoutez les informations suivantes :
-- Route : Verbe + path
+Retourne à ton tableur User stories et ajoute les informations suivantes :
+- Route : Verbe + Chemin
 - Action
 - Contrôleur
 
-Créez un ticket pour les valider avec un enseignant. C’est bon ? Place au `rails new` !
+Crée un ticket pour les faire valider avec un enseignant. Tout est bon ? C’est le moment du `rails new` !
 
 ### Partie II
 
-Avant de vous répartir les tâches, mettez en place le projet **ensemble**. Le **développeur principal** (et lui seul) doit :
+Avant de répartir les tâches dans l’équipe, configurez le projet ensemble. Le **lead developer** (et lui seul) doit :
 
-#### 1. Créer le projet Rails avec Postgres
+#### 1. Créer le projet Rails avec configuration Postgres
 
-Utilisez le template minimal de Le Wagon, qui inclut déjà une bonne configuration front-end :
+Utilise le template minimal de Le Wagon, qui contient déjà une bonne configuration front-end :
 
 ```bash
 cd ~/code/<user.github_nickname>
@@ -63,7 +88,7 @@ rails new \
   CHANGE_THIS_TO_YOUR_RAILS_APP_NAME
 ```
 
-Encore une fois, **seul le développeur principal** le fait ! Pas toute l’équipe...
+Encore une fois, seul le lead developer fait ça ! Pas toute l’équipe.
 
 #### 2. Pousser le projet sur Github
 
@@ -73,14 +98,12 @@ gh repo create --public --source=.
 git push origin master
 ```
 
+#### 3. Ajouter tes coéquipiers comme collaborateurs sur le repo Github
+Va dans les paramètres de ton repo Github (`https://github.com/<user.github_nickname>/your-rails-app-name/settings/collaboration`) et ajoute tes coéquipiers comme collaborateurs.
 
-#### 3. Ajouter vos coéquipiers comme collaborateurs sur Github
+Les autres pourront ensuite cloner le projet. ⚠️ Fais attention, utilise l’URL SSH ⚠️
 
-Allez dans les [paramètres de votre repo Github](https://github.com/<user.github_nickname>/rails-airbnb-clone/settings/collaboration) et ajoutez vos coéquipiers comme **collaborateurs**.
-
-Les autres membres peuvent maintenant **cloner** le projet. ⚠️**Attention, utilisez l’URL `SSH`**⚠️
-
-Ensuite, ils doivent exécuter :
+Ensuite, ils doivent lancer :
 
 ```bash
 bundle install
@@ -89,78 +112,82 @@ rails db:create db:migrate
 
 #### 4. Déployer sur Heroku
 
-Même si l'app est vide, déployez sur Heroku **dès le premier jour**, puis déployez à chaque nouvelle fonctionnalité.
+Même si c’est juste une app squelette, c’est important de déployer sur Heroku **dès le premier jour**, puis déployer continuellement chaque jour avec chaque nouvelle feature.
 
 ```bash
-heroku create ai-assistant-<user.lower_github_nickname> --region=REMPLACEZ_AVEC_REGION # (eu, us, etc.)
-heroku config:set WEB_CONCURRENCY=1
+heroku create ai-assistant-<user.lower_github_nickname> --region=REPLACE_WITH_REGION # (eu, us, ou toute région disponible dans `heroku regions`)
+heroku config:set WEB_CONCURRENCY=1 # corrige un bug temporaire Heroku
 git push heroku master
 heroku run rails db:migrate
 ```
 
 ### 5. Tableau Kanban
 
-Un [tableau Kanban](https://fr.wikipedia.org/wiki/Kanban_(d%C3%A9veloppement)) est un outil de gestion agile pour visualiser le travail, suivre la progression et maximiser l’efficacité. Voici trois brouillons pour démarrer avec Trello, Github Projects ou Notion :
+Un [tableau Kanban](https://fr.wikipedia.org/wiki/Kanban) est un outil de gestion de projet agile conçu pour visualiser le travail, suivre la progression et maximiser l’efficacité (ou le flow). Il existe plein de ressources ([Trello](https://trello.com/), [Github Projects](https://github.com/features/project-management/), [Notion](https://www.notion.so/), pour n’en nommer que quelques-uns).
 
-1. **Trello** – Copiez [ce tableau](https://trello.com/b/WB3fRTj2), ajoutez vos coéquipiers, et commencez à importer vos user stories et tâches (classées par priorité).
+Nous avons préparé trois drafts pour commencer avec Trello, Github Projects ou Notion, mais tu peux utiliser un autre outil si tu préfères :
 
-2. **Github Projects** - Pour configurer ton tableau kanban sur Github, tu devras d'abord avoir créé ton dépôt et ajouté tous les collaborateurs. Un membre de ton équipe pourra ensuite utiliser [ce tableau](https://github.com/orgs/lewagon/projects/117) comme base du tableau de ton projet. Suis les instructions [ici](https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/copying-an-existing-project) pour apprendre à copier et ajouter le tableau au dépôt de ton projet. Deux éléments à prendre en compte : 1. Github ne copie pas les cards depuis le tableau d'origine, tu devras donc les ajouter toi-même. N'hésite pas à copier/coller les cards ou commence de zéro. 2. Github utilise la syntaxe markdown pour la mise en forme du texte (titres, style de police, cases à cocher). Ce n'est pas obligatoire, mais il peut être sympa de mettre en forme des cards. Plus d'infos [ici](https://guides.github.com/features/mastering-markdown/).
+1. Draft Trello – Fais une copie de [ce tableau Trello](https://trello.com/b/WB3fRTj2) (menu > plus d’options > copier le tableau > nom du tableau pour ton projet). Ajoute ensuite tous les membres de l’équipe et commence à importer toutes vos user stories et tâches (par ordre de priorité).
 
-3. **Notion** – Dupliquez [cette page Notion](https://www.notion.so/lewagon/Project-Weeks-a3961a7da7324637bea441832becb3ad), ajoutez vos coéquipiers et commencez à saisir vos user stories. Suivez [ce guide](https://www.notion.com/help/embed-and-connect-other-apps#web-bookmarks) pour les bookmarks Web. Si vous débutez sur Notion, consultez [cette page](https://www.notion.com/help/start-here).
+2. Draft Github Projects – Pour configurer un kanban sur Github, il faut d’abord avoir créé le repo et ajouté tous les collaborateurs. Ensuite, un membre peut utiliser [ce tableau](https://github.com/orgs/lewagon/projects/117) comme base. Suis les instructions [ici](https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/copying-an-existing-project) pour copier et ajouter ce tableau à ton repo. Note que Github ne copie pas les cartes, tu devras donc les ajouter toi-même. Tu peux copier/coller les cartes pour démarrer ou partir de zéro. Aussi, Github utilise la syntaxe markdown pour formater le texte (titres, styles, cases à cocher). Ce n’est pas obligatoire, mais ça peut améliorer la lisibilité. Plus d’infos [ici](https://guides.github.com/features/mastering-markdown/).
 
-Ensuite, vous pouvez répartir les tâches. **Prenez le temps de bien configurer le projet, cela simplifiera tout le reste**.
+3. Draft Notion – Fais une copie de [cette page Notion](https://www.notion.so/lewagon/Project-Weeks-a3961a7da7324637bea441832becb3ad) en choisissant l’option `Duplicate`. Ajoute tous les membres de l’équipe (clic sur `Share` puis invite-les par mail) et commence à importer vos user stories et tâches, triées par priorité. La section en haut à droite de la page doit contenir les liens importants de ton app. Ceux présents servent de guide, mais tu ne peux pas les modifier, tu devras donc les recréer avec les bons liens. Suis [ce guide](https://www.notion.com/help/embed-and-connect-other-apps#web-bookmarks) pour ajouter correctement les `Web bookmarks`. Si tu découvres Notion, n’hésite pas à lire [cette page](https://www.notion.com/help/start-here) pour apprendre à bien l’utiliser rapidement 💯
 
-### Quelques conseils de gestion de projet
+À partir de là, vous pouvez commencer à répartir les tâches. **Prends le temps de bien configurer le projet, tout sera plus simple ensuite**.
 
-#### Kick-off
+### Quelques conseils pour la gestion de projet
 
-Lorsque vous répartissez le travail, vous constaterez que certaines tâches dépendent d’autres... Voici quelques conseils :
+#### Lancement
 
-Commencez toujours par les **modèles de base** de votre app (ceux sans clés étrangères). Une fois intégrés, il est plus facile de travailler sur les fonctionnalités annexes. Pour démarrer, deux groupes :
+Quand tu veux répartir le travail dans ton équipe, tu te rendras compte que beaucoup de tâches dépendent d’autres... Lors de la prochaine session, tu apprendras à collaborer en équipe avec git et Github.
 
-**groupe #1 - Démarrage modèle** :
-- Intégrer le modèle principal avec actions `index/show` et `new/create`.
+En attendant, vous pouvez commencer à faire du pair programming sur quelques fonctionnalités clés de votre app. C’est un bon moyen de démarrer et de vous assurer que vous êtes tous alignés. Voici 3 points sur lesquels tu peux déjà commencer à travailler :
 
-**groupe #2 - Démarrage front-end** :
-- Créer un layout propre avec navbar/footer
-- Construire une page d’accueil simple et attrayante
+**#1 - Setup Devise** :
+- Configure Devise et génère le modèle `User` avec devise.
+- Suis la conférence du matin pour ajouter la navbar, les pages d’inscription et de connexion (avec Bootstrap cols), et configure les filtres `before_action` et `skip_before_action`.
 
-Une fois ces deux groupes terminés (comptez environ 2h), fusionnez votre travail sur Github et répartissez les autres tâches.
+**#2 - Kick-start Front-end** :
+- Construis une page d’accueil simple et attractive avec un container Bootstrap, un contenu centré, et une proposition de valeur claire.
+
+**#3 - Actions du modèle principal** :
+- Génère ton modèle principal contextuel (par ex. `Challenge` pour Wott) avec les actions read (`index/show`) et create (`new/create`).
+
+N’oublie pas de déployer ton travail en continu sur Heroku, et de partager ton URL de production sur Slack avant de partir.
 
 #### Organisation des tâches
 
-Parmi la dizaine de user stories, **certaines sont plus importantes que d'autres**. Priorisez-les pour obtenir un MVP en fin de semaine !
+Dans les ~10 user stories du tableur, **certaines fonctionnalités sont plus importantes que d’autres**. C’est à toi de les prioriser pour avoir un MVP à la fin de la semaine !
 
-#### Coder en silo : du modèle à la vue
+#### Coder en silo, du modèle à la vue
 
-Lorsque vous développez une fonctionnalité, **faites-le de manière complète, du modèle à la vue HTML/CSS**. Exemple : création d’un challenge :
+Quand tu travailles sur une fonctionnalité, fais-le **consciencieusement du modèle jusqu’au HTML/CSS**. Prenons l’exemple de la création d’un challenge :
 
-*Modèle* :
-- Générer un modèle `Challenge` avec migration.
-- Ajouter associations et validations.
-- Tester le modèle dans la console Rails.
+*Modèle*
+- Je vais générer un modèle `Challenge` et sa migration associée.
+- Ensuite j’écris un modèle fonctionnel avec associations et validations.
+- Je teste mon modèle dans la console Rails pour être sûr que tout marche.
 
 *Routing* :
-- Ajouter les routes `new/create` dans `routes.rb`.
+- J’ajoute les routes new/create dans `routes.rb`
 
 *Contrôleur* :
-- Ajouter les actions `new` et `create` dans `ChallengesController`.
+- J’ajoute deux actions `new` et `create` dans `ChallengesController`
 
 *Vues* :
-- Coder le formulaire dans `views/challenges/new.html.erb`.
-- Rediriger vers la `show` avec un message de confirmation.
+- Je code le formulaire dans `views/challenges/new.html.erb`
+- L’action create redirige vers la vue `show` avec un message de confirmation
 
 *Liens* :
-- Ajouter un lien dans la navbar pour créer un Challenge.
+- J’ajoute un lien pour créer un Challenge dans la navbar.
 
 *HTML/CSS* :
-- Utiliser Bootstrap pour les inputs des formulaires et les boutons.
-- Centrer le contenu avec `container`, titres clairs, etc.
-- Refactoriser le HTML avec des partials si nécessaire.
+- Mes formulaires sont propres avec les classes Bootstrap correctes pour les inputs et boutons.
+- Ma page new challenge est propre avec un `container` centré, des headers clairs, et un design épuré pour chaque booking.
+- Je prends le temps de refactorer mon HTML avec des partials si le code est trop long ou difficile à lire.
 
-**Codez parfaitement, du modèle à la vue**
+**Code-le parfaitement, du modèle à la vue**
 
-- Testez vos associations et validations dans la console Rails.
-- Ne négligez pas la vue. Soignez vos formulaires (Bootstrap), vos listes (grille propre).
-- Utilisez des partials pour rendre le code lisible et maintenable.
-
+- Teste bien toutes tes associations et validations en console Rails.
+- Ne néglige pas la vue. Si tu ajoutes un formulaire, fais-le joli, centré et responsive avec Bootstrap. Si tu codes une liste de flats, construis une grille Bootstrap agréable (par ex. image à gauche, infos à droite).
+- Utilise des partials pour rendre ton HTML plus lisible et maintenable.

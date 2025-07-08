@@ -98,7 +98,6 @@ gh repo create --public --source=.
 git push origin master
 ```
 
-
 #### 3. Deploy on Heroku
 
 Even if it's just a skeleton app, it's important to deploy on Heroku **from day one**, and then continuously deploy every day with each new feature.
