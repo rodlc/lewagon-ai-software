@@ -42,6 +42,7 @@ Tu peux faire des croquis rapides au stylo et papier des différents écrans et 
 - En tant qu’utilisateur, je peux afficher un formulaire pour remplir les informations nécessaires à la création d’un nouveau challenge
 - En tant qu’utilisateur, je peux soumettre le formulaire pour créer le challenge
 - En tant qu’utilisateur, je peux afficher un formulaire pour modifier un challenge que j’ai créé
+- En tant qu’utilisateur, je peux soumettre le formulaire pour mettre à jour le challenge
 - En tant qu’utilisateur, je peux supprimer un challenge que j’ai créé
 - En tant qu’utilisateur, je peux créer une conversation avec l’Assistant IA à propos d’un challenge
 - En tant qu’utilisateur, je peux voir la liste des conversations que j’ai créées avec l’Assistant IA à propos d’un challenge
