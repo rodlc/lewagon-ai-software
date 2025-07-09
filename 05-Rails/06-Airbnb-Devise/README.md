@@ -139,7 +139,7 @@ In the meantime, you can start pair-programming on a few core features of your a
 - Build a simple, attractive home page with a Bootstrap container, centered content, and a clear proposition value.
 
 **Scope 3: Models generation**:
-Generating your models will allow you to split the work up more easily after the **Coding as team** lecture.
+- Generating the three other models will allow you to split the work up more easily after the **Coding as team** lecture.
 
 **(Optional) Scope 4: Core model Read actions**:
 Congratulations if you reach this step! Let's start coding the following user stories on your project's core model (replacing "challenges" with yours):
