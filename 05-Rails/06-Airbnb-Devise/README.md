@@ -132,7 +132,7 @@ When trying to split work in your team, you'll realize that many tasks depend on
 In the meantime, you can start pair-programming on a few core features of your app. This is a good way to get started and to make sure you are all on the same page. Here are 3 scopes you can get start working on already:
 
 **#1 - Devise setup**:
-- Setup Devise and generate the `User` model with devise. Make sure to use `rails g devise User` (not `model`)!
+- Setup Devise and generate the `User` model with devise. Make sure to use `rails g devise User` (not `rails g model`)!
 - Go through the morning lecture to add the navbar, sign up and sign in pages (wrapped in Bootstrap cols), and setup the appropriate `before_action` and `skip_before_action` filters.
 
 **#2 - Front-end kick-start**:
