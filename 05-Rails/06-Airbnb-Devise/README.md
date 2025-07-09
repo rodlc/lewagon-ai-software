@@ -131,15 +131,20 @@ When trying to split work in your team, you'll realize that many tasks depend on
 
 In the meantime, you can start pair-programming on a few core features of your app. This is a good way to get started and to make sure you are all on the same page. Here are 3 scopes you can get start working on already:
 
-**#1 - Devise setup**:
+**Scope 1: Devise setup**:
 - Setup Devise and generate the `User` model with devise. Make sure to use `rails g devise User` (not `rails g model`)!
 - Go through the morning lecture to add the navbar, sign up and sign in pages (wrapped in Bootstrap cols), and setup the appropriate `before_action` and `skip_before_action` filters.
 
-**#2 - Front-end kick-start**:
+**Scope 2: Front-end kick-start**:
 - Build a simple, attractive home page with a Bootstrap container, centered content, and a clear proposition value.
 
-**#3 - Core model actions**:
-- Generate your contextual core model (i.e. `Challenge` for Wott) with read (`index/show`) and create (`new/create`) actions.
+**Scope 3: Models generation**:
+Generating your models will allow you to split the work up more easily after the **Coding as team** lecture.
+
+**(Optional) Scope 4: Core model Read actions**:
+Congratulations if you reach this step! Let's start coding the following user stories on your project's core model (replacing "challenges" with yours):
+- As a visitor, I can see a list of challenges to navigate to the challenge I want to explore.
+- As a visitor, I can click on a challenge to see its details
 
 Don't forget to deploy your work on Heroku continuously, and to share your production URL on Slack before leaving.
 
