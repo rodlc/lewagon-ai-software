@@ -6,7 +6,7 @@ Good luck - you're going to be amazing. Here are your milestones:
 
 - Intermediate demo: first demo in front of the class to get staff feedback and organize your roadmap for the second half of the module.
 - Dress rehearsal: rehearsal for final demo with the staff only, the day before Demoday. Be prepared!
-- Demoday: THE BIG DAY. Everyone is here! Press, VCs, your family! Smash it!
+- Demoday: THE BIG DAY. Everyone is here! Alumni, teachers, your family! Smash it!
 
 ## Projects Instructions
 
