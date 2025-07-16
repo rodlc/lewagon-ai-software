@@ -6,7 +6,7 @@ Buena suerte. Verás que todo saldrá genial. Aquí están los puntos importante
 
 - Demo intermediaria: Es la primera demo en frente de toda la clase para tener una retroalimentación grupal y así organizar tus prioridades para la segunda mitad del módulo.
 - Demo de práctica: Un repaso con solo miembros del staff un día antes de la presentación final (Demo Day).¡Prepárate!
-- Presentación final (Demo Day): EL GRAN DÍA.¡Todos estarán ahí! La Prensa, VCs, tu familia!¡Dale con todo!
+- Presentación final (Demo Day): EL GRAN DÍA.¡Todos estarán ahí! ¡Exalumnos, profesores, tu familia!¡Dale con todo!
 
 ## Clases matinales
 
