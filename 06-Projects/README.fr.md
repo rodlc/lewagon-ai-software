@@ -6,7 +6,7 @@ Bonne chance ! Tu verras, tout va bien se passer. Voici les grandes étapes qui 
 
 - Démo intermédiaire : ta première démo aura lieu devant la classe et te permettra d'obtenir un retour des profs et d'élaborer ta feuille de route pour la deuxième partie du module.
 - Répétition générale : c'est la répétition avant le grand jour ; elle aura lieu uniquement devant les profs, la veille de la démo finale. Prépare-toi !
-- Démo finale : c'est LE GRAND JOUR ! Tout le monde sera là : la presse, ta famille... Frappe fort !
+- Démo finale : c'est LE GRAND JOUR ! Tout le monde sera là : Alumni, professeurs, ta famille... Frappe fort !
 
 ## Instructions
 
