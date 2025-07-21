@@ -18,7 +18,7 @@ Then, open [`localhost:8000`](http://localhost:8000) in your browser.
 
 ### Data and HTML
 
-In your `lib/to-do-list.js` file, you should be able to find the following two pieces of code.
+In your `lib/to-do-list.js` file, you should find the following two pieces of code.
 
 1. Data: an array of to-do items
 
@@ -31,7 +31,7 @@ const todos = [
 ];
 ```
 
-- `title`: a `string` that contains what the item is about.
+- `title`: a `string` that represents what the to-do is about.
 - `done`: a `boolean` that indicates whether the item is done or not.
 
 2. Design: a piece of to-do HTML code
