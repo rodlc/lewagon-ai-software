@@ -37,9 +37,7 @@ We're good to go!
 
 ## Specs
 
-Your goal is to implement the callback that copies the text in the value of the input to the clipboard.
-
-Once you click on the *Copy to Clipboard* button, you can then use `ctrl + v` to paste the text in another text area.
+Your goal is to implement the callback that copies the text in the value of the input to the computer's clipboard. Once the user clicks on the button, the button should become disabled and the text inside the button should change text to "Copied!". It should, of course, then be possible to paste the text in any text editor using the standard keyboard shortcut (Ctrl+V on Windows/Linux or Cmd+V on Mac).
 
 ### 1. Inspect the existing HTML
 

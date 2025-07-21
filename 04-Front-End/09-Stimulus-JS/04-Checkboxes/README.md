@@ -1,6 +1,6 @@
 ## Background & Objectives
 
-Let's create a new Stimulus controller that will allow us to check all checkboxes at once.
+Let's create a new Stimulus controller that will allow us to check all the checkboxes in a list at once.
 
 ## Setup
 
@@ -33,7 +33,7 @@ We're good to go!
 
 ## Specs
 
-Your goal is to implement a checkbox that will check all checkboxes at once.
+Your goal is to implement a checkbox that will check all the checkboxes at once.
 
 ### 1. Prepare your HTML
 
