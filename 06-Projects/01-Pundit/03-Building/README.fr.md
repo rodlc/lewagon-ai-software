@@ -3,7 +3,7 @@ Tout le monde ne sera pas en mesure de s'occuper de la configuration de l'app ; 
 
 ## Rails new
 
-Commence par désigner le développeur principal pour ce projet au sein de ton équipe. Il peut s'agir de la même personne que pour le projet Airbnb, ou d'un autre membre. Cette personne sera ensuite chargée du reste de la configuration de l'app.
+Commence par désigner le développeur principal pour ce projet au sein de ton équipe. Il peut s'agir de la même personne que pour le projet AI, ou d'un autre membre. Cette personne sera ensuite chargée du reste de la configuration de l'app.
 
 Au début de ton projet Rails, tu **dois** utiliser l'un des [**modèles Rails du Wagon**](https://github.com/lewagon/rails-templates/tree/master). Assure-toi d'utiliser le [modèle Devise](https://github.com/lewagon/rails-templates/tree/master#devise) si tu as besoin d'un modèle `User` !
 
@@ -34,7 +34,7 @@ Une fois que tu as généré tous tes modèles, n'oublie pas de lancer les migra
 rails db:migrate
 ```
 
-Remarque : Certains de tes schémas peuvent avoir plus de relations avancées et de clés étrangères que ce que tu as vu pendant la semaine Airbnb. Par exemple : une table peut avoir besoin de stocker deux instances (clés étrangères) d'une autre table (le plus souvent, il s'agit de la table `User`). Dans ce cas-là, tu auras besoin d'utiliser ce qu'on appelle des alias (`aliases`). Apprends à les coder avec [ce guide](https://kitt.lewagon.com/knowledge/cheatsheets/active_record_advanced) sur les concepts avancés d'Active Record.
+Remarque : Certains de tes schémas peuvent avoir plus de relations avancées et de clés étrangères que ce que tu as vu pendant la semaine AI. Par exemple : une table peut avoir besoin de stocker deux instances (clés étrangères) d'une autre table (le plus souvent, il s'agit de la table `User`). Dans ce cas-là, tu auras besoin d'utiliser ce qu'on appelle des alias (`aliases`). Apprends à les coder avec [ce guide](https://kitt.lewagon.com/knowledge/cheatsheets/active_record_advanced) sur les concepts avancés d'Active Record.
 
 Une fois que c'est fait, ouvre tes modèles et passe aux **associations** et aux **validations** 👌
 
@@ -55,7 +55,7 @@ rails g controller pets
 
 ## Figma
 
-Tu l'auras sans doute remarqué pendant la semaine Airbnb, avoir un prototype Figma riche et complet peut faire toute la différence et faciliter le travail de ton équipe. Savoir exactement ce à quoi ressemblera chaque fonctionnalité, avec un design pattern cohérent, te permettra de créer une app de niveau supérieur !
+Tu l'auras sans doute remarqué pendant la semaine AI, avoir un prototype Figma riche et complet peut faire toute la différence et faciliter le travail de ton équipe. Savoir exactement ce à quoi ressemblera chaque fonctionnalité, avec un design pattern cohérent, te permettra de créer une app de niveau supérieur !
 
 Tu as créé ta première maquette lors du design sprint de produit ; tu vas maintenant la reprendre et la mettre à jour en fonction des décisions que ton équipe et toi avez prises plus tôt à propos des stories utilisateurs, des routes, etc.
 Figma est un outil incroyable avec plein de fonctionnalités pratiques que tu pourras utiliser ici pour créer un prototype haute fidélité. Pense à créer ta [librairie de composants](https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-Components-in-Figma), ajoute quelques plug-ins comme [unsplash](https://www.figma.com/community/plugin/738454987945972471/Unsplash), des [palettes de couleurs](https://www.figma.com/community/search?model_type=public_plugins&q=color%20palettes), et découvre encore plus d'options dans la section [Communauté](https://www.figma.com/community/explore).

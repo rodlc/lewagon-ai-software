@@ -1,5 +1,5 @@
 
-Ya eres parte de un equipo con un concepto claro para el MVP que vas a construir durante el resto del bootcamp. El objetivo del kick off es el mismo que el de Airbnb.
+Ya eres parte de un equipo con un concepto claro para el MVP que vas a construir durante el resto del bootcamp. El objetivo del kick off es el mismo que el de IA.
 El kick off abarca las siguientes partes:
 
 * Diseño de producto 🤔

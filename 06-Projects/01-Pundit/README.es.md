@@ -1,6 +1,6 @@
 ## Proyectos - Día Uno
 
-Ya debes ser parte de un equipo de 3 o 4 personas con un concepto claro de MVP en el que estarás trabajando durante las próximas 2 semanas. El objetivo del día es el mismo que el de Airbnb - Día 1.
+Ya debes ser parte de un equipo de 3 o 4 personas con un concepto claro de MVP en el que estarás trabajando durante las próximas 2 semanas. El objetivo del día es el mismo que el de la semana pasada - Día 1.
 
 Cada **paso** debe ser validado por un/a profesor/a.¡Empezar a escribir código apresuradamente es la mejor manera de perder tiempo!
 

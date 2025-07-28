@@ -36,4 +36,4 @@ Let's again use the [SQL Designer](http://kitt.lewagon.com/db) to design a datab
 
 - Do you know what a schema is?
 - What's the relation between tables?
-- Could you draw the database scheme behind Facebook? Airbnb? Take a bit of paper and have a go!
+- Could you draw the database schema behind Facebook? Airbnb? Take a bit of paper and have a go!

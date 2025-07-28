@@ -3,7 +3,7 @@ As not everyone will be able to code the app setup, now is the perfect time to d
 
 ## Rails New
 
-First, decide amongst your team who will be the Lead Developer for this project. This can be the same person from your Airbnb project, or a new team member can give it a go. That person will then continue with the following steps for setting up the app.
+First, decide amongst your team who will be the Lead Developer for this project. This can be the same person from your AI project, or a new team member can give it a go. That person will then continue with the following steps for setting up the app.
 
 If you are building a web app, you **must** use one of the [**Wagon Rails Templates**](https://github.com/lewagon/rails-templates/tree/vue). Make sure you use the [Devise template](https://github.com/lewagon/rails-templates/tree/vue#devise) if you need a `User` model!
 
@@ -34,7 +34,7 @@ Once you generated all your models, don't forget to run
 rails db:migrate
 ```
 
-Note: Some of your schemas may have more advanced relationships and foreign keys than we saw during Airbnb week. For example, a table that may need to store two instances (foreign keys) from another table (most often the `User` table). In this case you'll need to use something called `aliases`. Learn how to implement them with [this guide](https://kitt.lewagon.com/knowledge/cheatsheets/active_record_advanced) on advanced Active Record.
+Note: Some of your schemas may have more advanced relationships and foreign keys than we saw during AI week. For example, a table that may need to store two instances (foreign keys) from another table (most often the `User` table). In this case you'll need to use something called `aliases`. Learn how to implement them with [this guide](https://kitt.lewagon.com/knowledge/cheatsheets/active_record_advanced) on advanced Active Record.
 
 Once done, open your models and go on with **associations** and **validations** 👌
 
@@ -55,7 +55,7 @@ At this point you should be ready to commit or merge this work to `master` and s
 
 ## Figma
 
-As you likely found out during Airbnb Week, having a thorough and fully fleshed-out Figma can make a world of a difference for your team's working process. Knowing exactly what each feature should look like, with a consistent design pattern, is what takes your app to the next level!
+As you likely found out during AI Week, having a thorough and fully fleshed-out Figma can make a world of a difference for your team's working process. Knowing exactly what each feature should look like, with a consistent design pattern, is what takes your app to the next level!
 
 While you created your initial mockup on the Product Design Sprint, now is the time to take another look and update it based on the decisions you & your team made earlier about user stories, routes, etc.
 Figma is an incredible tool with loads of cool features that you can utilize here to make a high-fidelity prototype. Make sure to create your [components library](https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-Components-in-Figma), add some plugins like [unsplash](https://www.figma.com/community/plugin/738454987945972471/Unsplash), [color palettes](https://www.figma.com/community/search?model_type=public_plugins&q=color%20palettes) and explore even more in the [community](https://www.figma.com/community/explore) section.
