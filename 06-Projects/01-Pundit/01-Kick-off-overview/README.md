@@ -1,5 +1,5 @@
 
-You now belong to a team with a clear concept for the MVP you are going to be building for the rest of the bootcamp. The goal of the kick off is the same as Airbnb Kick Off.
+You now belong to a team with a clear concept for the MVP you are going to be building for the rest of the bootcamp. The goal of the kick off is the same as AI Week Kick Off.
 
 The kick off will encompass the following parts:
 

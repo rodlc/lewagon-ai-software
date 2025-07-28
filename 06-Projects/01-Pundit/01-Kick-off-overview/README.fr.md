@@ -1,5 +1,5 @@
 
-Ton équipe a maintenant une idée claire du MVP qu'elle va créer pendant le reste du bootcamp. L'objectif de ce kick-off est le même que celui du challenge Airbnb.
+Ton équipe a maintenant une idée claire du MVP qu'elle va créer pendant le reste du bootcamp. L'objectif de ce kick-off est le même que celui du challenge AI.
 
 Le kick-off englobe les aspects suivants :
 

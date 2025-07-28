@@ -2,7 +2,7 @@ Como no todo el mundo será capaz de escribir el código del setup, ahora es el 
 
 
 ## Rails New
-En primer lugar, decide en equipo quién será el Lead developer de este proyecto. Puede ser la misma persona de tu proyecto Airbnb, o un nuevo miembro del equipo. Esa persona continuará con los siguientes pasos para configurar la aplicación.
+En primer lugar, decide en equipo quién será el Lead developer de este proyecto. Puede ser la misma persona del proyecto de IA, o un nuevo miembro del equipo. Esa persona continuará con los siguientes pasos para configurar la aplicación.
 
 Cuando empieces tu proyecto rails, **debes** usar una de las [**Plantillas Wagon Rails**](https://github.com/lewagon/rails-templates/tree/master). ¡Asegúrate de utilizar la [Plantilla de Devise](https://github.com/lewagon/rails-templates/tree/master#devise) si necesitas un modelo `User`!
 
@@ -32,7 +32,7 @@ Una vez que hayas generado todos tus modelos, no olvides hacer
 rails db:migrate
 ```
 
-Nota: Algunos de tus esquemas pueden tener relaciones y foreign keys más avanzadas que las que vimos durante la semana de Airbnb. Por ejemplo, una tabla que puede necesitar almacenar dos instancias (foreign keys) de otra tabla (casi siempre la tabla `User`). En este caso necesitarás utilizar algo llamado `alias`. Aprende a implementarlos con [esta guía](https://kitt.lewagon.com/knowledge/cheatsheets/active_record_advanced) de Active Record avanzado.
+Nota: Algunos de tus esquemas pueden tener relaciones y foreign keys más avanzadas que las que vimos durante la semana de IA. Por ejemplo, una tabla que puede necesitar almacenar dos instancias (foreign keys) de otra tabla (casi siempre la tabla `User`). En este caso necesitarás utilizar algo llamado `alias`. Aprende a implementarlos con [esta guía](https://kitt.lewagon.com/knowledge/cheatsheets/active_record_advanced) de Active Record avanzado.
 
 Cuando hayas terminado esto, abre tus modelos y sigue con las **asociaciones** y **validaciones** 👌
 
@@ -52,7 +52,7 @@ En este punto deberías estar listo para hacer commits o el merge de este trabaj
 
 
 ## Figma
-Probablemente te diste cuenta durante la Airbnb Week que tener un Figma completo y detallado puede hacer la diferencia en el trabajo de tu equipo. Saber exactamente cómo debe ser cada feature, con un patrón de diseño consistente, es lo que llevará a tu app al siguiente nivel!
+Probablemente te diste cuenta durante la AI Week que tener un Figma completo y detallado puede hacer la diferencia en el trabajo de tu equipo. Saber exactamente cómo debe ser cada feature, con un patrón de diseño consistente, es lo que llevará a tu app al siguiente nivel!
 
 A pesar de que ya creaste tu maqueta inicial en el Sprint de Diseño de Producto, ahora es el momento de echarle un nuevo vistazo y actualizarla en base a las decisiones que tomaste anteriormente junto con tu equipo sobre las historias de usuario, las rutas, etc. Figma es una herramienta increíble con un montón de características interesantes que puedes utilizar aquí para hacer un prototipo de alta fidelidad. Asegúrate de crear tu [librería de componentes](https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-Components-in-Figma), añadir algunos plugins como [unsplash](https://www.figma.com/community/plugin/738454987945972471/Unsplash), [color palettes](https://www.figma.com/community/search?model_type=public_plugins&q=color%20palettes) y explorar aún más en la sección de la [comunidad](https://www.figma.com/community/explore).
 
