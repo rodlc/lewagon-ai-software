@@ -7,8 +7,8 @@ Welcome to your first Vue challenge!
 You will learn the basics of Vue by building a to-do list APP, with which you can do the following:
 
 - See all your to-do items
-- Add a to-do item(Optional)
-- Remove a to-do item(Optional)
+- Add a to-do item (optional)
+- Remove a to-do item (optional)
 
 ![](https://raw.githubusercontent.com/lewagon/fullstack-images/master/frontend/to-do-list-vue-user-flow.gif)
 
@@ -69,11 +69,11 @@ createApp({
 }).mount('#todosContainer')
 ```
 
-A Vue instance is already created with `createApp()` function. You will code your component inside of `createApp()`.
+We've already provided code that creates a  Vue instance with the `createApp()` function. You will code your component inside of `createApp()`.
 
 `.mount("#todosContainer")` is called on the Vue instance. It means this Vue instance will be mounted on the HTML element that has the css selector `#todosContainer`.
 
-[`data`](https://vuejs.org/api/options-state.html#data) is a component option. It returns a plain JavaScript object. The properties, like `message`, are made available in the HTML by `{{}}`.
+[`data`](https://vuejs.org/api/options-state.html#data) is a component option. It should return a plain JavaScript object. The properties, like `message`, are made available in the HTML by `{{}}`.
 
 ```html
 <div id="app">
@@ -230,7 +230,7 @@ Note that every property in `data()` is accessible with `this.propertyName`. Now
 
 One thing cool about Vue is its [**reactivity**](https://vuejs.org/guide/extras/reactivity-in-depth.html). `data()` is reactive, meaning that changes in `data()` trigger an update in the DOM. See how changing `this.todos` automatically updates the DOM.
 
-You may also notice that after adding a to-do, user's input stays in the input field. Considering that `v-model`'s binding is two-ways, how would you reset the input?
+You may also notice that after adding a to-do, the user's input stays in the input field. Considering that `v-model`'s binding is two-ways, how would you reset the input?
 </details>
 
 ### 3. Delete a to-do(Optional)
