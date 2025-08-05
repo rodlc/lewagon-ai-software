@@ -1,5 +1,9 @@
-.blue {
+.blue, .blue > th {
   color: blue;
+}
+
+.table > :not(caption) > * > * {
+  background-color: transparent;
 }
 
 .error, .success {
