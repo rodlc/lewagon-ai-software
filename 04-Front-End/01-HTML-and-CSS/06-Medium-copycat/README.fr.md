@@ -10,9 +10,10 @@ On doit d'abord créer tous les fichiers et les dossiers dont on va avoir besoin
 mkdir medium-article
 touch medium-article/index.html
 touch medium-article/style.css
+mkdir medium-article/images
 ```
 
-Cette fois-ci, inutile de créer un dossier avec les images, car on va utiliser les images de [LoremFlickr](https://loremflickr.com/) à la place.
+Ensuite, tu peux aller sur [Unsplash](https://unsplash.com/) et trouver une belle image de fond pour ton article. Télécharge-la et place-la dans le dossier `images` que tu viens de créer. Tu peux aussi utiliser cette image d'un chaton : [Image Unsplash](https://unsplash.com/photos/white-and-gray-kitten-on-white-textile-so5nsYDOdxw).
 
 ## Spécifications
 

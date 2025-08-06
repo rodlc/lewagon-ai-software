@@ -10,9 +10,10 @@ Firstly, we will need to create all the files and folders we will need:
 mkdir medium-article
 touch medium-article/index.html
 touch medium-article/style.css
+mkdir images
 ```
 
-No need for an images folder this time as we will use placeholders from [LoremFlickr](https://loremflickr.com/) instead.
+Then, you can go to [Unsplash](https://unsplash.com/) and find a nice background image for your article. Download it and put it in the `images` folder you just created. You can also use the this image of a kitten: [Unsplash Image](https://unsplash.com/photos/white-and-gray-kitten-on-white-textile-so5nsYDOdxw).
 
 ## Specs
 

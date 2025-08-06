@@ -10,9 +10,10 @@
 mkdir medium-article
 touch medium-article/index.html
 touch medium-article/style.css
+mkdir medium-article/images
 ```
 
-这次不需要图片文件夹，因为我们将使用[LoremFlickr](https://loremflickr.com/)的占位符（placeholders）代替。
+然后，你可以去[Unsplash](https://unsplash.com/)找到一张漂亮的背景图片用于你的文章。下载它并放入你刚创建的`images`文件夹中。你也可以使用这张小猫的图片：[Unsplash Image](https://unsplash.com/photos/white-and-gray-kitten-on-white-textile-so5nsYDOdxw)。
 
 ## 详细说明
 

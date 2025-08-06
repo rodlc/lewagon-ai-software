@@ -10,9 +10,10 @@ Primero, debemos crear todos los archivo/carpetas que vayamos a necesitar:
 mkdir medium-article
 touch medium-article/index.html
 touch medium-article/style.css
+mkdir medium-article/images
 ```
 
-Esta vez no será necesario crear una carpeta de imágenes ya que vamos a usar marcadores (placeholders) de [LoremFlickr](https://loremflickr.com/).
+Luego, puedes ir a [Unsplash](https://unsplash.com/) y encontrar una bonita imagen de fondo para tu artículo. Descárgala y colócala en la carpeta `images` que acabas de crear. También puedes usar esta imagen de un gatito: [Imagen Unsplash](https://unsplash.com/photos/white-and-gray-kitten-on-white-textile-so5nsYDOdxw).
 
 ## Especificaciones
 
