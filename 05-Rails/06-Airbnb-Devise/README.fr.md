@@ -121,19 +121,21 @@ git push heroku master
 heroku run rails db:migrate
 ```
 
-### 5. Tableau Kanban
+### 5. GitHub Project
 
-Un [tableau Kanban](https://fr.wikipedia.org/wiki/Kanban) est un outil de gestion de projet agile conçu pour visualiser le travail, suivre la progression et maximiser l’efficacité (ou le flow). Il existe plein de ressources ([Trello](https://trello.com/), [Github Projects](https://github.com/features/project-management/), [Notion](https://www.notion.so/), pour n’en nommer que quelques-uns).
+Un [tableau Kanban](https://fr.wikipedia.org/wiki/Kanban) est un outil de gestion de projet agile conçu pour visualiser le travail, suivre la progression et maximiser l’efficacité (ou le flow).
 
-Nous avons préparé trois drafts pour commencer avec Trello, Github Projects ou Notion, mais tu peux utiliser un autre outil si tu préfères :
+Draft Github Projects – Pour configurer un kanban sur Github, il faut d’abord avoir créé le repo et ajouté tous les collaborateurs. Ensuite, un membre peut utiliser [ce tableau](https://github.com/orgs/lewagon/projects/117) comme base. Suis les instructions [ici](https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/copying-an-existing-project) pour copier et ajouter ce tableau à ton repo. Note que Github ne copie pas les cartes, tu devras donc les ajouter toi-même. Tu peux copier/coller les cartes pour démarrer ou partir de zéro. Aussi, Github utilise la syntaxe markdown pour formater le texte (titres, styles, cases à cocher). Ce n’est pas obligatoire, mais ça peut améliorer la lisibilité. Plus d’infos [ici](https://guides.github.com/features/mastering-markdown/).
 
-1. Draft Trello – Fais une copie de [ce tableau Trello](https://trello.com/b/WB3fRTj2) (menu > plus d’options > copier le tableau > nom du tableau pour ton projet). Ajoute ensuite tous les membres de l’équipe et commence à importer toutes vos user stories et tâches (par ordre de priorité).
+Chaque tâche doit être formulée sous forme de **User Story**, par exemple : `En tant qu'utilisateur, je peux voir une liste de tous les défis`.
 
-2. Draft Github Projects – Pour configurer un kanban sur Github, il faut d’abord avoir créé le repo et ajouté tous les collaborateurs. Ensuite, un membre peut utiliser [ce tableau](https://github.com/orgs/lewagon/projects/117) comme base. Suis les instructions [ici](https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/copying-an-existing-project) pour copier et ajouter ce tableau à ton repo. Note que Github ne copie pas les cartes, tu devras donc les ajouter toi-même. Tu peux copier/coller les cartes pour démarrer ou partir de zéro. Aussi, Github utilise la syntaxe markdown pour formater le texte (titres, styles, cases à cocher). Ce n’est pas obligatoire, mais ça peut améliorer la lisibilité. Plus d’infos [ici](https://guides.github.com/features/mastering-markdown/).
+Dans le champ de priorité, vous pouvez utiliser la méthode MoSCoW pour classer vos user stories en fonction de leur importance : Must have (Doit avoir), Should have (Devrait avoir), Could have (Pourrait avoir), Won't have (N'aura pas). Cette méthode vous aidera à vous concentrer sur les user stories les plus importantes en premier.
 
-3. Draft Notion – Fais une copie de [cette page Notion](https://www.notion.so/lewagon/Project-Weeks-a3961a7da7324637bea441832becb3ad) en choisissant l’option `Duplicate`. Ajoute tous les membres de l’équipe (clic sur `Share` puis invite-les par mail) et commence à importer vos user stories et tâches, triées par priorité. La section en haut à droite de la page doit contenir les liens importants de ton app. Ceux présents servent de guide, mais tu ne peux pas les modifier, tu devras donc les recréer avec les bons liens. Suis [ce guide](https://www.notion.com/help/embed-and-connect-other-apps#web-bookmarks) pour ajouter correctement les `Web bookmarks`. Si tu découvres Notion, n’hésite pas à lire [cette page](https://www.notion.com/help/start-here) pour apprendre à bien l’utiliser rapidement 💯
+Dans le champ de parcours, vous pouvez inclure le verbe, le chemin, le contrôleur et l'action, comme : `GET /challenges challenges index`, tout comme vous l'avez dans la feuille de calcul.
 
-À partir de là, vous pouvez commencer à répartir les tâches. **Prends le temps de bien configurer le projet, tout sera plus simple ensuite**.
+Assurez-vous d'utiliser la [fonction d'assignation sur GitHub](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/assigning-issues-and-pull-requests-to-other-github-users?ref=codebldr) pour identifier le membre de l'équipe qui travaillera sur chaque user story.
+
+À partir de ce point, vous pouvez commencer à diviser les tâches. **Passez du temps sur la configuration, car tout sera plus simple si vous le faites correctement dès le début**.
 
 ### Quelques conseils pour la gestion de projet
 
