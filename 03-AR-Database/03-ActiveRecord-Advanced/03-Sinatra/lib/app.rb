@@ -12,6 +12,10 @@ after do
   ActiveRecord::Base.connection.close
 end
 
+configure do
+  set :host_authorization, { permitted_hosts: [] }
+end
+
 get "/" do
   # TODO
   # 1. fetch posts from database.
