@@ -219,7 +219,7 @@ export default class extends Controller {
 
 ```js
 moveItem(e) {
-  // Get the parent element of the button we clicked on (the <div> the contains both the <button> and the <li>)
+  // Get the parent element of the button we clicked on (the <div> that contains both the <button> and the <li>)
   const item = e.currentTarget.parentElement;
 
   const li = `
