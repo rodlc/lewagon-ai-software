@@ -219,14 +219,20 @@ export default class extends Controller {
 
 ```js
 moveItem(e) {
+  // Get the parent element of the button we clicked on (the <div> that contains both the <button> and the <li>)
   const item = e.currentTarget.parentElement;
-  const li = item.querySelector('li');
 
-  li.setAttribute('data-action', 'click->gifts#toggleStrike');
-  li.classList.add('gift-item');
+  const li = `
+  <li
+  class="gift-item"
+  data-action="click->gifts#toggleStrike">
+    ${item.querySelector("li").innerHTML}
+  </li>`;
 
-  this.listTarget.appendChild(li);
+  // Add the <li> to the main list
+  this.listTarget.insertAdjacentHTML("beforeend", li);
 
+  // Remove the original item from the ideas list
   item.remove();
 }
 ```
