@@ -62,11 +62,11 @@ Antes de comenzar a escribir tu código, no olvides configurar tu app Rails para
 ```ruby
 # Gemfile
 # [...]
-gem "bootstrap", "~> 5.2"
+gem "bootstrap", "~> 5.3"
 gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
 gem "simple_form"
-gem "sassc-rails" # Uncomment this line
+gem "sassc-rails"
 ```
 
 ```bash
