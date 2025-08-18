@@ -36,7 +36,7 @@ Ne t’occupe pas de l’interface pour l’instant : cela viendra dans un secon
 
 ### Programme interactif
 
-Maintenant, construisons un programme interactif simple qui utilise la méthode `wagon_sort`. Le programme demandera à l'utilisateur d'entrer les noms des étudiants un par un, et lorsque l'utilisateur aura terminé, il affichera la liste triée des noms.
+Maintenant, construisons un programme interactif simple qui utilise la méthode `wagon_sort`. Le programme doit demander à l’utilisateur de saisir les noms des étudiants un par un, puis, une fois la saisie terminée, afficher la liste des noms triés.
 
 Ouvrez le fichier `interface.rb` et assurez-vous d'utiliser la méthode `wagon_sort`. L'interface devrait avoir une sortie correctement stylisée. Les noms doivent être séparés par des virgules (`, `) sauf pour les deux derniers qui doivent être séparés par le mot `and`. Les noms doivent également être sur une nouvelle ligne.
 
