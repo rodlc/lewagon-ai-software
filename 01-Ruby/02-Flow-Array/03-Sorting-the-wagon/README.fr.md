@@ -67,7 +67,7 @@ bob, Cedric and felix # Remarquez la séparation correcte des mots.
 
 💡 Comment afficher la liste des noms ? Utilise `puts` pour l’impression, mais veille à un formatage correct (virgules entre les noms, et "and" pour relier les deux derniers noms).
 
-## Enseignements clés
+## Points clés à retenir
 
 Familiarise-toi avec les opérations de base des arrays. Tu dois maintenant connaître la syntaxe à utiliser pour :
 
