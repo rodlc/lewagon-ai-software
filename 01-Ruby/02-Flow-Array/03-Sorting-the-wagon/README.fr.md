@@ -61,7 +61,7 @@ bob, Cedric and felix # Remarquez la séparation correcte des mots.
 
 💡 Comment permettons-nous à l'utilisateur de saisir des données ? N'oublie pas tes `gets` et `puts`.
 
-💡 Quand l'utilisateur a fini d'entrer des noms, comment le savons-nous ? Tu peux vérifier si l'entrée est vide (c'est-à-dire que l'utilisateur a juste appuyé sur entrée sans rien taper).
+💡 Comment détecter la fin de la saisie ? Vérifie si l’entrée est vide (c'est-à-dire que l’utilisateur appuie simplement sur Entrée).
 
 💡 Quand voulons-nous trier les noms ? Après que l'utilisateur ait fini de les entrer, n'est-ce pas ? Et peut-être l'as-tu déjà deviné, mais tu as écrit du code qui t'aidera à faire cela 😉
 
