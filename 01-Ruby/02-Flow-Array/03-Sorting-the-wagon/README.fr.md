@@ -32,7 +32,7 @@ wagon_sort(["bob", "Felix", "Cedric"])
 # => ["bob", "Cedric", "Felix"]
 ```
 
-Ne t'inquiète pas de construire l'interface pour l'instant ; cela viendra plus tard. Pour le moment, concentre-toi sur l'implémentation correcte de la méthode `wagon_sort`.
+Ne t’occupe pas de l’interface pour l’instant : cela viendra dans un second temps. Concentre-toi d’abord sur une implémentation correcte de `wagon_sort`.
 
 ### Programme interactif
 
