@@ -25,7 +25,7 @@ Par exemple :
 - Un tableau vide doit renvoyer un tableau vide.
 - ["Alex", "Claire", "Toni"] doit renvoyer ["Alex", "Claire", "Toni"].
 
-Ton travail consiste simplement à définir la méthode `wagon_sort` dans le fichier `lib/wagon_sort.rb`. Mais si tu veux tester ta méthode pendant que tu travailles, tu peux essayer de l'appeler sur un array réel comme :
+Ton travail consiste simplement à définir la méthode `wagon_sort` dans le fichier `lib/wagon_sort.rb`. Tu peux toutefois la tester en l’appelant directement sur un tableau, comme dans l’exemple ci-dessous :
 
 ```ruby
 wagon_sort(["bob", "Felix", "Cedric"])
