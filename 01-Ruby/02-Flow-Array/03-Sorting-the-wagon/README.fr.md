@@ -20,7 +20,10 @@ Dans la documentation Ruby, tu devrais trouver plusieurs façons de trier un [En
 
 La méthode `wagon_sort` doit prendre un tableau de noms d’étudiants et retourner un nouveau tableau trié par ordre alphabétique, en ignorant la casse. Le tableau original ne doit pas être modifié.
 
-Par exemple, si tu passes l'array `["bob", "Felix", "Cedric"]` à la méthode `wagon_sort`, elle devrait retourner `["bob", "Cedric", "Felix"]`. Si tu passes un array vide, elle devrait retourner un array vide. Si tu passes `["Alex", "Claire", "Toni"]`, elle devrait retourner `["Alex", "Claire", "Toni"]`.
+Par exemple :
+- ["bob", "Felix", "Cedric"] doit renvoyer ["bob", "Cedric", "Felix"].
+- Un tableau vide doit renvoyer un tableau vide.
+- ["Alex", "Claire", "Toni"] doit renvoyer ["Alex", "Claire", "Toni"].
 
 Ton travail consiste simplement à définir la méthode `wagon_sort` dans le fichier `lib/wagon_sort.rb`. Mais si tu veux tester ta méthode pendant que tu travailles, tu peux essayer de l'appeler sur un array réel comme :
 
