@@ -18,7 +18,7 @@ Dans la documentation Ruby, tu devrais trouver plusieurs façons de trier un [En
 
 ### Méthode `wagon_sort`
 
-La méthode `wagon_sort` doit prendre un array de noms d'étudiants et retourner un nouvel array avec les noms triés par ordre alphabétique, en ignorant la casse. L'array original doit rester inchangé.
+La méthode `wagon_sort` doit prendre un tableau de noms d’étudiants et retourner un nouveau tableau trié par ordre alphabétique, en ignorant la casse. Le tableau original ne doit pas être modifié.
 
 Par exemple, si tu passes l'array `["bob", "Felix", "Cedric"]` à la méthode `wagon_sort`, elle devrait retourner `["bob", "Cedric", "Felix"]`. Si tu passes un array vide, elle devrait retourner un array vide. Si tu passes `["Alex", "Claire", "Toni"]`, elle devrait retourner `["Alex", "Claire", "Toni"]`.
 
