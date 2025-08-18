@@ -69,7 +69,7 @@ bob, Cedric and felix # Remarquez la séparation correcte des mots.
 
 ## Points clés à retenir
 
-Familiarise-toi avec les opérations de base des arrays. Tu dois maintenant connaître la syntaxe à utiliser pour :
+Familiarise-toi avec les opérations de base sur les tableaux. Tu dois maintenant savoir utiliser la bonne syntaxe pour :
 
 - créer un array
 - ajouter un nouvel élément à l’array
