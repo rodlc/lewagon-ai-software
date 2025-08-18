@@ -12,7 +12,7 @@ Dans la documentation Ruby, tu devrais trouver plusieurs façons de trier un [En
 
 ## Spécifications
 
-- Implémente une méthode `wagon_sort` qui prend un argument, un array de noms d’étudiants (`String`), et retourne un array de ces noms d’étudiants triés par ordre alphabétique.
+- Implémente une méthode `wagon_sort` qui prend en argument un tableau de noms d’étudiants (`String`) et retourne un nouveau tableau contenant ces noms triés par ordre alphabétique.
 - La méthode de tri ne doit pas tenir compte de la casse ; `bob` doit apparaître avant `Felix` (regarde la [table de caractères ASCII](http://www.asciitable.com/))
 - La méthode doit respecter l'orthographe des noms.
 
