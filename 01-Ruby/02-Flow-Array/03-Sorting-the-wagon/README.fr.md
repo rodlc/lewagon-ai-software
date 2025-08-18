@@ -65,7 +65,7 @@ bob, Cedric and felix # Remarquez la séparation correcte des mots.
 
 💡 Quand trier les noms ? Une fois la saisie terminée ? Et devine quoi : tu as déjà écrit le code pour ça 😉
 
-💡 Comment affichons-nous les noms ? Tu peux utiliser `puts` pour les imprimer, mais tu voudras les formater correctement. N'oublie pas de séparer les noms avec des virgules et d'utiliser "and" pour les deux derniers noms.
+💡 Comment afficher la liste des noms ? Utilise `puts` pour l’impression, mais veille à un formatage correct (virgules entre les noms, et "and" pour relier les deux derniers noms).
 
 ## Enseignements clés
 
