@@ -63,7 +63,7 @@ bob, Cedric and felix # Remarquez la séparation correcte des mots.
 
 💡 Comment détecter la fin de la saisie ? Vérifie si l’entrée est vide (c'est-à-dire que l’utilisateur appuie simplement sur Entrée).
 
-💡 Quand voulons-nous trier les noms ? Après que l'utilisateur ait fini de les entrer, n'est-ce pas ? Et peut-être l'as-tu déjà deviné, mais tu as écrit du code qui t'aidera à faire cela 😉
+💡 Quand trier les noms ? Une fois la saisie terminée ? Et devine quoi : tu as déjà écrit le code pour ça 😉
 
 💡 Comment affichons-nous les noms ? Tu peux utiliser `puts` pour les imprimer, mais tu voudras les formater correctement. N'oublie pas de séparer les noms avec des virgules et d'utiliser "and" pour les deux derniers noms.
 
