@@ -60,7 +60,7 @@ Congratulations! Your Wagon has 3 students:
 bob, Cedric and felix # Remarquez la séparation correcte des mots.
 ```
 
-💡 Quel type de variable devrais-tu utiliser pour stocker les noms ? Devrait-ce être un array, une chaîne, un entier ou autre chose ?
+💡 Quel type de variable utiliser pour stocker les noms ? Tableau, chaîne, entier…  ou autre ?
 
 💡 Comment permettons-nous à l'utilisateur de saisir des données ? N'oublie pas tes `gets` et `puts`.
 
