@@ -62,7 +62,7 @@ bob, Cedric and felix # Remarquez la séparation correcte des mots.
 
 💡 Quel type de variable utiliser pour stocker les noms ? Tableau, chaîne, entier…  ou autre ?
 
-💡 Comment permettons-nous à l'utilisateur de saisir des données ? N'oublie pas tes `gets` et `puts`.
+💡 Comment permettre la saisie des données par l’utilisateur ? N’oublie pas `gets` et `puts`.
 
 💡 Comment détecter la fin de la saisie ? Vérifie si l’entrée est vide (c'est-à-dire que l’utilisateur appuie simplement sur Entrée).
 
