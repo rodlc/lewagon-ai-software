@@ -22,8 +22,8 @@ Aprenderás la mejor forma de implementar Bootstrap SCSS + bibliotecas front-end
 
 Aprenderás sobre el asset pipeline.
 
-En cuanto a los ejercicios, comenzarás con la creación de una app de watch list que tomará dos días. Dicha app tendrá 3 modelos `Movie`, `Bookmark` y `List`.
-Tendrás que seguir la configuración front-end detenidamente para poder crear una app que luzca bien.
+Para los ejercicios, empezarás un proyecto de dos días para construir una app de Watch List, con 3 modelos: `Movie`, `Bookmark` y `List`.
+Deberás seguir cuidadosamente la configuración frontend para trabajar en una app que luzca bien.
 
 ### `05 Hosting & Image Upload`
 
