@@ -4,15 +4,15 @@
 
 Esta es la última "semana real" en Kitt con ejercicios diarios. A partir de la semana que viene empezaremos a trabajar con proyectos más largos, ya sea un asistente de IA o tu proyecto personal. Por ahora vamos a explorar la arquitectura de una App Rails fresca para entender lo que pasa dentro de la misma. **Vamos a crear una app Rails diariamente**.
 
-### `01 Rutas, Controladores y Vistas`
+### `01 Routing, Controllers & Views`
 
 En el primer día verás el flujo estándar de Rails `ruta > controlador > vista` sin agregar el nivel del modelo ni la explicación de los `params`. Durante el transcurso del día transformarás ejercicios viejos de Ruby que hiciste en la semana 1 en apps en Rails.
 
-### `02 Modelos y CRUD`
+### `02 Models & CRUD`
 
 ¡Aquí entra nuevamente nuestro viejo amigo Active Record! **Una de las clases (lectures) de Rails más importantes del bootcamp** Tu profesor/a principal va a escribir todo el código de las 7 acciones CRUD desde cero y a introducir la herramienta de ruteo `resources`. ¡Presta mucha atención! 🤓
 
-### `03 Ruteo Avanzado`
+### `03 Advanced Routing`
 
 Hoy agregaremos un segundo modelo de aplicación Rails creando un clon de dos modelos de Yelp con restaurantes y reviews. La clase matinal es sobre **ir más allá de CRUD** con ruteo avanzado y validaciones en Rails.
 
@@ -25,7 +25,7 @@ Aprenderás sobre el asset pipeline.
 En cuanto a los ejercicios, comenzarás con la creación de una app de watch list que tomará dos días. Dicha app tendrá 3 modelos `Movie`, `Bookmark` y `List`.
 Tendrás que seguir la configuración front-end detenidamente para poder crear una app que luzca bien.
 
-### `05 Hosting y la Carga de Imágenes`
+### `05 Hosting & Image Upload`
 
 La clase (lecture) de esta mañana tiene 2 partes:
 **Hosting**: El deployment en [Heroku](http://heroku.com/)
@@ -36,9 +36,9 @@ Y hay ¡**el último quiz**! No te pongas triste 😢
 
 Miraremos hacia atrás para comprobar que hayas entendido los fundamentos de Rails.
 
-## Segunda parte - Semana de IA
+## Segunda parte - AI Week
 
-¡**Semana de IA**! En la segunda parte trabajarás con tu equipo de proyecto de 3 o 4. El objetivo es empezar desde cero y crear un Asistente de IA para una Persona y Objetivo - tendrás 5 bloques para llevar tu asistente de IA tan lejos como puedas.
+¡**AI Week**! En la segunda parte trabajarás con tu equipo de proyecto de 3 o 4. El objetivo es empezar desde cero y crear un Asistente de IA para una Persona y Objetivo - tendrás 5 bloques para llevar tu asistente de IA tan lejos como puedas.
 
 - Primera demo a mitad de camino - Si es un bootcamp a tiempo completo, el miércoles (5 p.m.)
 - **¡Demo oficial el último día!** Si es un bootcamp a tiempo completo, ¡el viernes! (5 p.m.)
