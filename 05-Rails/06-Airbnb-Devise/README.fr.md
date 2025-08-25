@@ -1,6 +1,6 @@
 ## AI Week - Lancement
 
-Tu vas passer les prochaines sessions avec ton groupe de projet à travailler sur un Assistant IA pour un **Persona** avec un **Objectif**. Par exemple, Wott est un Assistant IA pour **des étudiants apprenant à coder**.
+Tu vas passer les prochaines sessions avec ton groupe de projet à travailler sur un Assistant IA pour un **Utilisateur/utilisatrice** avec un **Objectif**. Par exemple, Wott est un Assistant IA pour **des étudiants apprenant à coder**. Tu voudras réfléchir au "persona" de ton utilisateur principal ("étudiant apprenant à coder") et à son objectif ("Je suis bloqué sur un problème et je veux que l'IA le résolve pour moi"). Cela t'aidera à définir la portée de ton application.
 
 Fais un brainstorming avec ton groupe et crée un ticket pour valider votre idée avec un enseignant.
 
