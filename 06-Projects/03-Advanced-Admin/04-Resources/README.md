@@ -1,7 +1,7 @@
 We all know by now that [Google](https://google.com) is our best friend... but so is Kitt! Check out the Library section for cheatsheets and tutorials including the following (and much more):
 
 - Behold the holy grail of [all things simple form](https://kitt.lewagon.com/knowledge/cheatsheets/simple_form), including how to target specific simple-form-generated CSS classes
-- Need any realtime content streams for your users, like for a chat? Use [ActionCable](https://kitt.lewagon.com/camps/<user.batch_slug>/lectures/06-Projects%2F01-Pundit)
+- Need any realtime content streams for your users, like for a chat? Use [ActionCable](https://kitt.lewagon.com/camps/<user.batch_slug>/lectures/05-Rails%2F10-Airbnb-Ajax-in-Rails)
 - Position things perfectly with [flexbox](https://kitt.lewagon.com/knowledge/cheatsheets/flexbox)
 - Need a calendar in your app? Check out [the Simple Calendar gem](https://kitt.lewagon.com/knowledge/tutorials/simple_calendar)
 - Add [a star rating](https://kitt.lewagon.com/knowledge/tutorials/star_rating) to your reviews

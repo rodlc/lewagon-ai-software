@@ -1,6 +1,6 @@
 A estas alturas, todos sabemos que Google es nuestro mejor amigo... ¡pero también lo es Kitt! Consulta la [sección Library](https://kitt.lewagon.com/knowledge/tutorials) para consultar los apuntes y tutoriales como los te mostramos a continuación (y mucho más):
 - Contempla el santo grial de [todo lo relacionado con simple form](https://kitt.lewagon.com/knowledge/cheatsheets/simple_form), incluyendo cómo manejar clases CSS específicas generadas con simple form
-- ¿Necesitas flujos de contenido en tiempo real para tus usuarios, como en un chat? Usa [ActionCable](https://kitt.lewagon.com/camps/<user.batch_slug>/lectures/06-Projects%2F01-Pundit)
+- ¿Necesitas flujos de contenido en tiempo real para tus usuarios, como en un chat? Usa [ActionCable](https://kitt.lewagon.com/camps/<user.batch_slug>/lectures/05-Rails%2F10-Airbnb-Ajax-in-Rails)
 - Posiciona las cosas perfectamente con [flexbox](https://kitt.lewagon.com/knowledge/cheatsheets/flexbox)
 - ¿Necesitas un calendario en tu aplicación? Échale un vistazo a la [gema Simple Calendar](https://kitt.lewagon.com/knowledge/tutorials/simple_calendar)
 - Agrégale [una calificación de estrellas](https://kitt.lewagon.com/knowledge/tutorials/star_rating) a tus reseñas
