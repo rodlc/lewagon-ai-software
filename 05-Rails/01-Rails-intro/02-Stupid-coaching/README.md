@@ -99,10 +99,13 @@ Last step to display the form, let's create a view! Do you remember in which fol
 
 ```html
 <form action="???" data-turbo="false">
-  <input type="text" name="???">
+  <label for="question">Your question</label>
+  <input type="text" id="question" name="???">
   <input type="submit" value="Ask!">
 </form>
 ```
+
+**Accessibility tip:** Always include a `<label>` for every form input. This helps screen readers and improves usability.
 
 The native behaviour of a `<form>` tag is to generate the HTTP request defined by the `method` and `action` attributes.
 - the `method` attribute holds the HTTP **verb** (`GET` by default)
