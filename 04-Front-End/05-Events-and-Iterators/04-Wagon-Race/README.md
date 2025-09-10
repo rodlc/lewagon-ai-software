@@ -86,6 +86,8 @@ document.addEventListener("keyup", event => console.log(event));
 
 _Do you understand why we use `keyup` and not `keydown`?_
 
+👥 **Accessibility note**: This game already demonstrates good keyboard accessibility by using keyboard events. In other interactive features you build, always consider how keyboard users will navigate and interact with your interface.
+
 ##### Starting and Winning 🏁
 
 Two more final things:

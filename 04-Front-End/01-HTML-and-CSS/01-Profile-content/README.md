@@ -47,6 +47,8 @@ Prepare your profile image file before starting to code. For this exercise You c
 
 - Don't forget the basic skeleton tags `<html>`, `<body>`, `<head>`.
 - Don't forget the page `<title>` in the `<head>` section, and other important metatags like `<meta charset="utf-8">`.
+- **Use semantic HTML tags**: `<header>`, `<main>`, `<section>` instead of generic `<div>` tags. 👥 This helps screen readers understand your page structure.
+- **Add descriptive alt text to your image**: `<img src="images/profile.jpg" alt="Person with a happy expression working at a computer">` - 👥 describe what's visible in the image, not just its purpose.
 - You can use [Font Awesome](https://fontawesome.com/icons) to find cool icons (e.g. for social networks). It's a super useful library because all of the icons are **fonts**, making it really easy to resize them, change their color, and even add animations to them!. To import Font Awesome, simply add this link into your `<head>`:
 
 ```html
@@ -55,6 +57,8 @@ Prepare your profile image file before starting to code. For this exercise You c
 ```
 
 - You can use the `target="_blank"` attribute on your links to open them on new tabs once clicked.
+
+👥 **Testing your accessibility**: Once you've built your profile page, test it with [Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/) (DevTools > Lighthouse > Accessibility) to check for accessibility issues and see how you can improve your score.
 
 ## Indent or die
 

@@ -47,6 +47,8 @@ Prépare le fichier de l'image de ton profil avant de commencer à coder. Pour c
 
 - N'oublie pas les balises de base du squelette : `<html>`, `<body>`, `<head>`.
 - N'oublie pas de donner un titre (`<title>`) à ta page dans la section `<head>`, et d'ajouter d'autres métadonnées importantes comme `<meta charset="utf-8">`.
+- **Utilise des balises HTML sémantiques** : `<header>`, `<main>`, `<section>` au lieu de balises génériques `<div>`. 👥 Cela aide les lecteurs d'écran à comprendre la structure de ta page.
+- **Ajoute un texte alternatif descriptif à ton image** : `<img src="images/profile.jpg" alt="Personne avec une expression joyeuse travaillant sur un ordinateur">` - 👥 décris ce qui est visible dans l'image, pas seulement son objectif.
 - Tu peux aller sur [Font Awesome](https://fontawesome.com/icons) pour trouver des icônes sympas (par ex., pour tes réseaux sociaux). Cette librairie est super pratique, car toutes les icônes sont des **polices**, de sorte que tu peux facilement les redimensionner, changer leur couleur et même ajouter des animations ! Pour importer Font Awesome, ajoute simplement ce lien à ton `<head>`:
 
 ```html
@@ -55,6 +57,8 @@ Prépare le fichier de l'image de ton profil avant de commencer à coder. Pour c
 ```
 
 - Tu peux utiliser l'attribut `target="_blank"` sur tes liens pour qu'ils s'ouvrent dans de nouveaux onglets quand on clique dessus.
+
+👥 **Tester ton accessibilité** : Une fois que tu as construit ta page de profil, teste-la avec [Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/) (DevTools > Lighthouse > Accessibility) pour vérifier les problèmes d'accessibilité et voir comment tu peux améliorer ton score.
 
 ## L'indentation, sinon rien
 

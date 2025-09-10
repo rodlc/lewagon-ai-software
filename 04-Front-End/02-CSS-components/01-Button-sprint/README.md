@@ -53,9 +53,9 @@ Then you just need **one unique link to `style.css`** in your HTML file:
 </head>
 ```
 
-## Don't forget the hover
+## Don't forget the hover and focus
 
-Don't forget to design the `.btn:hover` state for each of your buttons.
+Don't forget to design the `.btn:hover` and `.btn:focus` states for each of your buttons. 👥 The `:focus` state is essential for keyboard users who navigate with Tab.
 
 ## Spacing around a link
 
