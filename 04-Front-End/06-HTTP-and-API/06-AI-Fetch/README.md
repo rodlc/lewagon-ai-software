@@ -32,4 +32,8 @@ Now, head to `lib/index.js` and you'll see a function called `getAnswer`. This f
 
 When you're done, you should be able to type a question into the input field, click the button, and see the AI's response below the input field! Pretty cool 🕶️
 
-Going further, you can try using different models from Hugging Face by changing the `model` in the `fetch` call. You can find a list of models [here](https://huggingface.co/models). Just make sure to choose a model that is suitable for text generation.
+## Going Further
+
+Note that you will need the `method: "POST"` that's already in the code, as Hugging Face's API requires a POST request to get a response from the model. This is our first POST request of the day, and they're used to send new data to the server, unlike GET requests which are used to retrieve data.
+
+If you want to play around more, you can try using different models from Hugging Face by changing the `model` in the `fetch` call. You can find a list of models [here](https://huggingface.co/models). Just make sure to choose a model that is suitable for text generation.

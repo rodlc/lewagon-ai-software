@@ -32,4 +32,8 @@ serve
 
 完成后，你应该能够在输入框中输入一个问题，点击按钮，然后在输入框下方看到 AI 的回复！非常酷 🕶️
 
-更进一步，你可以通过更改 `fetch` 调用中的 `model` 来尝试使用 Hugging Face 的不同模型。你可以在[这里](https://huggingface.co/models)找到模型列表。只需确保选择适合文本生成的模型。
+## 更进一步
+
+注意，你需要代码中已有的 `method: "POST"`，因为 Hugging Face 的 API 需要 POST 请求来从模型获取响应。这是我们今天的第一个 POST 请求，它们用于向服务器发送新数据，而 GET 请求用于检索数据。
+
+如果你想玩得更多，你可以通过更改 `fetch` 调用中的 `model` 来尝试使用 Hugging Face 的不同模型。你可以在[这里](https://huggingface.co/models)找到模型列表。只需确保选择适合文本生成的模型。

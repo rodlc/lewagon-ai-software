@@ -32,4 +32,8 @@ Maintenant, va dans `lib/index.js` et tu verras une fonction appelée `getAnswer
 
 Quand tu auras fini, tu devrais pouvoir taper une question dans le champ de saisie, cliquer sur le bouton et voir la réponse de l'IA en dessous du champ de saisie ! Plutôt cool 🕶️
 
-Pour aller plus loin, tu peux essayer d'utiliser différents modèles de Hugging Face en changeant le `model` dans l'appel `fetch`. Tu peux trouver une liste de modèles [ici](https://huggingface.co/models). Assure-toi simplement de choisir un modèle adapté à la génération de texte.
+## Aller plus loin
+
+Note que tu auras besoin du `method: "POST"` qui est déjà dans le code, car l'API de Hugging Face nécessite une requête POST pour obtenir une réponse du modèle. C'est notre première requête POST de la journée, et elles sont utilisées pour envoyer de nouvelles données au serveur, contrairement aux requêtes GET qui sont utilisées pour récupérer des données.
+
+Si tu veux t'amuser davantage, tu peux essayer d'utiliser différents modèles de Hugging Face en changeant le `model` dans l'appel `fetch`. Tu peux trouver une liste de modèles [ici](https://huggingface.co/models). Assure-toi simplement de choisir un modèle adapté à la génération de texte.
