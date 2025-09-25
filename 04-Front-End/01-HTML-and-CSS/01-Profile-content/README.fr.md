@@ -58,7 +58,7 @@ Prépare le fichier de l'image de ton profil avant de commencer à coder. Pour c
 
 - Tu peux utiliser l'attribut `target="_blank"` sur tes liens pour qu'ils s'ouvrent dans un nouvel onglet quand on clique dessus.
 
-👥 **Tester ton accessibilité** : Une fois que tu as construit ta page de profil, teste-la avec [Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/) (DevTools > Lighthouse > Accessibility) pour vérifier les problèmes d'accessibilité et voir comment tu peux améliorer ton score.
+👥 **Teste l'accessibilité** : Une fois que tu as construit ta page de profil, teste-la avec [Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/) (DevTools > Lighthouse > Accessibility) pour identifier d'éventuels problèmes d'accessibilité et voir comment améliorer ton score.
 
 ## L'indentation, sinon rien
 
