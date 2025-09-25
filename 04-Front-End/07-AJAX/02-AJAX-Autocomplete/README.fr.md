@@ -37,7 +37,7 @@ etc.
 
 Quand tu recevras le JSON de l'API, ton travail sera de mettre à jour la liste `ul#results` avec des suggestions !
 
-👥 **Conseil d'accessibilité** : Lors de la création de fonctionnalités d'autocomplétion, souviens-toi que les utilisateurs de lecteurs d'écran ont besoin de savoir quand les résultats apparaissent. Ce type d'interface devrait suivre le [pattern ARIA combobox](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/) pour une meilleure expérience et conformité. C'est probablement un peu trop pour ce défi pour être honnête—à explorer pour de futurs projets !
+👥 **Conseil d'accessibilité** : Lors de la création de fonctionnalités d'autocomplétion, souviens-toi que les utilisateurs de lecteurs d'écran ont besoin de savoir quand les résultats apparaissent. Ce type d'interface devrait suivre le [pattern ARIA combobox](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/) pour une meilleure expérience et conformité. C'est probablement un peu trop pour ce défi pour être honnête... à explorer pour de futurs projets !
 
 Une fois que tu as le comportement de base, n'hésite pas à améliorer l'aspect de la liste  `ul#results` 🎨 🎨 😋
 
