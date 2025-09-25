@@ -34,7 +34,7 @@ Choisis une couleur de fond (`background-color`), un style de police (`font-fami
 
 - Change la couleur (`color`) et la décoration de texte (`text-decoration`) de tous les liens
 - Ajoute des effets de survol (hover) des liens en utilisant la pseudo-classe `a:hover`
-- 👥 **Sensibilité au mouvement** : Si tu ajoutes des transitions à tes effets de survol, considère l'utilisation de `@media (prefers-reduced-motion: no-preference)` pour respecter les utilisateurs qui ont besoin de [mouvement réduit](https://web.dev/articles/prefers-reduced-motion).
+- 👥 **Sensibilité au mouvement** : Si tu ajoutes des transitions à tes effets de survol, il est recommandé d'utiliser `@media (prefers-reduced-motion: no-preference)` pour s'adapter aux utilisateurs qui ont besoin de [mouvement réduit](https://web.dev/articles/prefers-reduced-motion).
 
 ## Suggestions et ressources supplémentaires
 
