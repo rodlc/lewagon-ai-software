@@ -37,7 +37,7 @@ etc.
 
 When you receive the JSON from the API, your job is to update the `ul#results` list with suggestions!
 
-👥 **Accessibility tip**: When building autocomplete features, remember that screen reader users need to know when results appear. This type of interface should follow the [ARIA combobox pattern](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/) for best experience and compliance. It's probably a bit too much for work this challenge to be perfectly honest—worth exploring for future projects!
+👥 **Accessibility tip**: When building autocomplete features, remember that screen reader users need to know when results appear. This type of interface should follow the [ARIA combobox pattern](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/) for the best experience and compliance. It's probably a bit too much for this challenge, to be perfectly honest—but definitely worth exploring for future projects!
 
 Once you have the basic behavior, don't hesitate to try and make the `ul#results` look 🎨 really good 🎨 😋
 
