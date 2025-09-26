@@ -1,0 +1,96 @@
+## AI 周 - 继续构建
+
+在这个阶段，你应该已经在 Heroku 上部署了一个基础的 Rails 应用，并有一个核心模型。如果情况不是这样，请创建一个票据。
+
+### 分配工作
+现在你已经了解了如何使用 git 和 Github 在项目上作为团队协作，是时候在队友之间分配工作并开始在**分支**上工作了。
+
+#### 清理 master 分支
+首先，确保**首席开发者**已经提交并推送了第 1 天完成的所有工作到 Github：
+
+```bash
+git status # 检查有更改的文件
+git diff   # 查看更改并编辑文件以丢弃不需要的工作
+git add .  # 暂存所有更改
+git commit -m "<你的提交消息>" # 提交更改
+git push origin master
+```
+
+#### 将你的队友添加为 Github 仓库的协作者
+
+前往你的 Github 仓库设置（`https://github.com/<user.github_nickname>/rails-airbnb-clone/settings/collaboration`）并将你的队友添加为**协作者**。
+
+其他队友现在可以**克隆**项目：
+
+```bash
+gh repo clone <owner-github-nickname>/<rails-app-name>
+```
+
+然后导航到目录并运行：
+```bash
+cd <rails-app-name>
+rails db:create db:migrate
+bundle install
+```
+
+#### 为你的功能创建新分支
+
+记住你想通过构建用户故事来工作 💡 如果你试图让一个队友构建控制器而另一个队友分别构建视图，你不会有太多成功 😠 通常，完整地构建一个用户故事需要一个路由、一个控制器动作和一个视图。所以，是时候查看电子表格中列出的用户故事，确定你想首先构建哪些，然后将它们分配给你的队友开始编码：
+
+```bash
+git checkout -b <feature-name>
+code .
+```
+
+> [!WARNING]
+> 从现在开始，你不应该再在 `master` 上提交。
+
+一旦你的团队生成了模型文件，你们都应该能够开始构建功能。下面的范围是关于如何在队友之间分配工作的建议。对于它们中的每一个（除了 seeds），你需要构建路由、控制器动作和视图。注意我们说"challenge"作为我们课程测试应用的示例模型，但你应该始终用你项目的核心模型名称替换这个词：
+
+**范围 0：Seed**
+在能够处理范围 1 和 3 之前，你需要在数据库中有核心模型的记录。你可以在 `rails console` 中创建记录，但拥有一个 seed 文件对开发非常有用。查看[这个教程](https://kitt.lewagon.com/knowledge/cheatsheets/rails_seeds?course_ats_slug=web)。
+
+**范围 1：Index + Show**
+
+- 作为访客，我可以看到挑战列表，导航到我想要探索的挑战。
+- 作为访客，我可以点击一个挑战查看其详情
+
+**范围 2：New + Create**
+- 作为用户，我可以显示一个表单来填写创建新挑战所需的信息
+- 作为用户，我可以提交表单创建新挑战
+
+**范围 3：Edit + Update**
+- 作为用户，我可以显示一个表单来编辑我创建的挑战
+- 作为用户，我可以提交表单更新挑战
+
+### 添加 AI
+现在你有了一个带有核心模型的基础 Rails 应用，是时候添加 AI 功能了。
+如果你还没有这样做，请按照 LLM 简介课程在你的应用中设置 RubyLLM。
+
+这是添加与 AI 相关的用户故事的起点：
+- 作为用户，我可以创建一个关于某个挑战的 AI 助手聊天。
+- 作为用户，我可以看到我创建的关于某个挑战的 AI 助手聊天列表。
+- 作为用户，我可以导航到我创建的关于某个挑战的 AI 助手聊天。
+- 作为用户，我可以在聊天的上下文中向 AI 助手发送消息。
+
+在这部分，AI 周的每节课都会指导你如何取得进展。话虽如此，不要等待开始实施这些动作。
+
+提醒一下，我们建议添加一个 `chats` 表和一个 `messages` 表，包含以下字段 👇 以预期未来的改进。
+
+<details><summary markdown='span'>查看数据库架构
+</summary>
+  <img src="https://wagon-public-assets.s3.eu-west-3.amazonaws.com/3h0por8ku29vrntndn0ci30fobb7" alt="数据库架构显示四个表：users、challenges、chats 和 messages，它们的关系和列">
+</details>
+
+记住 **chats** 是在"挑战"的上下文中创建的，**messages** 是在 **chat** 的上下文中创建的。如果你需要复习这种关系，请回到 **Advanced Routing** 课程的 **Nested Resources** 部分。
+
+当然，如果你遇到困难，请创建一个票据！
+
+### System Prompt
+接下来，你将处理你的 AI 助手**系统提示**，并确保每个 API 请求都使用适当的 `with_instructions(system_prompt)` 发送，以根据你的角色和目标塑造你的 AI 助手的行为。
+
+记住一个好的提示应该包括：
+- **角色**：AI 应该扮演谁？
+- **上下文**：输出将用于什么以及由谁使用（即用户），以及与用户输入一起传递的任何相关数据。
+- **任务**：通常由用户定义，但应该清晰、直接和具体。
+- **格式**：输出应该如何结构化（例如 JSON、Markdown 等）。
