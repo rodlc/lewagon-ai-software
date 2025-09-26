@@ -201,6 +201,8 @@ This generates the following HTML:
 
 Since we installed Simple Form, we are going to use the `simple_form_for` helper instead of `form_with` from now on.
 
+**Accessibility Note:** Simple Form automatically generates proper labels for all inputs. Never skip labels - they're essential for screen readers and form usability.
+
 Your reviews URLs are now nested in `/restaurants/:restaurant_id`. This means you can't use `simple_form_for` the same way you did with a non-nested resource. If you write:
 
 ```erb

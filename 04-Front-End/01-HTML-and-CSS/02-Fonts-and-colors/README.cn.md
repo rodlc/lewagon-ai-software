@@ -1,6 +1,6 @@
 ## 设置
 
-我们要继续建立我们的个人资料页面。如果你还没有把之前的文件复制到这个挑战的文件夹中，那么你可以运行以下代码，并添加一个CSS文件：
+我们要继续建立我们的个人资料页面。如果你还没有把之前的文件复制到这个练习的文件夹中，那么你可以运行以下代码，并添加一个CSS文件：
 
 ```bash
 cp -r ../01-Profile-content/profile . # 不要忘记后面的点!
@@ -22,6 +22,8 @@ touch style.css
 
 为`<body>`选择一个好看的 背景颜色`background-color`，字体名称`font-family`，字体颜色`color`，字体大小`font-size`。**在body层级中设置这些字体规则,将应用于所有基本文本标签** (`<p>`，`<li>`等)。
 
+👥 **颜色对比度提示**：确保你的文本颜色与背景颜色有足够的对比度以便阅读。使用 [WebAIM对比度检查器](https://webaim.org/resources/contrastchecker/) 来测试你的颜色组合。
+
 ### 页眉
 
 - 为页眉选择一个好看的`color`和`font-family`(`<h1>`，`<h2>`，`<h3>`)。
@@ -32,6 +34,7 @@ touch style.css
 
 - 改变所有链接的`color`和 文本装饰`text-decoration`。
 - 使用伪类`a:hover`为链接添加悬停效果。
+- 👥 **动作敏感度**：如果你在悬停效果中添加过渡效果，请考虑使用 `@media (prefers-reduced-motion: no-preference)` 来尊重需要[减少动作](https://web.dev/articles/prefers-reduced-motion)的用户。
 
 ## 进一步的建议和资源
 

@@ -53,9 +53,9 @@ h1, h2, h3 {
 </head>
 ```
 
-## 不要忘记悬停（Hover）
+## 不要忘记悬停（Hover）和焦点（Focus）
 
-不要忘记为每个按钮设计`.btn:hover`的悬停状态。
+不要忘记为每个按钮设计`.btn:hover`和`.btn:focus`状态。👥 `:focus`状态对于使用Tab键导航的键盘用户至关重要。
 
 ## 链接的间距（Spacing）
 

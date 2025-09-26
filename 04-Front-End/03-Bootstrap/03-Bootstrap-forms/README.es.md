@@ -65,41 +65,48 @@ Aquí está un ejemplo de un formulario Bootstrap **con etiquetas**:
 
 ```html
 <form action="#">
-  <div class="form-group">
-    <label for="email">Your email</label>
+  <div class="mb-3">
+    <label for="email" class="form-label">Your email</label>
     <input type="email" id="email" class="form-control">
   </div>
-  <div class="form-group">
-    <label for="password">Your password</label>
+  <div class="mb-3">
+    <label for="password" class="form-label">Your password</label>
     <input type="password" id="password" class="form-control">
+    <div id="password" class="form-text">Your password must be at least 6 characters long and contain letters and numbers.</div>
   </div>
   <input type="submit" value="Sign In" class="btn btn-primary">
 </form>
 ```
 
-Aquí está otro ejemplo. Este **no tiene etiquetas**:
+Ejemplo de formulario Bootstrap **con etiquetas visualmente ocultas** (para accesibilidad):
 
 ```html
 <form action="#">
-  <div class="form-group">
-    <input type="email" class="form-control">
+  <div class="mb-3">
+    <label for="email-simple" class="visually-hidden">Email</label>
+    <input type="email" id="email-simple" class="form-control" placeholder="Email">
   </div>
-  <div class="form-group">
-    <input type="password" class="form-control">
+  <div class="mb-3">
+    <label for="password-simple" class="visually-hidden">Contraseña</label>
+    <input type="password" id="password-simple" class="form-control" placeholder="Password">
    </div>
   <input type="submit" value="Sign In" class="btn btn-primary">
 </form>
 ```
+
+**⚠️ Nota de accesibilidad:** Cada entrada necesita una etiqueta para lectores de pantalla. Usa la clase `.visually-hidden` cuando quieras que la etiqueta sea invisible pero aún accesible.
 
 Ahora, si quieres un [inline form] (https://getbootstrap.com/docs/5.3/forms/layout/#inline-forms) puedes **agregarle `.row` (la cual es un flexbox) y las clases `.row-cols-*-auto` al `<form>`** (la clase `.row-cols-*` nos permite decidir a partir de qué breakpoint (los saltos en los que la pantalla cambia de layout) estarán posicionados tus campos de datos de entrada. Por ejemplo, `.row-cols-sm-auto` significa que en la versión mobile cada campo de datos de entrada toma el ancho completo mientras que en una tablet o en dispositivos más grandes todos los campos de datos de entrada están próximos entre sí ):
 
 ```html
 <form action="#" class="row row-cols-lg-auto">
   <div class="col-12">
-    <input type="email" class="form-control">
+    <label for="email-inline" class="visually-hidden">Email</label>
+    <input type="email" id="email-inline" class="form-control" placeholder="Email">
   </div>
   <div class="col-12">
-    <input type="password" class="form-control">
+    <label for="password-inline" class="visually-hidden">Contraseña</label>
+    <input type="password" id="password-inline" class="form-control" placeholder="Password">
   </div>
   <div class="col-12">
     <input type="submit" value="Sign In" class="btn btn-primary">
@@ -124,26 +131,6 @@ También puedes agregar la clase `.row` a tu `<form>` y ponerle dimensiones dife
   <div class="col-12 mb-3">
     <label for="address" class="form-label">Address</label>
     <input id="address" type="text" class="form-control" placeholder="Address">
-  </div>
-  <!-- rest of the form below -->
-</form>
-```
-
-## Inyección de un `.form-row` en un formulario
-
-También se puede inyectar una fila (row) dentro de un formulario usando las clase `.form-row`. Aquí hay un ejemplo para tener 2 entradas (`input`) en la misma fila:
-
-```html
-<form>
-  <div class="form-row">
-    <div class="col-6 form-group">
-      <label>First name</label>
-      <input type="text" class="form-control" placeholder="First name">
-    </div>
-    <div class="col-6 form-group">
-      <label>Last name</label>
-      <input type="text" class="form-control" placeholder="Last name">
-    </div>
   </div>
   <!-- rest of the form below -->
 </form>

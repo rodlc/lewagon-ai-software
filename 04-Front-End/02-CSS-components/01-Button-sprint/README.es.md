@@ -52,9 +52,9 @@ Luego solo necesitas **un enlace único para `style.css`** en tu archivo HTML:
 </head>
 ```
 
-## No te olvides del hover
+## No te olvides del hover y focus
 
-Recuerda diseñar el estado `.btn:hover` para cada uno de tus botones.
+Recuerda diseñar los estados `.btn:hover` y `.btn:focus` para cada uno de tus botones. 👥 El estado `:focus` es esencial para los usuarios que navegan con el teclado usando Tab.
 
 ## Espacio alrededor de un enlace
 

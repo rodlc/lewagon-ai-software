@@ -22,6 +22,8 @@ Don't forget to **hard refresh** your browser (`cmd + shift + r`) to clear your 
 
 Pick a nice `background-color`, `font-family`, `color`, `font-size` and `line-height` for the `<body>`. **Setting these font rules at the body-level will apply them on all basic text tags** (`<p>`, `<li>`, etc.).
 
+👥 **Color contrast tip**: Make sure your text color has enough contrast against your background color for readability. Use the [WebAIM contrast checker](https://webaim.org/resources/contrastchecker/) to test your color combinations.
+
 ### Headers
 
 - Choose a nice `color` and `font-family` for headers (`<h1>`, `<h2>`, `<h3>`)
@@ -32,6 +34,7 @@ Pick a nice `background-color`, `font-family`, `color`, `font-size` and `line-he
 
 - Change the `color` & `text-decoration` of all the links
 - Add hover effects to links using the pseudo-class `a:hover`.
+- 👥 **Motion sensitivity**: If you add transitions to your hover effects, consider using `@media (prefers-reduced-motion: no-preference)` to respect users who need [reduced motion](https://web.dev/articles/prefers-reduced-motion).
 
 ## Further suggestions & resources
 
