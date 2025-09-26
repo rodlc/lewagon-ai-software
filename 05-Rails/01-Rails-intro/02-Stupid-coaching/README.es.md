@@ -99,10 +99,13 @@ La creación de la vista es el último paso para mostrar el formulario.¡Hagámo
 
 ```html
 <form action="???" data-turbo="false">
-  <input type="text" name="???">
+  <label for="question">Your question</label>
+  <input type="text" id="question" name="???">
   <input type="submit" value="Ask!">
 </form>
 ```
+
+**Consejo de accesibilidad:** Siempre incluye un `<label>` para cada entrada de formulario. Esto ayuda a los lectores de pantalla y mejora la usabilidad.
 
 El comportamiento de origen de una etiqueta `<form>` es generar la petición HTTP definida por los atributos `method` y `action`.
 - el atributo `method` aloja el **verbo** HTTP (`GET` está predeterminado)

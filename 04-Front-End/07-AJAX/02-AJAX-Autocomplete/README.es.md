@@ -35,6 +35,8 @@ etc.
 ```
 ¡Cuando recibas el JSON desde la API, tu trabajo será actualizar la lista `ul#results` con sugerencias!
 
+👥 **Consejo de accesibilidad**: Al crear funciones de autocompletado, recuerda que los usuarios de lectores de pantalla necesitan saber cuándo aparecen los resultados. Este tipo de interfaz debería seguir el [patrón ARIA combobox](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/) para una mejor experiencia y cumplimiento. Para ser honesto, probablemente sea demasiado para este ejercicio—¡vale la pena explorarlo en futuros proyectos!
+
 Una vez que tengas el comportamiento de básico, no dudes en mejorar el estilo 🎨 de la lista `ul#results` para que se vea muy bien 🎨 😋.
 
 ![Animated gif of final goal, showing a list of auto sugesstions that pop up while typing.](https://raw.githubusercontent.com/lewagon/fullstack-images/3a1b80803f1fa3fc59b79530101847d852d21170/frontend/autocomplete.gif)

@@ -37,6 +37,8 @@ etc.
 
 当你从API接收到JSON时，你的任务就是用建议来更新`ul#results`列表！
 
+👥 **无障碍性提示**：构建自动完成功能时，请记住屏幕阅读器用户需要知道结果何时出现。这种类型的界面应该遵循 [ARIA combobox 模式](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/) 以获得最佳体验和合规性。老实说，这对于这个练习来说可能有点太复杂了——值得在未来的项目中探索！
+
 当你实现了基本的行为，不要犹豫去尝试把`ul#results` 变得 🎨 非常好看 🎨 😋
 
 ![Animated gif of final goal, showing a list of auto sugesstions that pop up while typing.](https://raw.githubusercontent.com/lewagon/fullstack-images/3a1b80803f1fa3fc59b79530101847d852d21170/frontend/autocomplete.gif)

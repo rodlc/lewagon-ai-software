@@ -84,6 +84,8 @@ document.addEventListener("keyup", event => console.log(event));
 
 _¿Entiendes por qué usamos `keyup` en lugar de `keydown`?_
 
+👥 **Nota de accesibilidad**: Este juego ya demuestra una buena accesibilidad de teclado al usar eventos de teclado. En otras funciones interactivas que construyas, siempre considera cómo los usuarios de teclado navegarán e interactuarán con tu interfaz.
+
 ##### Inicio y Final 🏁
 
 Dos últimos detalles:

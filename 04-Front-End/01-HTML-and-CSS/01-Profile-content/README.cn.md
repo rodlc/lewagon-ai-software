@@ -47,6 +47,8 @@ serve
 
 - 不要忘记基本的结构标签`<html>`、`<body>`、`<head>`。
 - 不要忘记页面`<head>`中的`<title>`，以及其他重要的元标签，如`<meta charset="utf-8">`。
+- **使用语义化HTML标签**：使用 `<header>`、`<main>`、`<section>` 而不是通用的 `<div>` 标签。👥 这有助于屏幕阅读器理解你的页面结构。
+- **为图片添加描述性的alt文本**：`<img src="images/profile.jpg" alt="一个表情快乐的人在电脑前工作">` - 👥 描述图片中看到的内容，而不仅仅是图片的用途。
 - 你可以使用[Font Awesome](https://fontawesome.com/icons)来找很酷的图标(例如用于社交网络)。这是一个很有用的库，因为所有的图标都可以看做是一种**字体**。你可以很容易地去调整它们的大小，改变它们的颜色，甚至添加动画效果。要导入Font Awesome，只需将下方链接添加到你的`<head>`中。
 
 ```html
@@ -55,6 +57,8 @@ serve
 ```
 
 - 你可以在你的链接上使用`target="_blank"`属性，一旦点击它们就会在新的标签页上打开。
+
+👥 **测试你的无障碍性**：构建完个人资料页面后，使用 [Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/)（DevTools > Lighthouse > Accessibility）测试无障碍问题，看看如何提高你的得分。
 
 ## 缩进或混乱
 

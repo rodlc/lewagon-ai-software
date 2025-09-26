@@ -77,29 +77,35 @@ Example of Bootstrap form **with labels**:
 </form>
 ```
 
-Example of Bootstrap form **without labels**:
+Example of Bootstrap form **with visually hidden labels** (for accessibility):
 
 ```html
 <form action="#">
   <div class="mb-3">
-    <input type="email" class="form-control">
+    <label for="email-simple" class="visually-hidden">Email</label>
+    <input type="email" id="email-simple" class="form-control" placeholder="Email">
   </div>
   <div class="mb-3">
-    <input type="password" class="form-control">
+    <label for="password-simple" class="visually-hidden">Password</label>
+    <input type="password" id="password-simple" class="form-control" placeholder="Password">
    </div>
   <input type="submit" value="Sign In" class="btn btn-primary">
 </form>
 ```
+
+**⚠️ Accessibility Note:** Every input needs a label for screen readers. Use `.visually-hidden` class when you want the label to be invisible but still accessible.
 
 Now if you want an [inline form](https://getbootstrap.com/docs/5.3/forms/layout/#inline-forms) you can **add the `.row` (which is a flexbox) and `.row-cols-*-auto` classes to the `<form>`** (the `.row-cols-*` class allows you to decide as of which breakpoint you want your input fields to be stacked next to each other. For example, `.row-cols-sm-auto` means that on mobile each input field takes up the full width and on a tablet or larger devices all input fields are next to each other):
 
 ```html
 <form action="#" class="row row-cols-lg-auto">
   <div class="col-12">
-    <input type="email" class="form-control">
+    <label for="email-inline" class="visually-hidden">Email</label>
+    <input type="email" id="email-inline" class="form-control" placeholder="Email">
   </div>
   <div class="col-12">
-    <input type="password" class="form-control">
+    <label for="password-inline" class="visually-hidden">Password</label>
+    <input type="password" id="password-inline" class="form-control" placeholder="Password">
   </div>
   <div class="col-12">
     <input type="submit" value="Sign In" class="btn btn-primary">
