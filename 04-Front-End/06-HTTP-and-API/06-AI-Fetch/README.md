@@ -37,3 +37,15 @@ When you're done, you should be able to type a question into the input field, cl
 Note that you will need the `method: "POST"` that's already in the code, as Hugging Face's API requires a POST request to get a response from the model. This is our first POST request of the day, and they're used to send new data to the server, unlike GET requests which are used to retrieve data.
 
 If you want to play around more, you can try using different models from Hugging Face by changing the `model` in the `fetch` call. You can find a list of models [here](https://huggingface.co/models). Just make sure to choose a model that is suitable for text generation.
+
+### Bearer Token
+
+The `Authorization` header in the `fetch` call uses a Bearer Token, which is a type of token that is used to authenticate requests to an API. The token is included in the request header and is used to verify that the request is coming from an authorized user. You can think of it like how you use a password to log into a website. The Bearer Token is like a password that is used to access the API.
+
+### `GET` vs `POST`
+
+Do you remember the difference between `GET` and `POST` requests? If not, here's a quick refresher:
+
+- `GET` requests are used to retrieve data from a server. They are typically used for things like fetching a webpage or getting data from an API.
+- `POST` requests are used to send data to a server. They are typically used for things like submitting a form or uploading a file.
+- `POST` requests have a body, which is where the data being sent to the server is included. `GET` requests do not have a body. The data is formatted as a series of key-value pairs, kind of like a `Hash`.

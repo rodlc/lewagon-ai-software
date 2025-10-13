@@ -37,3 +37,15 @@ serve
 注意，你需要代码中已有的 `method: "POST"`，因为 Hugging Face 的 API 需要 POST 请求来从模型获取响应。这是我们今天的第一个 POST 请求，它们用于向服务器发送新数据，而 GET 请求用于检索数据。
 
 如果你想玩得更多，你可以通过更改 `fetch` 调用中的 `model` 来尝试使用 Hugging Face 的不同模型。你可以在[这里](https://huggingface.co/models)找到模型列表。只需确保选择适合文本生成的模型。
+
+### Bearer Token
+
+`fetch` 调用中的 `Authorization` 头使用 Bearer Token，这是一种用于验证 API 请求的令牌类型。令牌包含在请求头中，用于验证请求来自授权用户。你可以把它想象成你用来登录网站的密码。Bearer Token 就像用于访问 API 的密码。
+
+### `GET` vs `POST`
+
+你还记得 `GET` 和 `POST` 请求之间的区别吗？如果不记得，这里有一个快速复习：
+
+- `GET` 请求用于从服务器检索数据。它们通常用于获取网页或从 API 获取数据等操作。
+- `POST` 请求用于向服务器发送数据。它们通常用于提交表单或上传文件等操作。
+- `POST` 请求有一个主体（body），这是发送到服务器的数据所在的位置。`GET` 请求没有主体。数据被格式化为一系列键值对，有点像 `Hash`。

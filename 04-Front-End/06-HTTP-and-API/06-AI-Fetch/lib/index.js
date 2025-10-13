@@ -6,7 +6,6 @@ const getAnswer = (event) => {
   // TODO: prevent default behavior of the form
 
   // TODO get the user's input from the form
-  const userQuestion = "REPLACE_WITH_USER_INPUT"; // Replace with actual input retrieval logic
 
   fetch("https://router.huggingface.co/v1/chat/completions", {
     method: "POST",
@@ -16,12 +15,8 @@ const getAnswer = (event) => {
     },
     body: JSON.stringify({
       model: "openai/gpt-oss-120b",
-      messages: [
-        {
-          role: "user",
-          content: userQuestion,
-        }
-      ]
+      // TODO: add any other key-value pairs needed in the body
+      //       you can check the API documentation for that
     }),
   })
     .then(response => response.json())

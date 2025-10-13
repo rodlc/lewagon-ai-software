@@ -37,3 +37,15 @@ Quand tu auras fini, tu devrais pouvoir taper une question dans le champ de sais
 Note que tu auras besoin du `method: "POST"` qui est déjà dans le code, car l'API de Hugging Face nécessite une requête POST pour obtenir une réponse du modèle. C'est notre première requête POST de la journée, et elles sont utilisées pour envoyer de nouvelles données au serveur, contrairement aux requêtes GET qui sont utilisées pour récupérer des données.
 
 Si tu veux t'amuser davantage, tu peux essayer d'utiliser différents modèles de Hugging Face en changeant le `model` dans l'appel `fetch`. Tu peux trouver une liste de modèles [ici](https://huggingface.co/models). Assure-toi simplement de choisir un modèle adapté à la génération de texte.
+
+### Bearer Token
+
+L'en-tête `Authorization` dans l'appel `fetch` utilise un Bearer Token, qui est un type de token utilisé pour authentifier les requêtes vers une API. Le token est inclus dans l'en-tête de la requête et est utilisé pour vérifier que la requête provient d'un utilisateur autorisé. Tu peux le considérer comme un mot de passe que tu utilises pour te connecter à un site web. Le Bearer Token est comme un mot de passe qui est utilisé pour accéder à l'API.
+
+### `GET` vs `POST`
+
+Tu te souviens de la différence entre les requêtes `GET` et `POST` ? Si ce n'est pas le cas, voici un rappel rapide :
+
+- Les requêtes `GET` sont utilisées pour récupérer des données d'un serveur. Elles sont généralement utilisées pour des choses comme récupérer une page web ou obtenir des données d'une API.
+- Les requêtes `POST` sont utilisées pour envoyer des données à un serveur. Elles sont généralement utilisées pour des choses comme soumettre un formulaire ou télécharger un fichier.
+- Les requêtes `POST` ont un corps (body), qui est l'endroit où les données envoyées au serveur sont incluses. Les requêtes `GET` n'ont pas de corps. Les données sont formatées comme une série de paires clé-valeur, un peu comme un `Hash`.
