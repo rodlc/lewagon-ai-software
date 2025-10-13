@@ -57,6 +57,7 @@ Les listes dépliantes sont un peu différentes. **Elles ont leurs propres balis
 
 On va maintenant parler des classes de formulaire Bootstrap :
 - `.form-control` définit chaque entrée `<input>` ou sélection `<select>`, à l'exception du bouton de soumission.
+- `.form-text` permet d'ajouter une indication sous une entrée `<input>` ou sélection `<select>`, comme par exemple la longueur d'un mot de passe.
 - `.mb-3` regroupe chaque entrée `<input>` ou sélection `<select>` avec l'étiquette `<label>` pour créer de l'espace sous chaque groupe.
 
 Exemple de formulaire Bootstrap **avec des étiquettes** :
@@ -81,14 +82,18 @@ Exemple de formulaire Bootstrap **sans étiquette** :
 ```html
 <form action="#">
   <div class="mb-3">
-    <input type="email" class="form-control">
+    <label for="email-simple" class="visually-hidden">Email</label>
+    <input type="email" id="email-simple" class="form-control" placeholder="Email">
   </div>
   <div class="mb-3">
-    <input type="password" class="form-control">
+    <label for="password-simple" class="visually-hidden">Mot de passe</label>
+    <input type="password" id="password-simple" class="form-control" placeholder="Password">
    </div>
   <input type="submit" value="Sign In" class="btn btn-primary">
 </form>
 ```
+
+**⚠️ Note d'accessibilité :** Chaque entrée a besoin d'une étiquette pour les lecteurs d'écran. Utilise la classe `.visually-hidden` quand tu veux que l'étiquette soit invisible mais toujours accessible.
 
 Maintenant, si tu veux un [formulaire en ligne](https://getbootstrap.com/docs/5.3/forms/layout/#inline-forms), tu peux **ajouter la classe `.form-inline` au formulaire `<form>`** (comme la classe `.list-inline` pour une liste `<ul>`) :
 
@@ -97,10 +102,12 @@ tu peux **ajouter les classes `.row` (qui est une flexbox) et `.row-cols-*-auto`
 ```html
 <form action="#" class="row row-cols-lg-auto">
   <div class="col-12">
-    <input type="email" class="form-control">
+    <label for="email-inline" class="visually-hidden">Email</label>
+    <input type="email" id="email-inline" class="form-control" placeholder="Email">
   </div>
   <div class="col-12">
-    <input type="password" class="form-control">
+    <label for="password-inline" class="visually-hidden">Mot de passe</label>
+    <input type="password" id="password-inline" class="form-control" placeholder="Password">
   </div>
   <div class="col-12">
     <input type="submit" value="Sign In" class="btn btn-primary">

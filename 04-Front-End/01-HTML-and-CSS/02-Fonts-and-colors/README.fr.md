@@ -22,6 +22,8 @@ N'oublie pas de **forcer le rafraîchissement** de ton navigateur (`Ctrl/Cmd + S
 
 Choisis une couleur de fond (`background-color`), un style de police (`font-family`), une couleur (`color`), une taille de police (`font-size`) et une hauteur de ligne (`line-height`) pour le corps (`<body>`). **Si tu définis ces règles de police au niveau du corps, elles s'appliqueront à toutes les balises de texte de base** (`<p>`, `<li>`, etc.).
 
+👥 **Astuce contraste des couleurs** : Assure-toi que la couleur de ton texte a suffisamment de contraste par rapport à la couleur de fond pour être lisible. Utilise le [vérificateur de contraste WebAIM](https://webaim.org/resources/contrastchecker/) pour tester tes combinaisons de couleurs.
+
 ### Titres (headers)
 
 - Choisis une couleur (`color`) et un style de police (`font-family`) pour les titres (`<h1>`, `<h2>`, `<h3>`)
@@ -32,6 +34,7 @@ Choisis une couleur de fond (`background-color`), un style de police (`font-fami
 
 - Change la couleur (`color`) et la décoration de texte (`text-decoration`) de tous les liens
 - Ajoute des effets de survol (hover) des liens en utilisant la pseudo-classe `a:hover`
+- 👥 **Sensibilité au mouvement** : Si tu ajoutes des transitions à tes effets de survol, il est recommandé d'utiliser `@media (prefers-reduced-motion: no-preference)` pour s'adapter aux utilisateurs qui ont besoin de [mouvement réduit](https://web.dev/articles/prefers-reduced-motion).
 
 ## Suggestions et ressources supplémentaires
 

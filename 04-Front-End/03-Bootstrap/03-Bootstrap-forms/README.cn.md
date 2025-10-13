@@ -77,29 +77,35 @@
 </form>
 ```
 
-**无标签**的Bootstrap表单示例：
+**带有视觉隐藏标签**的Bootstrap表单示例（为了无障碍访问）：
 
 ```html
 <form action="#">
   <div class="mb-3">
-    <input type="email" class="form-control">
+    <label for="email-simple" class="visually-hidden">邮箱</label>
+    <input type="email" id="email-simple" class="form-control" placeholder="Email">
   </div>
   <div class="mb-3">
-    <input type="password" class="form-control">
+    <label for="password-simple" class="visually-hidden">密码</label>
+    <input type="password" id="password-simple" class="form-control" placeholder="Password">
    </div>
   <input type="submit" value="Sign In" class="btn btn-primary">
 </form>
 ```
+
+**⚠️ 无障碍访问注意事项：** 每个输入框都需要标签以供屏幕阅读器使用。当你希望标签不可见但仍可访问时，请使用`.visually-hidden`类。
 
 现在，如果你想要一个行内表单[inline form](https://getbootstrap.com/docs/5.3/forms/layout/#inline-forms)，你可以在`<form>`里**添加这两个类：`.row` (是一个flexbox)和`.row-cols-*-auto`** （`.row-cols-*`类可以让你决定你的输入栏该怎么排列，什么时候该换行。 比如， `.row-cols-sm-auto` 的意思就是在手机上，每一个输入栏都会和屏幕一样宽，但如果在大一点的设备上面，比如平板电脑，输入栏就会在同一行：
 
 ```html
 <form action="#" class="row row-cols-lg-auto">
   <div class="col-12">
-    <input type="email" class="form-control">
+    <label for="email-inline" class="visually-hidden">邮箱</label>
+    <input type="email" id="email-inline" class="form-control" placeholder="Email">
   </div>
   <div class="col-12">
-    <input type="password" class="form-control">
+    <label for="password-inline" class="visually-hidden">密码</label>
+    <input type="password" id="password-inline" class="form-control" placeholder="Password">
   </div>
   <div class="col-12">
     <input type="submit" value="Sign In" class="btn btn-primary">

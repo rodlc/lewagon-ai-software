@@ -16,6 +16,8 @@ On va maintenant créer un composant un peu plus complexe et travailler sur la c
 
 Tu dois maintenant ajouter du HTML dans chaque card (carte), et le CSS associé dans `cards.css` (le CSS des trois cartes peut aller dans le même fichier).
 
+👥 **Rappel d'accessibilité** : Quand tu ajoutes des images à tes cartes, inclus toujours un texte alternatif descriptif qui explique ce qui est montré dans l'image (par ex. "Paysage de montagne avec des sommets enneigés" plutôt que "image de carte").
+
 **REMARQUE** : Essaie de créer le `card-trip` sans l'avatar de l'utilisateur dans le coin inférieur droit pour le moment. On l'ajoutera une fois qu'on aura terminé les cartes.
 
 N'oublie pas de **forcer le rafraîchissement** de ton navigateur (`Cmd + Shift + R`) pour vider le cache si ta page n'affiche pas le code le plus récent !

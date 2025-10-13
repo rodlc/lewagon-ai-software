@@ -53,9 +53,9 @@ Ensuite, tu as seulement besoin d'**un lien unique vers `style.css`** dans ton f
 </head>
 ```
 
-## N'oublie pas le survol (hover)
+## N'oublie pas le survol (hover) et le focus
 
-N'oublie pas de créer l'état `.btn:hover` pour chacun de tes boutons.
+N'oublie pas de créer les états `.btn:hover` et `.btn:focus` pour chacun de tes boutons. 👥 L'état `:focus` est essentiel pour les utilisateurs qui naviguent au clavier avec Tab.
 
 ## Espacement autour d'un lien
 

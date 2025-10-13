@@ -1,6 +1,6 @@
 ## Configuracion
 
-Queremos continuar construyendo tu perfil. Si todavía no has copiado el archivo del ejercicio anterior, hazlo ahora. Copialo en la carpeta de este desafío y agregale un archivo CSS:
+Queremos continuar construyendo tu perfil. Si todavía no has copiado el archivo del ejercicio anterior, hazlo ahora. Copialo en la carpeta de este ejercicio y agregale un archivo CSS:
 
 ```bash
 cp -r ../01-Profile-content/profile . # don't forget the trailing dot!
@@ -22,6 +22,8 @@ Agregar reglas CSS simples para diseñar **fuentes** y **colores** para tu perfi
 
 Escoge un color de fondo (`background-color`), un estilo de fuente (`font-family`), un tamaño de fuente (`font-size`) y una altura de línea (`line-height`) que te guste para el `<body>`. **Al configurar estas reglas a nivel del body, las mismas se aplicarán sobre las etiquetas básicas** (`<p>`, `<li>`, etc.).
 
+👥 **Consejo de contraste de colores**: Asegúrate de que el color de tu texto tenga suficiente contraste con el color de fondo para que sea legible. Usa el [verificador de contraste WebAIM](https://webaim.org/resources/contrastchecker/) para probar tus combinaciones de colores.
+
 ## Encabezados (Headers)
 
 - Escoge un color (`color`) y un estilo de fuente (`font-family`) que te guste para los encabezados (headers: `<h1>`, `<h2>`, `<h3>`).
@@ -32,6 +34,7 @@ Escoge un color de fondo (`background-color`), un estilo de fuente (`font-family
 
 - Cambia el `color` y la decoración de texto (`text-decoration`) de todos los enlaces.
 - Agrega efectos hover (la alteración del aspecto de un componente de la interfaz gráfica una vez que se posa el ratón sobre él, aunque no haya sido seleccionado) a los enlaces usando la pseudoclase `a:hover`.
+- 👥 **Sensibilidad al movimiento**: Si agregas transiciones a tus efectos hover, considera usar `@media (prefers-reduced-motion: no-preference)` para respetar a los usuarios que necesitan [movimiento reducido](https://web.dev/articles/prefers-reduced-motion).
 
 ## Sugerencias y recursos adicionales
 
