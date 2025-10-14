@@ -66,9 +66,10 @@ Draw your database schema using [our db tool](https://kitt.lewagon.com/db/new) a
 #### 3 - Routes
 
 Go back to your User stories spreadsheet and add the following information:
-- Route: Verb + Path
-- Action
-- Controller
+- **Verb**: `GET`
+- **Path**: `/challenges`
+- **Controller**: `challenges`
+- **Action**: `index`
 
 Create a ticket to validate them with a teacher. All good? Time for the `rails new`!
 
@@ -109,17 +110,19 @@ git push heroku master
 heroku run rails db:migrate
 ```
 
-### 4. Kanban Board
+### 4. GitHub Project
 
-A [Kanban board](https://en.wikipedia.org/wiki/Kanban_board) is an agile project management tool designed to help visualize work, track progress, and maximize efficiency (or flow). There are many different resources out there ([Trello](https://trello.com/), [Github Projects](https://github.com/features/project-management/), [Notion](https://www.notion.so/), just to name a few).
+A [Kanban board](https://en.wikipedia.org/wiki/Kanban_board) is an agile project management tool designed to help visualize work, track progress, and maximize efficiency (or flow).
 
-We've prepared three drafts for you to start from if you choose Trello, Github Projects or Notion, but feel free to use another tool if you are more familiar with it:
+Github Projects Draft - To set up your kanban board on Github, you'll need to have the repository created already and to have all the collaborators added. Then, a team member can use [this board](https://github.com/orgs/lewagon/projects/117) as the basis for your project board. Follow the instructions [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/copying-an-existing-project) to see how to copy and add the board to your own project's repository. Two things to note: Github doesn't copy over the cards from the original board, so you'll have to add them yourself. Feel free to copy/paste the cards to get you going, or just start from scratch. Second, Github uses markdown syntax for text formatting like headings, font style, and checkboxes. It's not required, but can be nice to add formatting to your cards. You can read more about it [here](https://guides.github.com/features/mastering-markdown/).
 
-1. Trello Draft - Make a copy of [this Trello Board](https://trello.com/b/WB3fRTj2) (menu > more options > copy board > board name for your project). Then add all team members to the board and start importing all your user stories and tasks (order by priority).
+Each task should be in the format of a **User story** like: `As a user, I can see a list of all the challenges`
 
-2. Github Projects Draft - To set up your kanban board on Github, you'll need to have the repository created already and to have all the collaborators added. Then, a team member can use [this board](https://github.com/orgs/lewagon/projects/117) as the basis for your project board. Follow the instructions [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/copying-an-existing-project) to see how to copy and add the board to your own project's repository. Two things to note: Github doesn't copy over the cards from the original board, so you'll have to add them yourself. Feel free to copy/paste the cards to get you going, or just start from scratch. Second, Github uses markdown syntax for text formatting like headings, font style, and checkboxes. It's not required, but can be nice to add formatting to your cards. You can read more about it [here](https://guides.github.com/features/mastering-markdown/).
+In the priority field, you can use the MoSCoW method to prioritize your user stories: Must have, Should have, Could have, Won't have. This will help you focus on the most important user stories first.
 
-3. Notion Draft - Make a copy of [this Notion page](https://www.notion.so/lewagon/Project-Weeks-a3961a7da7324637bea441832becb3ad) by selecting the `Duplicate` option in the navbar. Then add all team members to the board (by clicking `Share` and then inviting them by email) and start importing all your user stories and tasks, ordering by priority. The top right section of the page should house all your relevant app links. The ones there should be used as a guide for which ones you'll need to include but unfortunately you can't edit these, so you'll have to recreate them yourself with the correct links. Follow [this guide](https://www.notion.com/help/embed-and-connect-other-apps#web-bookmarks) for getting the `Web bookmarks` added correctly. If you're new to Notion, feel free to check out [this page](https://www.notion.com/help/start-here) to learn more and become a Notion-expert in no-time 💯
+In the route field, you can include the verb, path, controller, and action, like: `GET /challenges challenges index` just like you have in the spreadsheet.
+
+Make sure to use the [assign feature on GitHub](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/assigning-issues-and-pull-requests-to-other-github-users?ref=codebldr) to tag the team member who will be working on each user story.
 
 From this point you can start splitting the tasks. **Spend time on the setup, because everything will be simpler if you do it correctly at the beginning**.
 
