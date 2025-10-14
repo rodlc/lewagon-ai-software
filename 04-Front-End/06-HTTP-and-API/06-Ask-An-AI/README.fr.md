@@ -42,6 +42,10 @@ Si tu veux t'amuser davantage, tu peux essayer d'utiliser différents modèles d
 
 L'en-tête `Authorization` dans l'appel `fetch` utilise un Bearer Token, qui est un type de token utilisé pour authentifier les requêtes vers une API. Le token est inclus dans l'en-tête de la requête et est utilisé pour vérifier que la requête provient d'un utilisateur autorisé. Tu peux le considérer comme un mot de passe que tu utilises pour te connecter à un site web. Le Bearer Token est comme un mot de passe qui est utilisé pour accéder à l'API.
 
+### Supprimer le token
+
+Une fois que tu as terminé le challenge, assure-toi de supprimer le token que tu as créé sur Hugging Face. Tu peux le faire en retournant dans la section "Access Tokens" de tes paramètres, en trouvant le token que tu as créé, et en cliquant sur l'icône de la corbeille à côté. C'est important pour des raisons de sécurité, car tu ne veux pas laisser traîner des clés API que tu n'utilises pas.
+
 ### `GET` vs `POST`
 
 Tu te souviens de la différence entre les requêtes `GET` et `POST` ? Si ce n'est pas le cas, voici un rappel rapide :

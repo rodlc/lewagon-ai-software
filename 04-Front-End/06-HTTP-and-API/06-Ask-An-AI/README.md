@@ -42,6 +42,10 @@ If you want to play around more, you can try using different models from Hugging
 
 The `Authorization` header in the `fetch` call uses a Bearer Token, which is a type of token that is used to authenticate requests to an API. The token is included in the request header and is used to verify that the request is coming from an authorized user. You can think of it like how you use a password to log into a website. The Bearer Token is like a password that is used to access the API.
 
+### Deleting the Token
+
+Once you're done with the challenge, make sure to delete the token you created on Hugging Face. You can do this by going back to the "Access Tokens" section in your settings, finding the token you created, and clicking the trash can icon next to it. This is important for security reasons, as you don't want to leave API keys you're not using lying around.
+
 ### `GET` vs `POST`
 
 Do you remember the difference between `GET` and `POST` requests? If not, here's a quick refresher:
