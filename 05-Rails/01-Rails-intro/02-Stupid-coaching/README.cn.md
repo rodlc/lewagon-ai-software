@@ -104,10 +104,13 @@ ask          GET        /ask(.:format)       questions#ask
 
 ```html
 <form action="???" data-turbo="false">
-  <input type="text" name="???">
+  <label for="question">Your question</label>
+  <input type="text" id="question" name="???">
   <input type="submit" value="Ask!">
 </form>
 ```
+
+**无障碍访问提示：** 每个表单输入都要包含`<label>`标签。这有助于屏幕阅读器使用，并改善可用性。
 
 `<form>`标签的原生行为是生成一个被`method`和`action`属性所定义的HTTP请求。
 

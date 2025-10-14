@@ -99,10 +99,13 @@ Dernière étape de la création du formulaire : créer une vue ! Tu te souviens
 
 ```html
 <form action="???" data-turbo="false">
-  <input type="text" name="???">
+  <label for="question">Your question</label>
+  <input type="text" id="question" name="???">
   <input type="submit" value="Ask!">
 </form>
 ```
+
+**Conseil d'accessibilité :** Inclus toujours un `<label>` pour chaque champ de formulaire. Cela aide les lecteurs d'écran et améliore l'ergonomie.
 
 Le comportement natif d'une balise `<form>` consiste à générer la requête HTTP définie par les attributs `method` et `action`.
 - L'attribut `method` contient le **verbe** HTTP (`GET` par défaut).

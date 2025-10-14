@@ -16,6 +16,8 @@ Ahora vamos a avanzar hacia un componente un poco más complejo. Trabaja en tres
 
 Ahora tu trabajo es agregar HTML dentro de cada card y el CSS asociado en `cards.css` (el código CSS de las tres cards puede estar en el mismo archivo).
 
+👥 **Recordatorio de accesibilidad**: Al agregar imágenes a tus cards, siempre incluye texto alternativo descriptivo que explique lo que se muestra en la imagen (ej. "Paisaje montañoso con picos nevados" en lugar de "imagen de card").
+
 **NOTA**: por ahora intenta crear el `card-trip` sin el avatar del usuario en la esquina inferior derecha. Eso lo agregaremos cuando hayamos completado nuestros cards.
 
 ¡No olvides hacer el **hard refresh** (forzar la actualización de la página) en tu navegador (`cmd + shift + r`) para limpiar el caché en caso de que tu página no muestre el código más reciente!

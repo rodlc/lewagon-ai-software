@@ -1,6 +1,6 @@
 ## Contexto y Objetivos
 
-Este es un desafío simple para manipular etiquetas (tags) HTML y crear una card (tarjeta) de tu perfil con títulos, listas e imágenes.
+Este es un ejercicio simple para manipular etiquetas (tags) HTML y crear una card (tarjeta) de tu perfil con títulos, listas e imágenes.
 
 ## Configuración
 
@@ -35,7 +35,7 @@ Crea una página simple de tu perfil HTML con los siguientes elementos (utiliza 
 - Un botón
 - Una lista de enlaces a tus redes sociales
 
-Como una imagen vale más que mil palabras, [aquí está lo que debes crear en este desafío](https://lewagon.github.io/html-css-challenges/01-profile-content-new/).
+Como una imagen vale más que mil palabras, [aquí está lo que debes crear en este ejercicio](https://lewagon.github.io/html-css-challenges/01-profile-content-new/).
 
 ## Sugerencias y recursos adicionales
 
@@ -47,6 +47,8 @@ Prepara el archivo de tu foto de perfil antes de comenzar a escribir código. Pa
 
 - No olvides poner las etiquetas básicas de la estructura: `<html>`, `<body>`, `<head>`.
 - Tampoco olvides poner el nombre (`<title>`) de la página en la sección `<head>` ni otras metaetiquetas (metatags) como `<meta charset="utf-8">`.
+- **Usa etiquetas HTML semánticas**: `<header>`, `<main>`, `<section>` en lugar de etiquetas genéricas `<div>`. 👥 Esto ayuda a los lectores de pantalla a entender la estructura de tu página.
+- **Agrega texto alternativo descriptivo a tu imagen**: `<img src="images/profile.jpg" alt="Persona con expresión feliz trabajando en una computadora">` - 👥 describe lo que se ve en la imagen, no solo su propósito.
 - Puedes usar [Font Awesome](https://fontawesome.com/icons) para agregar iconos interesantes e.g. redes sociales. Font Awesome es una librería muy interesante porque todos los iconos son **fuentes**. ¡Esto significa que puedes cambiar los tamaños y colores de los iconos fácilmente e inclusive agregarles animaciones! Para importar Font Awesome, solo debes agregar el siguiente enlace a tu `<head>`:
 
 ```html
@@ -55,6 +57,8 @@ Prepara el archivo de tu foto de perfil antes de comenzar a escribir código. Pa
 ```
 
 - Puedes usar el atributo `target="_blank"` para que abran en una nueva página al hacer clic sobre ellos.
+
+👥 **Prueba tu accesibilidad**: Una vez que hayas construido tu página de perfil, pruébala con [Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/) (DevTools > Lighthouse > Accessibility) para verificar problemas de accesibilidad y ver cómo puedes mejorar tu puntuación.
 
 ## Tabular o morir
 

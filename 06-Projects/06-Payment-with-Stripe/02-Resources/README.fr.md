@@ -1,7 +1,7 @@
 ## Ressources
 
 - Voici le saint graal des [formulaires simples](https://kitt.lewagon.com/knowledge/cheatsheets/simple_form), et comment cibler des classes CSS générées par des formulaires simples
-- Tu as besoin de flux de contenu en temps réel pour tes utilisateurs, par exemple pour un chat ? Utilise [ActionCable](https://kitt.lewagon.com/camps/<user.batch_slug>/lectures/06-Projects%2F01-Pundit)
+- Tu as besoin de flux de contenu en temps réel pour tes utilisateurs, par exemple pour un chat ? Utilise [ActionCable](https://kitt.lewagon.com/camps/<user.batch_slug>/lectures/05-Rails%2F10-Airbnb-Ajax-in-Rails)
 - Positionne tes éléments à la perfection avec [flexbox](https://kitt.lewagon.com/knowledge/cheatsheets/flexbox)
 - Tu as besoin d'un calendrier dans ton app ? Découvre [la gem Simple Calendar](https://kitt.lewagon.com/knowledge/tutorials/simple_calendar)
 - Ajoute [une note à étoiles](https://kitt.lewagon.com/knowledge/tutorials/star_rating) à tes avis

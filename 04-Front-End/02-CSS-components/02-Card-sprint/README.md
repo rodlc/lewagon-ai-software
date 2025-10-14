@@ -16,6 +16,8 @@ Now let's move on to building a slightly more complex component. Work on buildin
 
 Your job is now to add HTML inside each card, and the associated CSS in `cards.css` (the CSS for all three cards can go in the same file).
 
+👥 **Accessibility reminder**: When adding images to your cards, always include descriptive alt text that explains what's shown in the image (e.g., "Mountain landscape with snow-capped peaks" rather than "card image").
+
 **NOTE**: Try building the `card-trip` without the user avatar in the bottom right hand corner for now. We will add that after we complete our cards.
 
 Don't forget to **hard refresh** your browser (`Cmd + Shift + R`) to clear your browser's cache if your page doesn't seem to display your current code!
