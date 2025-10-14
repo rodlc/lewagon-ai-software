@@ -42,6 +42,10 @@ Si quieres jugar más, puedes intentar usar diferentes modelos de Hugging Face c
 
 El encabezado `Authorization` en la llamada `fetch` usa un Bearer Token, que es un tipo de token que se usa para autenticar solicitudes a una API. El token se incluye en el encabezado de la solicitud y se usa para verificar que la solicitud proviene de un usuario autorizado. Puedes pensar en él como una contraseña que usas para iniciar sesión en un sitio web. El Bearer Token es como una contraseña que se usa para acceder a la API.
 
+### Eliminar el token
+
+Una vez que hayas terminado con el ejercicio, asegúrate de eliminar el token que creaste en Hugging Face. Puedes hacer esto volviendo a la sección "Access Tokens" en tu configuración, encontrando el token que creaste, y haciendo clic en el ícono de la papelera junto a él. Esto es importante por razones de seguridad, ya que no quieres dejar claves API que no estás usando por ahí.
+
 ### `GET` vs `POST`
 
 ¿Recuerdas la diferencia entre las solicitudes `GET` y `POST`? Si no, aquí hay un repaso rápido:
