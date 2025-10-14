@@ -3,7 +3,7 @@
 # - Just look in the doc for the right method of the String, Integer, and Array classes!
 
 def get_rid_of_surrounding_whitespaces(a_string)
-  a_string.strip()
+  a_string.strip
 end
 
 def belongs_to?(a_string, a_word)
@@ -19,7 +19,7 @@ def exactly_divide(an_integer, a_divider)
 end
 
 def divisible_by_two?(an_integer)
-  an_integer.even?()
+  an_integer.even?
 end
 
 def random_subset(an_array, sample_size)
@@ -27,9 +27,9 @@ def random_subset(an_array, sample_size)
 end
 
 def randomize(an_array)
-  an_array.shuffle()
+  an_array.shuffle
 end
 
 def ascending_order(an_array)
-  an_array.sort()
+  an_array.sort
 end
