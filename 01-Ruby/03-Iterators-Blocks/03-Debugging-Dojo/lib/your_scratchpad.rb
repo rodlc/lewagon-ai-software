@@ -1,4 +1,5 @@
 require_relative 'debugging_dojo'
+require "pry-byebug"
 
 # The tests don't check this file at all
 # It's just here to give you a place to play with the code

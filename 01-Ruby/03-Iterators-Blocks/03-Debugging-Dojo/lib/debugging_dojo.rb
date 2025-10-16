@@ -6,7 +6,7 @@
 # Can you help me out?
 def double_number(number)
   # This method is supposed to double the input number
-  numer * 2
+  number * 2
 end
 
 # Ok, thanks so much!
@@ -14,23 +14,18 @@ end
 # I have the right idea, but I can't seem to get the syntax right.
 def double_array(numbers)
   # This method is supposed to double each number in the array
-  numbers.map do
-    number * 2
-  end
+  numbers.map { |number| number * 2 }
 end
 
 # Next up, I'm really stumped on this one:
 def capitalize_words_starting_with_a(string)
   # This method is supposed to capitalize words that start with 'a'
   processed_words = []
-  string.split.for_each do
-    if start_with?(word, 'a')
-      word.capitalize
-    else
-      word
-    end
+  string.split.each do |word|
+    word.capitalize! if word.downcase.start_with?("a")
+    processed_words << word
   end
-  return processed_words.join(' ')
+  processed_words.join(' ')
 end
 
 # OK for this next one, I have no idea. My boss said it should be similar
@@ -47,13 +42,10 @@ def capitalize_words(string)
   # This method is supposed to capitalize words that match a condition
   processed_words = []
   string.split.each do |word|
-    if word.true
-      word.capitalize
-    else
-      word
-    end
+    word.capitalize! if yield(word)
+    processed_words << word
   end
-  return processed_words.join(' ')
+  processed_words.join(' ')
 end
 
 # You're planning a party 🥳 but not everyone is invited 😱
@@ -73,13 +65,11 @@ end
 # > plan_party(["Alice", "Bob", "Charlie"]) { |name| name.start_with?('A') }  # => ["Alice"]
 # > plan_party(["Alice", "Bob", "Charlie"]) { |name| name.length > 3 }  # => ["Alice", "Charlie"]
 # > plan_party(["Alice", "Bob", "Charlie"]) { |name| name.include?('b') }  # => ["Bob"]
-#
-# rubocop:disable Lint/UselessAssignment
+
 def plan_party(guests)
   invited_guests = []
-
   guests.each do |guest|
-    guests << guest if yield
+    invited_guests << guest if yield(guest)
   end
+  invited_guests
 end
-# rubocop:enable Lint/UselessAssignment
