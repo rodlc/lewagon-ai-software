@@ -1,25 +1,35 @@
 def louchebemize(sentence)
-  vowels   = %w[a e i o u y]
-  suffixes = %w[em é ji oc ic uche ès]
+  vowels      = %w[a e i o u y]
+  punctuation = [",", "!", "?", ".", ";", ":"]
+  suffixes    = %w[em é ji oc ic uche ès]
+  result      = []
 
-  sentence.split.map do |token|
-    first_l = token.index(/\p{L}/)
-    last_l  = token.rindex(/\p{L}/)
-    next token if first_l.nil?
+  sentence.split.each do |word|
+    tail = ''
+    while punctuation.include?(word[-1])
+      tail   = word[-1] + tail
+      word   = word[0...-1]
+    end
 
-    lead, core, tail = token[0...first_l], token[first_l..last_l], token[(last_l + 1)..]
-    next token if core.length <= 1
+    if word.length <= 1
+      result << word + tail
+      next
+    end
 
-    v_idx = core.downcase.chars.index { |c| vowels.include?(c) }
-    trans = if v_idx.nil? || v_idx.zero?
-              "l#{core}#{suffixes.sample}"
-            else
-              cons = core[0...v_idx]
-              rest = core[v_idx..]
-              "l#{rest}#{cons}#{suffixes.sample}"
-            end
+    letters = word.downcase.chars
+    fv_idx  = letters.find_index { |l| vowels.include?(l) } || 0
 
-    trans[0] = trans[0].upcase if core[0] =~ /[A-Z]/
-    "#{lead}#{trans}#{tail}"
-  end.join(' ')
+    if fv_idx.zero?
+      core = ["l", letters.join, suffixes.sample].join
+    else
+      start = letters[0...fv_idx].join
+      rest  = letters[fv_idx..].join
+      core  = ["l", rest, start, suffixes.sample].join
+    end
+
+    core[0] = core[0].upcase if word[0] =~ /[A-Z]/
+    result << core + tail
+  end
+
+  result.join(' ')
 end
