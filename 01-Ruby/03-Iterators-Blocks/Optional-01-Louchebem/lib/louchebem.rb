@@ -23,5 +23,3 @@ def louchebemize(sentence)
     "#{lead}#{trans}#{tail}"
   end.join(' ')
 end
-
-puts louchebemize("dans l'os")
