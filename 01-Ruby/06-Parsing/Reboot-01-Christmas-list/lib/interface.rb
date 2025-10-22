@@ -1,6 +1,6 @@
-# TODO: you can build your christmas list program here!
+# TODO: build your christmas list program here!
 
-require_relative 'actions'
+require_relative 'actions', 'scraper.rb'
 
 p "Welcome to your Christmas gift list!"
 list = [{ name: "Tie", status: false }, { name: "Ruby book", status: false }]
@@ -26,7 +26,7 @@ loop do
     item = gets.chomp
     delete(list, item)
   when "mark"
-    p "Which item would have you bought?"
+    p "Which item have you bought?"
     item = gets.chomp
     mark(list, item)
   when "quit"
