@@ -11,8 +11,7 @@ class Cookbook
     @recipes
   end
 
-  def create(recipe_name, recipe_description)
-    recipe = Recipe.new(recipe_name, recipe_description)
+  def create(recipe)
     @recipes << recipe
   end
 

@@ -1,8 +1,7 @@
 # TODO: Define your View class here, to display elements to the user and ask them for their input
 
 class View
-
-  def display_recipes(recipes)
+  def display_list(recipes)
     if recipes.empty?
       puts "Pas de recettes dans votre carnet pour le moment."
     else
@@ -25,5 +24,4 @@ class View
     print "> "
     gets.chomp.to_i - 1 # Pour obtenir un index base zéro
   end
-
 end
