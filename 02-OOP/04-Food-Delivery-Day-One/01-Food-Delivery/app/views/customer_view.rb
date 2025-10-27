@@ -3,7 +3,7 @@
 require_relative "../controllers/customers_controller"
 require_relative "../models/customer"
 
-class View
+class CustomerView
   def display_list(customers)
     if customers.empty?
       puts "Pas de client dans votre fichier pour le moment."

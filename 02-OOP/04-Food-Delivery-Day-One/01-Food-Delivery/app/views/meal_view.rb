@@ -3,7 +3,7 @@
 require_relative "../controllers/meals_controller"
 require_relative "../models/meal"
 
-class View
+class MealView
   def display_list(meals)
     if meals.empty?
       puts "Pas de repas dans votre carnet pour le moment."
