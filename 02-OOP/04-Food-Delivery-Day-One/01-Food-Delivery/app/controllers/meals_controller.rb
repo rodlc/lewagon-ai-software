@@ -16,8 +16,8 @@ class MealsController
   def add
     meal_added = {}
     meal_added[:id] = 0
-    meal_added[:name] = MealView.new.ask_for("nom du repas").to_s
-    meal_added[:price] = MealView.new.ask_for("prix du repas").to_i
+    meal_added[:name] = MealView.new.ask_for("name of the meal").to_s
+    meal_added[:price] = MealView.new.ask_for("price of the meal").to_i
     meal = Meal.new(meal_added)
     @meals.create(meal)
   end

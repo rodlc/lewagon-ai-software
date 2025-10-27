@@ -36,8 +36,8 @@ class CustomerRepository
       row[:name] = row[:name].to_s
       row[:address] = row[:address].to_s
       @customers << Customer.new(row)
-      @next_id = @customers.empty? ? 1 : @customers.last.id + 1
     end
+    @next_id = @customers.empty? ? 1 : @customers.last.id + 1
   end
 
   def save_csv

@@ -36,8 +36,8 @@ class MealRepository
       row[:name] = row[:name].to_s
       row[:price] = row[:price].to_i
       @meals << Meal.new(row)
-      @next_id = @meals.empty? ? 1 : @meals.last.id + 1
     end
+    @next_id = @meals.empty? ? 1 : @meals.last.id + 1
   end
 
   def save_csv

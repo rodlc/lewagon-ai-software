@@ -1,3 +1,22 @@
 # TODO: require relevant files to bootstrap the app.
 # Then you can test your program with:
 #   ruby app.rb
+
+require_relative 'app/repositories/meal_repository'
+require_relative 'app/controllers/meals_controller'
+require_relative 'app/repositories/customer_repository'
+require_relative 'app/controllers/customers_controller'
+require_relative 'router'
+
+meals_csv_file = File.join(__dir__, './app/data/meals.csv')
+meals = MealRepository.new(meals_csv_file)
+meals_controller = MealsController.new(meals)
+
+customers_csv_file = File.join(__dir__, './app/data/customers.csv')
+customers = CustomerRepository.new(customers_csv_file)
+controller = CustomersController.new(customers)
+
+router = Router.new(meals_controller, controller)
+
+# Start the app
+router.run
