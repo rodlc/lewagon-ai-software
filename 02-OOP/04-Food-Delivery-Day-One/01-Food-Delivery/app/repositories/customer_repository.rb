@@ -1,29 +1,29 @@
-require_relative "../models/meal"
+require_relative "../models/customer"
 require "csv"
 
-class MealRepository
+class CustomerRepository
   attr_accessor :next_id
 
   def initialize(csv_file_path)
     @csv_file_path = csv_file_path
-    @meals = []
+    @customers = []
     @next_id = 1
     load_csv
   end
 
   def all
-    @meals
+    @customers
   end
 
-  def create(meal)
-    meal.id = @next_id
+  def create(customer)
+    customer.id = @next_id
     @next_id += 1
-    @meals << meal
+    @customers << customer
     save_csv
   end
 
   def find(id)
-    @meals[id - 1]
+    @customers[id - 1]
   end
 
   private
@@ -34,17 +34,17 @@ class MealRepository
     CSV.foreach(@csv_file_path, headers: true, header_converters: :symbol) do |row|
       row[:id] = row[:id].to_i
       row[:name] = row[:name].to_s
-      row[:price] = row[:price].to_i
-      @meals << Meal.new(row)
-      @next_id = @meals.empty? ? 1 : @meals.last.id + 1
+      row[:address] = row[:address].to_s
+      @customers << Customer.new(row)
+      @next_id = @customers.empty? ? 1 : @customers.last.id + 1
     end
   end
 
   def save_csv
     CSV.open(@csv_file_path, "wb") do |csv|
-      csv << ["id", "name", "price"]
-      @meals.each do |meal|
-        csv << [meal.id, meal.name, meal.price]
+      csv << ["id", "name", "address"]
+      @customers.each do |customer|
+        csv << [customer.id, customer.name, customer.address]
       end
     end
   end
