@@ -9,10 +9,10 @@ class Router
   def run
     puts "Welcome to the Food Delivery App!"
     puts "           --           "
-    
+
     # Connexion au démarrage
     @current_user = @sessions_controller.login
-    
+
     while @running
       display_tasks
       action = gets.chomp.to_i
@@ -59,7 +59,7 @@ class Router
   def display_tasks
     puts ""
     puts "What do you want to do next?"
-    
+
     if @current_user.manager?
       display_manager_tasks
     else

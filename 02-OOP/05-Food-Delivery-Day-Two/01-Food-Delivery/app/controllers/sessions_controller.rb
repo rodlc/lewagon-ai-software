@@ -10,7 +10,7 @@ class SessionsController
     username = @view.ask_for_username
     password = @view.ask_for_password
     employee = @employee_repository.find_by_username(username)
-    
+
     # Vérifier si l'employé existe et si le password correspond
     if employee && employee.password == password
       @view.welcome(employee)
