@@ -20,7 +20,7 @@ class EmployeeRepository
   end
 
   def find_by_username(username)
-    @employees.select { |employee| employee.username == username }[0]
+    @employees.find { |employee| employee.username == username }
   end
 
   private
