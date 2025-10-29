@@ -40,5 +40,10 @@ end
 
 def albums_per_artist(db)
   # TODO: return an array of arrays, each containing the artist's name and the number of albums they have
-  db.execute("SELECT artists.name, COUNT(*) FROM albums LEFT JOIN artists ON albums.artist_id = artists.id GROUP BY artists.name")
+  db.execute(
+    "SELECT artists.name, COUNT(*)
+    FROM albums LEFT JOIN artists
+      ON albums.artist_id = artists.id
+    GROUP BY artists.name"
+  )
 end
