@@ -9,7 +9,7 @@ def artist_count(db)
   # TODO: use `db` to execute an SQL query against the database.
   # Should return an integer of the number of artists.
   db.execute("SELECT COUNT(*) FROM artists")[0][0]
- # Puis tu auras besoin de retourner quelque chose.
+  # Puis tu auras besoin de retourner quelque chose.
 end
 
 def number_of_rows(db, table_name)
