@@ -20,21 +20,11 @@ class PostsController
   end
 
   def update
-    # Demande directement l'ID du post à mettre à jour.
-    id = @view.ask_for("the ID of the post to edit").to_i
-    post = Post.find_by(id: id) # Utilise find_by pour une recherche plus flexible
+    post = find_post_to_update # Extrait la logique pour trouver le post
+    return unless post # Arrête si le post n'est pas trouvé
 
-    if post
-      new_title = @view.ask_for("the new title for the post (leave empty to keep current: #{post.title})")
-      new_url = @view.ask_for("the new URL for the post (leave empty to keep current: #{post.url})")
-
-      post.title = new_title unless new_title.empty?
-      post.url = new_url unless new_url.empty?
-      post.save # Sauvegarde les modifications
-      @view.display_message("Post updated successfully!")
-    else
-      @view.display_message("Post with ID #{id} not found.")
-    end
+    update_post_attributes(post) # Extrait la logique pour demander et mettre à jour les attributs
+    @view.display_message("Post updated successfully!") # Message de succès
   end
 
   def destroy
@@ -61,5 +51,26 @@ class PostsController
     else
       @view.display_message("Post with ID #{id} not found.")
     end
+  end
+
+  private
+
+  # Méthode privée pour trouver le post à mettre à jour
+  def find_post_to_update
+    id = @view.ask_for("the ID of the post to edit").to_i
+    post = Post.find_by(id: id)
+
+    @view.display_message("Post with ID #{id} not found.") unless post
+    post # Retourne le post trouvé ou nil
+  end
+
+  # Méthode privée pour demander et mettre à jour les attributs du post
+  def update_post_attributes(post)
+    new_title = @view.ask_for("the new title for the post (leave empty to keep current: #{post.title})")
+    new_url = @view.ask_for("the new URL for the post (leave empty to keep current: #{post.url})")
+
+    post.title = new_title unless new_title.empty?
+    post.url = new_url unless new_url.empty?
+    post.save # Sauvegarde les modifications
   end
 end
