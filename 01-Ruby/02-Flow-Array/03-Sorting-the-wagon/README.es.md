@@ -14,7 +14,24 @@ Esperemos que la documentación de Ruby te proporcione distintas maneras de orde
 - El método de ordenamiento debe ser sensible a mayúsculas y minúsculas e.g. escribe `bob` antes de `Felix` (revisa la [tabla ASCII](http://www.asciitable.com/)).
 - El método debe mantener el deletreo original de los nombres.
 
+### Método `wagon_sort`
+
+El método `wagon_sort` debe tomar un array de nombres de estudiantes y devolver un nuevo array con los nombres ordenados alfabéticamente, ignorando mayúsculas y minúsculas. El array original debe permanecer sin cambios.
+
+Por ejemplo, si pasas el array `["bob", "Felix", "Cedric"]` al método `wagon_sort`, debe devolver `["bob", "Cedric", "Felix"]`. Si pasas un array vacío, debe devolver un array vacío. Si pasas `["Alex", "Claire", "Toni"]`, debe devolver `["Alex", "Claire", "Toni"]`.
+
+Tu trabajo es solo definir el método `wagon_sort` en el archivo `lib/wagon_sort.rb`. Pero si quieres probar tu método mientras trabajas, puedes intentar llamarlo en un array real como:
+
+```ruby
+wagon_sort(["bob", "Felix", "Cedric"])
+# => ["bob", "Cedric", "Felix"]
+```
+
+No te preocupes por construir la interfaz todavía; eso vendrá más tarde. Por ahora, concéntrate en implementar el método `wagon_sort` correctamente.
+
 ### Programa interactivo
+
+Ahora, construyamos un programa interactivo simple que use el método `wagon_sort`. El programa solicitará al usuario que ingrese nombres de estudiantes uno por uno, y cuando el usuario haya terminado, mostrará la lista ordenada de nombres.
 
 Abre el archivo `interface.rb` y asegúrate de usar el método `wagon_sort`. La interfaz debe tener una output estilizada. Los nombres deben estar separados por comas (`, `) excepto los dos últimos que deben estar separados por la palabra `and`. Los nombres también deben estar en una nueva línea.
 
@@ -32,8 +49,18 @@ bob
 Type another student name or press enter to finish:
 
 Congratulations! Your Wagon has 3 students:
-bob, Cedric and felix
+bob, Cedric and felix # Nota la separación adecuada de palabras.
 ```
+
+💡 ¿Qué tipo de variable deberías usar para almacenar los nombres? ¿Debería ser un array, una cadena, un entero o algo más?
+
+💡 ¿Cómo permitimos que el usuario ingrese datos? No olvides tus `gets` y `puts`.
+
+💡 Cuando el usuario haya terminado de ingresar nombres, ¿cómo lo sabemos? Puedes verificar si la entrada está vacía (es decir, el usuario solo presionó enter sin escribir nada).
+
+💡 ¿Cuándo queremos ordenar los nombres? Después de que el usuario haya terminado de ingresarlos, ¿verdad? Y tal vez ya lo hayas adivinado, pero has escrito algo de código que te ayudará a hacer eso 😉
+
+💡 ¿Cómo mostramos los nombres? Puedes usar `puts` para imprimirlos, pero querrás formatearlos bien. Recuerda separar los nombres con comas y usar "and" para los dos últimos nombres.
 
 ## Puntos clave de aprendizaje
 
