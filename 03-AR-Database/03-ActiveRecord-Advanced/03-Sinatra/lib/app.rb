@@ -21,7 +21,8 @@ get "/" do
   # 1. fetch posts from database.
   # 2. Store these posts in an instance variable
   # 3. Use it in the `app/views/posts.erb` view
-
+  # Load posts
+  @posts = Post.all
   erb :posts # Do not remove this line
 end
 
