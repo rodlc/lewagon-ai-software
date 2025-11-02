@@ -4,7 +4,6 @@ class Router
     @customers_controller = customers_controller
     @sessions_controller = sessions_controller
     @orders_controller = orders_controller
-    @manager_actions = MANAGER_ACTIONS
     @running = true
   end
 
