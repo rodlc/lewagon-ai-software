@@ -25,6 +25,10 @@ class OrderRepository
     save_csv
   end
 
+  def save
+    save_csv
+  end
+
   private
 
   def load_csv
@@ -32,9 +36,10 @@ class OrderRepository
 
     CSV.foreach(@csv_file_path, headers: true, header_converters: :symbol) do |row|
       row[:id] = row[:id].to_i
-      row[:meal] = @meal_repository.find(row[:meal].to_s.to_i)
-      row[:customer] = @customer_repository.find(row[:customer].to_s.to_i)
-      row[:employee] = @employee_repository.find(row[:employee].to_s.to_i)
+      # Utilise les noms de colonnes du test : meal_id, customer_id, employee_id
+      row[:meal] = @meal_repository.find(row[:meal_id].to_i)
+      row[:customer] = @customer_repository.find(row[:customer_id].to_i)
+      row[:employee] = @employee_repository.find(row[:employee_id].to_i)
       row[:delivered] = (row[:delivered].to_s == "true")
       @orders << Order.new(row)
     end
@@ -43,9 +48,11 @@ class OrderRepository
 
   def save_csv
     CSV.open(@csv_file_path, "wb") do |csv|
-      csv << ["id", "meal", "customer", "employee", "delivered"]
+      # Les en-têtes DOIVENT correspondre à ceux du test
+      csv << ["id", "delivered", "meal_id", "customer_id", "employee_id"]
       @orders.each do |order|
-        csv << [order.id, order.meal.id, order.customer.id, order.employee.id, order.delivered]
+        # L'ordre des colonnes doit aussi correspondre
+        csv << [order.id, order.delivered, order.meal.id, order.customer.id, order.employee.id]
       end
     end
   end
