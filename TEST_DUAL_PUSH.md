@@ -1,1 +1,0 @@
-# Testing dual push configuration
