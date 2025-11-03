@@ -99,6 +99,29 @@ gh repo create --public --source=.
 git push origin master
 ```
 
+##### Add your teammates as collaborators on the Github repo
+
+Go to your Github repo settings (`https://github.com/<user.github_nickname>/rails-airbnb-clone/settings/collaboration`) and add your teammates as **collaborators**.
+
+##### Clone the project
+
+The other teammates can now **clone** the project:
+
+```bash
+mkdir ~/code/<owner-github-nickname>
+cd ~/code/<owner-github-nickname>
+gh repo clone <owner-github-nickname>/<rails-app-name>
+```
+
+Then run:
+
+```bash
+cd <rails-app-name>
+rails db:create db:migrate
+bundle install
+```
+
+
 #### 3. Deploy on Heroku
 
 Even if it's just a skeleton app, it's important to deploy on Heroku **from day one**, and then continuously deploy every day with each new feature.
@@ -110,7 +133,7 @@ git push heroku master
 heroku run rails db:migrate
 ```
 
-### 4. GitHub Project
+#### 4. GitHub Project
 
 A [Kanban board](https://en.wikipedia.org/wiki/Kanban_board) is an agile project management tool designed to help visualize work, track progress, and maximize efficiency (or flow).
 
@@ -132,23 +155,7 @@ From this point you can start splitting the tasks. **Spend time on the setup, be
 
 Now, let's get the team started on the project. The lead developer has already created the Rails app, pushed it to Github, and deployed it on Heroku.
 
-#### Add your teammates as collaborators on the Github repo
-
-Go to your Github repo settings (`https://github.com/<user.github_nickname>/rails-airbnb-clone/settings/collaboration`) and add your teammates as **collaborators**.
-
-The other teammates can now **clone** the project:
-
-```bash
-gh repo clone <owner-github-nickname>/<rails-app-name>
-```
-
-Then navigate to the directory and run:
-
-```bash
-cd <rails-app-name>
-rails db:create db:migrate
-bundle install
-```
+#### Coding as a team
 
 Now you can break your team into two groups to start pair-programming on a few core features of your app. This is a good way to get started and to make sure you are all on the same page.
 
@@ -156,7 +163,7 @@ This is an opportunity to learn about [Pair programming](https://en.wikipedia.or
 
 > Pair programming is a software development technique in which two programmers work together at one workstation. One, the driver, writes code while the other, the observer or navigator, reviews each line of code as it is typed in. The two programmers switch roles frequently.
 
-Here are 3 scopes you can get start working on already:
+Here are 3 scopes you can start working on already:
 
 **Scope 1: Devise setup**:
 - Setup Devise and generate the `User` model with devise. Make sure to use `rails g devise User` (not `rails g model`)!
