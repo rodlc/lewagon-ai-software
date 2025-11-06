@@ -6,19 +6,33 @@ import runChallenges from "../spec/inbox_examiner.js";
 
 const hasNewMessage = () => {
   // TODO: return true with a probability of 20%.
+  return Math.random() <= 0.2;
 };
 
 const newMessage = () => {
   // TODO: return a random message as an object with two keys, subject and sender
+  const senders = ['Boris', 'Igor', 'Yuri', 'Dimitri'];
+  const subjects = ['Rock', 'Paper', 'Scissor', 'Lizard'];
+
+  const message = {
+    sender: senders[Math.floor(Math.random() * senders.length)],
+    subject: subjects[Math.floor(Math.random() * subjects.length)]
+  };
+
+  return message;
 };
 
 const appendMessageToDom = (message) => {
   // TODO: append the given message to the DOM (as a new row of `#inbox`)
+  const inbox = document.querySelector("#inbox");
+  const newMessageHTML = (`<div class="row message unread"> <div class="col-3"> ${message.sender} </div><div class="col-9"> ${message.subject} </div>`);
+  return inbox.insertAdjacentHTML("afterbegin", newMessageHTML);
 };
 
 const refresh = () => {
   // TODO: Implement the global refresh logic. If there is a new message,
   //       append it to the DOM. Update the unread counter in title as well.
+  return hasNewMessage() ? appendMessageToDom(newMessage()) : "";
 };
 
 // Do not remove these lines.
