@@ -18,4 +18,3 @@ scratchcards.addEventListener("click", (event) => {
     balance.textContent = `${balanceAmount}`;
   }
 });
-
