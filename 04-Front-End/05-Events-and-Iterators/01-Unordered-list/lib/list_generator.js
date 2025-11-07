@@ -6,10 +6,16 @@ import runChallenges from "../spec/list_generator_examiner.js";
 
 const listItem = (content) => {
   // TODO: return the proper <li> HTML tag with its content (as a string)
+  return `<li class="list-group-item">${content}</li>`;
 };
 
 const unorderedList = (items) => {
   // TODO: return the proper <ul> markup (as a string)
+  let itemsList = [];
+  items.forEach((item) => {
+    itemsList += listItem(item);
+  });
+  return `<ul class="list-group">${itemsList}</ul>`;
 };
 
 // Do not remove these lines:
@@ -17,6 +23,8 @@ if (typeof window === "object") {
   document.addEventListener("DOMContentLoaded", () => {
     // TODO: call unorderedList() passing the right element
     // TODO: display the list in the browser
+    const list = document.querySelector("#list");
+    list.insertAdjacentHTML("beforeend", unorderedList(['milk', 'butter', 'bread']));
   });
 }
 
