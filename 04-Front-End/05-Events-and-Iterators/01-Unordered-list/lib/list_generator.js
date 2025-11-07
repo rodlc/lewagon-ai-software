@@ -18,6 +18,9 @@ const unorderedList = (items) => {
   return `<ul class="list-group">${itemsList}</ul>`;
 };
 
+// eslint-disable-next-line semi
+console.log(unorderedList(['milk', 'butter', 'bread']))
+
 // Do not remove these lines:
 if (typeof window === "object") {
   document.addEventListener("DOMContentLoaded", () => {
