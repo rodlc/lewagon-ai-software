@@ -4,7 +4,7 @@ class Student
   attr_reader :name, :fives, :tens, :twenties
 
   def <=>(other)
-    self.wealth <=> other.wealth
+    wealth <=> other.wealth
   end
 
   def initialize(name, fives, tens, twenties)
