@@ -1,0 +1,60 @@
+.banner {
+  padding: 200px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  isolation: isolate;
+}
+
+/* Couche 1 (la plus profonde) : L'image floue */
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background-image: url(https://images.unsplash.com/photo-1603290989627-5155a7f83dac?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2670);
+  background-size: cover;
+  background-position: center;
+
+  filter: blur(3px);
+  z-index: -2;
+}
+
+/* Couche 2 (intermédiaire) : Le voile sombre pour le contraste */
+.banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* Le conteneur du texte, simplifié */
+.banner-text {
+  width: 90%;
+  max-width: 900px;
+}
+
+/* Les textes, avec une meilleure hiérarchie et lisibilité */
+.banner h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  margin-bottom: 15px;
+}
+
+.banner p {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.5;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
