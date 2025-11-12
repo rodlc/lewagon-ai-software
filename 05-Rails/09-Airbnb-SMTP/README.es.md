@@ -2,6 +2,6 @@
 
 Las demos intermedias quedaron atrás, ahora deberías tener una mejor idea de lo que vas a presentar durante las demos finales.
 
-Hoy deberías agregar el comportamiento de conversación en tu app para permitir a los usuarios **hacer seguimiento** a una respuesta LLM, **manteniendo el contexto** de los mensajes anteriores.
+Como viste durante la clase, ahora puedes **procesar archivos** y configurar ActiveStorage con Cloudinary para hacerlo.
 
-También, a medida que las conversaciones crezcan, asegúrate de controlar el consumo de tokens con las barreras de protección apropiadas, y corrige el comportamiento molesto de desplazamiento respondiendo con **Turbo Streams** en lugar de una redirección.
+Asegúrate de usar el modelo correcto dependiendo del tipo de contenido del archivo, y de agregar las **validaciones** apropiadas en tu código para evitar procesar archivos demasiado grandes, para controlar tu consumo de API.
