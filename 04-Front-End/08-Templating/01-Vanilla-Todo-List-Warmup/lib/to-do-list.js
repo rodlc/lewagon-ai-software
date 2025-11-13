@@ -5,10 +5,38 @@ const todos = [
   { title: "Water the plants", done: true }
 ];
 
-// To-do item HTML 👇
-// <div class="shadow-sm rounded px-4 py-3 mb-2 border d-flex">
-//   <input class="d-flex form-check-input me-1" type="checkbox">
-//   <div>Replace with to-do title</div>
-// </div>
+/* ------------------------------------------------------------------ */
+/* RENDER FUNCTION                                                    */
+/* ------------------------------------------------------------------ */
+const renderTodos = (items) => {
+  // 1. Sélectionne le conteneur prévu dans index.html
+  const container = document.getElementById("todosContainer");
+  container.innerHTML = ""; // On vide (idempotent)
 
-// TODO: Dynamically generate a list of to-dos based on `todos` array, and display them
+  // 2. Pour chaque tâche, crée les nœuds nécessaires
+  items.forEach(({ title, done }) => {
+    // • Wrapper
+    const card = document.createElement("div");
+    card.className = "shadow-sm rounded px-4 py-3 mb-2 border d-flex";
+
+    // • Checkbox
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.className = "d-flex form-check-input me-1";
+    checkbox.checked = done; // coche/décoche suivant le booléen
+
+    // • Titre
+    const text = document.createElement("div");
+    text.textContent = title;
+
+    // • On assemble
+    card.appendChild(checkbox);
+    card.appendChild(text);
+    container.appendChild(card);
+  });
+};
+
+/* ------------------------------------------------------------------ */
+/* INITIALISATION                                                     */
+/* ------------------------------------------------------------------ */
+document.addEventListener("DOMContentLoaded", () => renderTodos(todos));
