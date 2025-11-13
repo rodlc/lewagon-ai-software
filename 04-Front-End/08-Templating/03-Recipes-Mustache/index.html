@@ -31,14 +31,51 @@
   </head>
   <body class="container bg-light">
     <div class="row justify-content-center mt-4">
+
       <div class="col bg-white rounded shadow-sm p-5">
         <div class="row">
           <div class="col">
             <h1 class="mb-3 text-center">🧑‍🍳 Let's Cook</h1>
           </div>
         </div>
-
         <div id="recipesContainer" class="row"></div>
+          <div class="col col-lg-4">
+            <div class="card mb-3 h-100">
+              <div class="card-header">
+                <h2>Croissant</h2>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title">Ingredients:</h5>
+              <ul class="list-group">
+                <li class="list-group-item">Flour</li>
+                <li class="list-group-item">Butter</li>
+                <li class="list-group-item">Yeast</li>
+                <li class="list-group-item">Sugar</li>
+                <li class="list-group-item">Salt</li>
+              </ul>
+            <h5 class="card-title mt-3">Difficulty: 9/10</h5>
+            </div>
+          </div>
+        <template id="recipeCardTemplate">
+        {{#recipes}}
+          <div class="col col-lg-4">
+            <div class="card mb-3">
+              <div class="card-header"><h2>{{name}}</h2></div>
+
+              <div class="card-body">
+                <h5 class="card-title">Ingredients:</h5>
+                <ul class="list-group">
+                  {{#ingredients}}
+                    <li class="list-group-item">{{.}}</li>   <!-- ← . au lieu de ingredient -->
+                  {{/ingredients}}
+                </ul>
+                <h5 class="card-title mt-3">Difficulty: {{difficulty}}/10</h5>
+              </div>
+            </div>
+          </div>
+        {{/recipes}}
+      </template>
+      </div>
       </div>
     </div>
     <!-- Import your own javascript -->

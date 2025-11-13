@@ -25,3 +25,9 @@ const recipes = [
 ];
 
 // TODO: Your code goes below:
+document.addEventListener("DOMContentLoaded", () => {
+  const template = document.querySelector("#recipeCardTemplate").innerHTML;
+  const rendered = Mustache.render(template, { recipes }); // ← objet
+  const container = document.getElementById("recipesContainer");
+  container.innerHTML = rendered; // injection
+});
