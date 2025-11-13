@@ -15,21 +15,23 @@
       {
         "imports": {
           "@hotwired/stimulus": "https://unpkg.com/@hotwired/stimulus/dist/stimulus.js"
-        }
+
+
+        } 
       }
     </script>
-  </head>
+  </head> 
 
   <body>
     <div class="d-flex flex-column justify-content-center align-items-center vh-100">
       <h1 class="mb-5">API Key</h1>
 
       <!-- TODO: Implement a copy to clipboard -->
-      <div class="input-group w-50">
+      <div class="input-group w-50" data-controller="copy-to-clipboard" data-copy-to-clipboard-feedback-text-value="Disabled!">>
         <label for="api-key" class="visually-hidden">API Key</label>
-        <input id="api-key" class="form-control" type="text" value="0628aea3-48f6-4183-80be-c5def07939f2" readonly>
+        <input id="api-key" class="form-control" type="text" value="0628aea3-48f6-4183-80be-c5def07939f2" data-copy-to-clipboard-target="field" readonly>
         <div class="input-group-append">
-          <button class="btn btn-outline-primary">Copy to Clipboard</button>
+          <button class="btn btn-outline-primary" data-action="click->copy-to-clipboard#copy">Copy to Clipboard</button>
         </div>
       </div>
     </div>
