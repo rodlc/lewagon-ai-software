@@ -22,11 +22,22 @@
 <body class="bg-light">
   <div class="row justify-content-center mt-4">
     <div class="col-lg-4 bg-white rounded shadow-sm p-5">
-     <h1 class="mb-3">🗒 My Todo List</h1>
-     <div id="todosContainer">
+     <div id="todosContainer" class="d-flex flex-column gap-3" v-cloak>
        {{message}}
        <!-- Your code goes here -->
-     </div>
+      <h1 class="mb-3">🗒 My Todo list (Vue)</h1>
+
+      <!-- carte to-do -->
+      <div v-for="(todo, i) in todos"
+         :key="i"
+         class="shadow-sm rounded px-4 py-3 mb-2 border d-flex">
+          <input  class="d-flex form-check-input me-1"
+            type="checkbox"
+            v-model="todo.done">
+      <div :class="{ 'text-decoration-line-through': todo.done }">
+            {{todo.title}}
+      </div>
+    </div>
    </div>
   </div>
   <!-- Import your own javascript -->

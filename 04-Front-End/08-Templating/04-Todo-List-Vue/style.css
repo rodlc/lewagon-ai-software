@@ -1,1 +1,4 @@
 /* Your customized CSS goes here */
+[v-cloak] {
+  display: none !important;
+}
