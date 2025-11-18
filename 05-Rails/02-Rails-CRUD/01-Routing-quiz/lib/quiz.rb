@@ -1,5 +1,3 @@
-# rubocop:disable Lint/UselessAssignment
-
 # TODO: Below are five questions for you to answer. Read each of the questions
 # and make sure each of the methods return the correct answer.
 
@@ -7,6 +5,7 @@ def launching_a_rails_server
   # TODO: Return a `string` with the command you would run in your terminal
   # to launch a rails server so that you could visit your app in development
   # at `http://localhost:3000`.
+  "rails s"
 end
 
 def rails_flow
@@ -18,7 +17,7 @@ def rails_flow
   b = "create view"
   c = "add routes"
 
-  return []
+  return [c, a, b]
 end
 
 def route_to_about_page
@@ -27,17 +26,18 @@ def route_to_about_page
   # add to your `config/routes.rb` file, so that you could visit your page
   # at `localhost:3000/about` (you will need to specify the controller and
   # action somehow....).
+  "get 'about', to: 'pages#about'"
 end
 
 def generate_controller_command
   # TODO: Return a `string` with the command you would run in the terminal to
   # generate a `pages` controller, with an `about` action.
+  "rails generate controller pages about"
 end
 
 def naming_conventions
   # TODO: Return a `string` with the file path (from the root of your rails
   # application) to the view corresponding to the controller action generated
   # in the question above (the `about` action, in the `pages` controller).
+  "app/views/pages/about.html.erb"
 end
-
-# rubocop:enable Lint/UselessAssignment
