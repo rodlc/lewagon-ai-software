@@ -1,5 +1,5 @@
 // TODO: Replace the following line with your Hugging Face token
-const huggingFaceToken = ""
+const huggingFaceToken = "";
 
 // TODO: Create a function to get the AI's answer
 const getAnswer = (event) => {
