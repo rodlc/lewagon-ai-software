@@ -30,14 +30,14 @@ end
 
 def compute_score(attempt, time_taken)
   # Arbitrary scoring rule: lengths over time
-  time_taken > 60.0 ? 0 : attempt.size * (1.0 - time_taken / 60.0)
+  time_taken > 60.0 ? 0 : attempt.size * (1.0 - (time_taken / 60.0))
 end
 
 def run_game(attempt, grid, start_time, end_time)
   result = { time: end_time - start_time }
 
   score, message = score_and_message(attempt, grid, result[:time])
-  
+
   result[:score] = score
   result[:message] = message
 
